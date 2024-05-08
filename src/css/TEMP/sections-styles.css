@@ -1,0 +1,275 @@
+section {
+  padding: 1rem;
+  width: 100vw;
+}
+
+.section-subtitle {
+  font-family: var(--txt-font-stack-headings);
+  font-size: 1.4rem;
+  margin-left: 1.7rem;
+  opacity: 75%;
+  text-shadow: var(--txt-h2-shadow);
+}
+.section-featured-tech {
+  margin: 0;
+  margin-top: 100vh;
+  z-index: 10;
+  position: relative;
+  background-color: #323242;
+  background: var(--bg-section-featured-tech);
+  min-height: 100vh;
+}
+
+.featured-technology-content {
+  position: relative;
+  top: 70px;
+}
+.green-feature-heading {
+  color: var(--txt-section-featured-tech-heading);
+  margin-left: 30px;
+  margin-top: 10px;
+  font-family: Lato !important;
+  font-weight: 400 !important;
+  font-size: 1.65rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* SECTIONS */
+
+.section-secret-laboratory {
+  /* background is an image */
+  background-color: silver;
+  background: var(--bg-section-secret-laboratory);
+  min-height: 600px;
+  z-index: 10;
+  position: relative;
+  background-position: top left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0;
+
+  .overlay {
+    background: url('images/homepage/section-overlay.svg');
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+.section-defi {
+  background-color: gray;
+  background: var(--bg-section-defi);
+  min-height: 500px;
+  z-index: 10;
+  position: relative;
+  padding: 0;
+
+  .overlay {
+    background: url('images/homepage/section-overlay-3.svg');
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+.section-creativity-central {
+  /* background is an image */
+  background-color: silver;
+  background: var(--bg-section-creativity-central);
+  background-size: cover;
+  background-position: top center;
+  min-height: 400px;
+  z-index: 10;
+  position: relative;
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 0;
+
+  .overlay {
+    background: url('images/homepage/section-overlay-2.svg');
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+.section-neural-network {
+  background-color: gray;
+  background: var(--bg-section-neural-network);
+  background-size: cover;
+  background-position: bottom left;
+  min-height: 500px;
+  z-index: 10;
+  position: relative;
+  padding: 0;
+
+  .overlay {
+    background: url('images/homepage/section-overlay-3.svg');
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+.section-particle {
+  background-color: silver;
+  background: var(--bg-section-particle);
+  min-height: 500px;
+  z-index: 10;
+  position: relative;
+  padding: 0;
+
+  .overlay {
+    background: url('images/homepage/section-overlay-3.svg');
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+.section-nebula {
+  --_min-height: 500px;
+  min-height: var(--_min-height);
+  z-index: 10;
+  position: relative;
+  padding: 0;
+  background: url('../img/masthead/masthead-03.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .overlay {
+    background: url('images/homepage/section-overlay-3.svg');
+    background-size: cover;
+    height: 100vh;
+  }
+}
+.section-nebula .mask {
+  background: #323242;
+  /* background: url('images/homepage/section-mask-nebula.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll; */
+  -webkit-mask-image: url('images/homepage/section-mask-nebula.svg');
+  mask-image: url('images/homepage/section-mask-nebula.svg');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  min-height: var(--_min-height);
+  z-index: -1;
+
+  .content-container {
+    margin-left: 17rem;
+  }
+}
+
+.section-james-vertisan {
+  background-color: silver;
+  background: var(--bg-section-james-vertisan);
+  background-size: cover;
+  background-position: center right;
+  min-height: 500px;
+  z-index: 10;
+  position: relative;
+  padding: 0;
+
+  .overlay {
+    background: url('images/homepage/section-overlay-3.svg');
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+/* START masked image */
+.mask-bordered-hexagon-container {
+  position: relative;
+  z-index: 100;
+  width: 180px;
+  height: 180px;
+}
+.mask-bordered-hexagon-container > img {
+  object-fit: cover;
+}
+.mask-bordered-hexagon-container::after {
+  content: '';
+  background-image: var(--img-mask-bordered-hexagon);
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+.mask-bordered-hexagon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url('images/homepage/bordered-hexagon-mask-alt.svg');
+  mask-image: url('images/homepage/bordered-hexagon-mask-alt.svg');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+/* END masked image */
+
+/* START masked image */
+.mask-featured-item-container {
+  position: relative;
+  z-index: 100;
+  width: 120px;
+  height: 120px;
+}
+.mask-featured-item-container > img {
+  object-fit: cover;
+}
+.mask-featured-item-container::after {
+  content: '';
+  background-image: url('images/homepage/mask-hexagon-featured-item-after.svg');
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+}
+.mask-featured-item {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-mask-image: url('images/homepage/mask-hexagon-featured-item.svg');
+  mask-image: url('images/homepage/mask-hexagon-featured-item.svg');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+/* END masked image */
+
+.section-the-best {
+  /* background is an image */
+  background-color: gray;
+  background: var(--bg-section-the-best);
+  background-size: cover;
+  background-position: bottom center;
+  height: 500px !important;
+  z-index: 10;
+  position: relative;
+}
+
+.section-resources {
+  background-color: silver;
+  background: var(--bg-section-resources);
+  min-height: 500px;
+  z-index: 10;
+  position: relative;
+}
+
+.homepage-footer {
+  background-color: #323242;
+  background: var(--bg-section-footer);
+  background-size: cover;
+  background-position: bottom left;
+  min-height: 500px;
+  z-index: 10;
+  position: relative;
+}

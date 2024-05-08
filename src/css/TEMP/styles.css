@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600;700&display=swap');
+/* Bebas Neue is for the '2024' in the Featured Technology section exclusively */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+html {
+  color-scheme: dark light;
+
+  background-color: var(--color-bg-html);
+  font-family: var(--txt-font-stack-content);
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  margin: 0;
+  line-height: 1.6;
+  overflow-x: hidden; /* for nav menu */
+  background-color: var(--color-bg-body);
+  color: var(--color-text);
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.homepage-footer {
+  background-color: var(--color-bg-body) !important;
+  color: var(--color-text) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-text);
+  font-family: var(--txt-font-stack-headings);
+  line-height: normal;
+}
+
+h2 {
+  margin: 0 0 0 1.7rem;
+  padding-top: 1.3rem;
+  color: var(--color-text);
+  font-size: 2.3rem;
+  font-weight: 400;
+  text-shadow: var(--txt-h2-shadow);
+
+  .green-subtitle-text {
+    color: #afff00;
+    font-size: 1.5rem;
+    opacity: 75%;
+  }
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.1rem;
+  color: var(--color-text);
+  font-family: var(--txt-font-stack-content);
+}
+
+img {
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url('images/ph/bg-ph-generic-loading.svg'); */
+  shape-margin: 1rem;
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.body-cover {
+}
+.body-overlay {
+}
+.body-mask {
+}

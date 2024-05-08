@@ -1,0 +1,60 @@
+svg {
+  vertical-align: middle;
+  overflow: hidden;
+  outline: 0 !important;
+}
+svg .icon {
+  -webkit-transition: stroke 0.3s ease-out, fill 0.3s ease-out;
+  transition: stroke 0.3s ease-out, fill 0.3s ease-out;
+}
+svg .hexagon.on-dark {
+  fill: transparent;
+  stroke: #fff;
+}
+svg .icon.on-dark {
+  fill: transparent;
+  stroke: #fff;
+}
+svg .hexagon.on-light {
+  fill: white;
+  stroke: #222;
+}
+svg .icon.on-light {
+  fill: transparent;
+  /* stroke: #ff9800; */
+  stroke: #1e82e5;
+}
+svg .icon-filled.on-light {
+  stroke: transparent;
+  fill: #1e82e5;
+}
+.icon-button:hover svg .hexagon.on-light {
+  fill: #afff00;
+  stroke: #505d33;
+}
+.icon-button-2:hover svg .hexagon.on-light {
+  fill: #357abe;
+  stroke: #003a80;
+}
+.icon-button-3:hover svg .hexagon.on-light {
+  fill: #892db4;
+  stroke: #5a117c;
+}
+.icon-button:hover svg .icon.on-light {
+  stroke: #1d1d1d;
+}
+.icon-button-2:hover svg .icon.on-light {
+  stroke: white;
+}
+.icon-button-3:hover svg .icon.on-light {
+  stroke: white;
+}
+.cta-right {
+  display: inline-block;
+  height: 66px;
+  width: 58px;
+  transform: scale(1);
+  margin-top: 20px;
+  margin-left: 2px;
+  opacity: 1;
+}

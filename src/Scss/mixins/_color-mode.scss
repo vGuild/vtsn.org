@@ -1,0 +1,41 @@
+// scss-docs-start color-mode-mixin
+@mixin theme-mode($mode: light, $root: false) {
+  @if $theme-mode-type == 'media-query' {
+    @if $root == true {
+      @media (prefers-color-scheme: $mode) {
+        :root {
+          @content;
+        }
+      }
+    } @else {
+      @media (prefers-color-scheme: $mode) {
+        @content;
+      }
+    }
+  } @else {
+    [data-theme-mode='#{$mode}'] {
+      @content;
+    }
+  }
+}
+// scss-docs-end color-mode-mixin
+@mixin color-mode($mode: light, $root: false) {
+  @if $color-mode-type == 'media-query' {
+    @if $root == true {
+      @media (prefers-color-scheme: $mode) {
+        :root {
+          @content;
+        }
+      }
+    } @else {
+      @media (prefers-color-scheme: $mode) {
+        @content;
+      }
+    }
+  } @else {
+    [data-theme-mode='#{$mode}'] {
+      @content;
+    }
+  }
+}
+// scss-docs-end color-mode-mixin

@@ -1,0 +1,96 @@
+/* Helper Margin */
+@include helper-spacing('', 'margin', 'm');
+@include helper-spacing('top', 'margin', 'mt');
+@include helper-spacing('right', 'margin', 'me');
+@include helper-spacing('bottom', 'margin', 'mb');
+@include helper-spacing('left', 'margin', 'ms');
+@include helper-spacing('mx', 'margin', 'mx');
+@include helper-spacing('my', 'margin', 'my');
+
+/* Helper Padding */
+@include helper-spacing('', 'padding', 'p');
+@include helper-spacing('top', 'padding', 'pt');
+@include helper-spacing('right', 'padding', 'pe');
+@include helper-spacing('bottom', 'padding', 'pb');
+@include helper-spacing('left', 'padding', 'ps');
+@include helper-spacing('px', 'padding', 'px');
+@include helper-spacing('py', 'padding', 'py');
+
+/* Helper Font */
+@include helper-font-size(0, 80);
+@include helper-font-weight(1, 8);
+
+/* Helper Flex */
+.flex-1 {
+	flex: 1 !important;
+}
+
+/* Helper Position Direction */
+.top-0 {
+	top: 0 !important;
+}
+.bottom-0 {
+	bottom: 0 !important;
+}
+.start-0 {
+	left: 0 !important;
+}
+.end-0 {
+	right: 0 !important;
+}
+.top-auto {
+	top: auto !important;
+}
+.bottom-auto {
+	bottom: auto !important;
+}
+.start-auto {
+	left: auto !important;
+}
+.end-auto {
+	right: auto !important;
+}
+
+/* Helper Text */
+.text-underline {
+	text-decoration: underline !important;
+}
+.text-gradient {
+	-webkit-background-clip: text !important;
+	background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+}
+.lh-1 {
+	line-height: 1 !important;
+}
+
+/* Helper Size */
+@include helper-size('w', 'width');
+@include helper-size('h', 'height');
+
+/* Helper Color */
+
+
+.bg-none {
+	background: none !important;
+}
+.bg-position-center {
+	background-position: center !important;
+}
+.bg-size-cover {
+	background-size: cover !important;
+}
+.bg-repeat-no-repeat {
+	background-repeat: no-repeat !important;
+}
+
+@if $enable-dark-mode {
+	@include theme-mode(dark, true) {
+		.invert-dark {
+			filter: invert(1);
+		}
+	}
+}
+
+/* Helper Opacity */
+@include helper-opacity(0, 10);

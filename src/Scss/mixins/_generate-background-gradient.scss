@@ -1,0 +1,17 @@
+// This outputs a linear gradient class
+@mixin generate-background-gradient($className, $from, $to, $direction: bottom) {
+	.#{$className} {
+		background: $from;
+	}
+	.#{$className} {
+		@if $direction == top {
+			background: linear-gradient(to top, $from, $to) !important;
+		} @else if $direction == right {
+			background: linear-gradient(to left, $from, $to) !important;
+		} @else if $direction == left {
+			background: linear-gradient(to right, $from, $to) !important;
+		} @else if $direction == bottom {
+			background: linear-gradient(to bottom, $from, $to) !important;
+		}
+	}
+}

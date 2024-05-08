@@ -1,0 +1,29 @@
+.btn-scroll-top {
+	position: fixed;
+	bottom: rem(20px);
+	right: rem(20px);
+	width: rem(40px);
+	height: rem(40px);
+	background: rgb(0 0 0 / .5);
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	z-index: 1000;
+	border-radius: 36px;
+   border: 2px solid var(--color-text);
+	// transition: $btn-transition;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+	// @include media-breakpoint-down(md) {
+	// 	bottom: rem(20px);
+	// 	z-index: 1000;
+	// 		}
+	
+	&:hover {
+      background: rgb(255 255 255 / .5);
+		color: black;
+		text-decoration: none;
+	}
+}

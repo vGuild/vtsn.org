@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI Theme Values</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/fontawesome-6.1.1-pro/all.css" />
+    <link rel="stylesheet" href="scss/styles-site.css" />
+    <script src="js/nav-menu.js" defer></script>
+    <script src="js/theme-switcher.js" defer></script>
+  </head>
+  <body class="home">
+    <div class="body-cover"></div>
+    <div class="body-overlay"></div>
+    <div class="body-mask"></div>
+    <h1 class="sr-only">VERTISAN - UI Theme Values</h1>
+    <header id="primaryHeader" class="primary-header">
+      <div>
+        <img class="header-logo" src="img/vertisan-logo-navbar-200x100.svg" alt="vertisan" />
+      </div>
+      <button class="mobile-nav-toggle" aria-controls="primaryNav" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav>
+        <ul id="primaryNav" class="primary-nav" data-visible="false">
+          <li class="active">
+            <a href="/index.html"><span aria-hidden="true">00</span>home</a>
+          </li>
+          <li>
+            <a href="#colors"><span aria-hidden="true">01</span>colors</a>
+          </li>
+          <li>
+            <a href="#fills"><span aria-hidden="true">02</span>fills</a>
+          </li>
+          <li>
+            <a href="#images"><span aria-hidden="true">03</span>images</a>
+          </li>
+          <li id="theme-toggle-container">
+            <button id="theme-toggle" aria-label="Switch to dark theme">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g id="theme-svg-outer-points" class="toggle-sun">
+                  <path
+                    d="M20.5,8.5v-5h-5L12,0L8.5,3.5h-5v5L0,12l3.5,3.5v5h5L12,24l3.5-3.5h5v-5L24,12L20.5,8.5z M12,18.6c-3.6,0-6.6-2.9-6.6-6.6
+		S8.4,5.4,12,5.4s6.6,2.9,6.6,6.6C18.5,15.6,15.6,18.6,12,18.6C12,18.6,12,18.6,12,18.6L12,18.6z"
+                  />
+                </g>
+                <g id="theme-svg-inner-circle" class="toggle-circle">
+                  <circle class="cls-1" cx="12" cy="12" r="5.3" />
+                </g>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="uiThemeValues">
+      <p>
+        The purpose of this page is to provide a complete representation of the theme values that will be used
+        to construct website interfaces.
+      </p>
+      <div class="section">
+        <h2 class="section-title">Core Theme Colors</h2>
+        <h3>Mandatory Theme Colors</h3>
+        <div class="official-colors-grid">
+          <div class="color-card">
+            <div class="title">Official Primary Color</div>
+            <div class="color-value primary"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Primary Accent Color</div>
+            <div class="color-value primary-accent"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Complementary Color</div>
+            <div class="color-value complementary"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Official Silver Color</div>
+            <div class="color-value silver"></div>
+          </div>
+        </div>
+        <h3>Optional Theme Colors</h3>
+        <div class="official-colors-grid">
+          <div class="color-card">
+            <div class="title">Complementary Accent Color (optional)</div>
+            <div class="color-value complementary-accent"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Complementary Color 2 (optional)</div>
+            <div class="color-value complementary-2"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Complementary Color 3 (optional)</div>
+            <div class="color-value complementary-3"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Complementary Color 4 (optional)</div>
+            <div class="color-value complementary-4"></div>
+          </div>
+        </div>
+        <h3>Fixed Background Colors</h3>
+        <div class="official-colors-grid">
+          <div class="color-card">
+            <div class="title">Primary Neutral Background</div>
+            <div class="color-value bg-primary-neutral"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Secondary Neutral Background</div>
+            <div class="color-value bg-secondary-neutral"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Light Background</div>
+            <div class="color-value bg-color-light"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Dark Background</div>
+            <div class="color-value bg-color-dark"></div>
+          </div>
+        </div>
+        <h3>Switching Background Colors</h3>
+        <div class="official-colors-grid">
+          <div class="color-card">
+            <div class="title">Muted Background</div>
+            <div class="color-value bg-color-gray-muted"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Subtle Background</div>
+            <div class="color-value bg-color-gray-subtle"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Normal Background</div>
+            <div class="color-value bg-color-gray-normal"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Bold Background</div>
+            <div class="color-value bg-color-gray-bold"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Intense Background</div>
+            <div class="color-value bg-color-gray-intense"></div>
+          </div>
+        </div>
+        <h3>Text Colors</h3>
+        <div class="official-colors-grid">
+          <div class="color-card">
+            <div class="title">Text Color on Primary BG</div>
+            <div class="color-value text-on-primary-300"></div>
+            <div class="color-value text-on-primary fw-700">Base:&nbsp;</div>
+            <div class="color-value text-on-primary-700"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Primary Color on Light BG</div>
+            <div class="color-value text-accent-on-light-300"></div>
+            <div class="color-value text-accent-on-light fw-700">Base:&nbsp;</div>
+            <div class="color-value text-accent-on-light-700"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Text Color on Light BG</div>
+            <div class="color-value text-on-light-300"></div>
+            <div class="color-value text-on-light fw-700">Base:&nbsp;</div>
+            <div class="color-value text-on-light-700"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Text Color on Dark BG</div>
+            <div class="color-value text-on-dark-300"></div>
+            <div class="color-value text-on-dark fw-700">Base:&nbsp;</div>
+            <div class="color-value text-on-dark-700"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Text Color on Silver BG</div>
+            <div class="color-value text-on-silver-300"></div>
+            <div class="color-value text-on-silver fw-700">Base:&nbsp;</div>
+            <div class="color-value text-on-silver-700"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Links Color on Primary BG</div>
+            <div class="color-value text-accent-on-primary-300"></div>
+            <div class="color-value text-accent-on-primary fw-700">Base:&nbsp;</div>
+            <div class="color-value text-accent-on-primary-700"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Links on Complementary BG</div>
+            <div class="color-value text-accent-on-complementary-300"></div>
+            <div class="color-value text-accent-on-complementary fw-700">Base:&nbsp;</div>
+            <div class="color-value text-accent-on-complementary-700"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Links Color on Dark BG</div>
+            <div class="color-value text-accent-on-dark-300"></div>
+            <div class="color-value text-accent-on-dark fw-700">Base:&nbsp;</div>
+            <div class="color-value text-accent-on-dark-700"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Links Color on Light BG</div>
+            <div class="color-value text-accent-on-light-300"></div>
+            <div class="color-value text-accent-on-light fw-700">Base:&nbsp;</div>
+            <div class="color-value text-accent-on-light-700"></div>
+          </div>
+        </div>
+        <h3>Shades and Tints</h3>
+        <div class="official-colors-grid">
+          <div class="color-card">
+            <div class="title">Official Primary Color</div>
+            <div class="color-value primary-100"></div>
+            <div class="color-value primary-300"></div>
+            <div class="color-value primary fw-700">Base:&nbsp;</div>
+            <div class="color-value primary-700"></div>
+            <div class="color-value primary-900"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Primary Accent Color</div>
+            <div class="color-value primary-accent-100"></div>
+            <div class="color-value primary-accent-300"></div>
+            <div class="color-value primary-accent fw-700">Base:&nbsp;</div>
+            <div class="color-value primary-accent-700"></div>
+            <div class="color-value primary-accent-900"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Complementary Color</div>
+            <div class="color-value complementary-100"></div>
+            <div class="color-value complementary-300"></div>
+            <div class="color-value complementary fw-700">Base:&nbsp;</div>
+            <div class="color-value complementary-700"></div>
+            <div class="color-value complementary-900"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Official Silver Color</div>
+            <div class="color-value silver-100"></div>
+            <div class="color-value silver-300"></div>
+            <div class="color-value silver fw-700">Base:&nbsp;</div>
+            <div class="color-value silver-700"></div>
+            <div class="color-value silver-900"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Complementary Accent Color</div>
+            <div class="color-value complementary-accent-100"></div>
+            <div class="color-value complementary-accent-300"></div>
+            <div class="color-value complementary-accent fw-700">Base:&nbsp;</div>
+            <div class="color-value complementary-accent-700"></div>
+            <div class="color-value complementary-accent-900"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Complementary Color 2</div>
+            <div class="color-value complementary-2-100"></div>
+            <div class="color-value complementary-2-300"></div>
+            <div class="color-value complementary-2 fw-700">Base:&nbsp;</div>
+            <div class="color-value complementary-2-700"></div>
+            <div class="color-value complementary-2-900"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Complementary Color 3</div>
+            <div class="color-value complementary-3-100"></div>
+            <div class="color-value complementary-3-300"></div>
+            <div class="color-value complementary-3 fw-700">Base:&nbsp;</div>
+            <div class="color-value complementary-3-700"></div>
+            <div class="color-value complementary-3-900"></div>
+          </div>
+          <div class="color-card">
+            <div class="title">Complementary Color 4</div>
+            <div class="color-value complementary-4-100"></div>
+            <div class="color-value complementary-4-300"></div>
+            <div class="color-value complementary-4 fw-700">Base:&nbsp;</div>
+            <div class="color-value complementary-4-700"></div>
+            <div class="color-value complementary-4-900"></div>
+          </div>
+        </div>
+        <h3>Data Rows</h3>
+        <div class="official-colors-grid">
+          <div class="data-row-card primary">
+            <div class="title">Rows BG Colors on Official Primary</div>
+            <p>alternating data rows for tables</p>
+            <div class="container">
+              <div class="color-value color-primary-drow-ying"></div>
+              <div class="color-value color-primary-drow-yang"></div>
+            </div>
+          </div>
+          <div class="data-row-card complementary">
+            <div class="title">Rows BG Colors on Complementary</div>
+            <p>alternating data rows for tables</p>
+            <div class="container">
+              <div class="color-value color-complementary-drow-ying"></div>
+              <div class="color-value color-complementary-drow-yang"></div>
+            </div>
+          </div>
+          <div class="data-row-card complementary-2">
+            <div class="title">Rows BG Colors on Complementary 2</div>
+            <p>alternating data rows for tables</p>
+            <div class="container">
+              <div class="color-value color-complementary-2-drow-ying"></div>
+              <div class="color-value color-complementary-2-drow-yang"></div>
+            </div>
+          </div>
+        </div>
+        <h3>Opacity Fills</h3>
+        <div class="official-colors-grid">
+          <div class="opacity-card callout-block bg-jean-georges-03">
+            <div class="title">Solid Callout Block</div>
+            <p>demo background for overlay</p>
+            <div class="container">
+              <div class="color-value color-fill-callout-1 bg"></div>
+              <div class="color-value color-fill-callout-1 fg"></div>
+            </div>
+          </div>
+          <div class="opacity-card callout-block bg-jean-georges-05">
+            <div class="title">Solid Callout Block (alternate)</div>
+            <p>demo background for overlay</p>
+            <div class="container">
+              <div class="color-value color-fill-callout-2 bg"></div>
+              <div class="color-value color-fill-callout-2 fg"></div>
+            </div>
+          </div>
+          <div class="opacity-card complementary-overlay bg-map">
+            <div class="title">Primary Color Overlay (on light)</div>
+            <p>demo background for overlay</p>
+            <div class="container">
+              <div class="color-value color-fill-primary-90"></div>
+              <div class="color-value color-fill-primary-85"></div>
+              <div class="color-value color-fill-primary-75"></div>
+              <div class="color-value color-fill-primary-65"></div>
+              <div class="color-value color-fill-primary-50 text-white-shadow"></div>
+              <div class="color-value color-fill-primary-25 text-white-shadow"></div>
+            </div>
+          </div>
+          <div class="opacity-card complementary-overlay bg-monaco-04">
+            <div class="title">Primary Color Overlay (on dark)</div>
+            <p>demo background for overlay</p>
+            <div class="container">
+              <div class="color-value color-fill-primary-90"></div>
+              <div class="color-value color-fill-primary-85"></div>
+              <div class="color-value color-fill-primary-75"></div>
+              <div class="color-value color-fill-primary-65"></div>
+              <div class="color-value color-fill-primary-50 text-white-shadow"></div>
+              <div class="color-value color-fill-primary-25 text-white-shadow"></div>
+            </div>
+          </div>
+          <div class="opacity-card complementary-overlay bg-foodie">
+            <div class="title">Primary Accent Color Overlay</div>
+            <p>demo background for overlay</p>
+            <div class="container">
+              <div class="color-value color-fill-primary-accent-90"></div>
+              <div class="color-value color-fill-primary-accent-85"></div>
+              <div class="color-value color-fill-primary-accent-75"></div>
+              <div class="color-value color-fill-primary-accent-65"></div>
+              <div class="color-value color-fill-primary-accent-50 text-white-shadow"></div>
+              <div class="color-value color-fill-primary-accent-25 text-white-shadow"></div>
+            </div>
+          </div>
+          <div class="opacity-card complementary-overlay bg-map">
+            <div class="title">Complementary Color Overlay</div>
+            <p>demo background for overlay</p>
+            <div class="container">
+              <div class="color-value color-fill-complementary-90"></div>
+              <div class="color-value color-fill-complementary-85"></div>
+              <div class="color-value color-fill-complementary-75"></div>
+              <div class="color-value color-fill-complementary-65"></div>
+              <div class="color-value color-fill-complementary-50 text-white-shadow"></div>
+              <div class="color-value color-fill-complementary-25 text-white-shadow"></div>
+            </div>
+          </div>
+          <div class="opacity-card complementary-overlay bg-lobster">
+            <div class="title">Complementary Accent Color Overlay</div>
+            <p>demo background for overlay</p>
+            <div class="container">
+              <div class="color-value color-fill-complementary-accent-90"></div>
+              <div class="color-value color-fill-complementary-accent-85"></div>
+              <div class="color-value color-fill-complementary-accent-75"></div>
+              <div class="color-value color-fill-complementary-accent-65"></div>
+              <div class="color-value color-fill-complementary-accent-50 text-white-shadow"></div>
+              <div class="color-value color-fill-complementary-accent-25 text-white-shadow"></div>
+            </div>
+          </div>
+          <div class="opacity-card complementary-overlay bg-map-color">
+            <div class="title">Complementary 2 Color Overlay</div>
+            <p>demo background for overlay</p>
+            <div class="container">
+              <div class="color-value color-fill-complementary-2-90"></div>
+              <div class="color-value color-fill-complementary-2-85"></div>
+              <div class="color-value color-fill-complementary-2-75"></div>
+              <div class="color-value color-fill-complementary-2-65"></div>
+              <div class="color-value color-fill-complementary-2-50 text-white-shadow"></div>
+              <div class="color-value color-fill-complementary-2-25 text-white-shadow"></div>
+            </div>
+          </div>
+          <div class="opacity-card complementary-overlay bg-office-01">
+            <div class="title">Complementary 3 Color Overlay</div>
+            <p>demo background for overlay</p>
+            <div class="container">
+              <div class="color-value color-fill-complementary-3-90"></div>
+              <div class="color-value color-fill-complementary-3-85"></div>
+              <div class="color-value color-fill-complementary-3-75"></div>
+              <div class="color-value color-fill-complementary-3-65"></div>
+              <div class="color-value color-fill-complementary-3-50 text-white-shadow"></div>
+              <div class="color-value color-fill-complementary-3-25 text-white-shadow"></div>
+            </div>
+          </div>
+          <div class="opacity-card complementary-overlay bg-office-02">
+            <div class="title">Complementary 4 Color Overlay</div>
+            <p>demo background for overlay</p>
+            <div class="container">
+              <div class="color-value color-fill-complementary-4-90"></div>
+              <div class="color-value color-fill-complementary-4-85"></div>
+              <div class="color-value color-fill-complementary-4-75"></div>
+              <div class="color-value color-fill-complementary-4-65"></div>
+              <div class="color-value color-fill-complementary-4-50 text-white-shadow"></div>
+              <div class="color-value color-fill-complementary-4-25 text-white-shadow"></div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Themed Gradient Fills</h3>
+        <div class="official-colors-grid">
+          <div class="gradient-card bg-gradient-primary">
+            <div class="title">Primary Color Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-primary from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-primary to"></div>
+            </div>
+          </div>
+          <div class="gradient-card bg-gradient-complementary">
+            <div class="title">Complementary Color Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-complementary from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-complementary to"></div>
+            </div>
+          </div>
+          <div class="gradient-card bg-gradient-complementary-2">
+            <div class="title">Complementary 2 Color Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-complementary-2 from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-complementary-2 to"></div>
+            </div>
+          </div>
+          <div class="gradient-card bg-gradient-complementary-3">
+            <div class="title">Complementary 3 Color Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-complementary-3 from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-complementary-3 to"></div>
+            </div>
+          </div>
+          <div class="gradient-card bg-gradient-complementary-4">
+            <div class="title">Complementary 4 Color Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-complementary-4 from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-complementary-4 to"></div>
+            </div>
+          </div>
+          <div class="gradient-card bg-gradient-primary-accent">
+            <div class="title">Primary Accent Color Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-primary-accent from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-primary-accent to"></div>
+            </div>
+          </div>
+          <div class="gradient-card bg-gradient-complementary-accent">
+            <div class="title">Complementary Accent Color Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-complementary-accent from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-complementary-accent to"></div>
+            </div>
+          </div>
+        </div>
+        <h3>Standard Gradient Fills</h3>
+        <div class="official-colors-grid">
+          <div class="gradient-card bg-gradient-cyan-blue">
+            <div class="title">Cyan to Blue Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-cyan-blue from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-cyan-blue to"></div>
+            </div>
+          </div>
+          <div class="gradient-card bg-gradient-yellow-orange">
+            <div class="title">Yellow to Orange Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-yellow-orange from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-yellow-orange to"></div>
+            </div>
+          </div>
+          <div class="gradient-card bg-gradient-crimson-orange">
+            <div class="title">Crimson to Orange Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-crimson-orange from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-crimson-orange to"></div>
+            </div>
+          </div>
+          <div class="gradient-card bg-gradient-blue-cyan">
+            <div class="title">Blue to Cyan Gradient</div>
+            <p>0-degree linear gradient</p>
+            <div class="container">
+              <div class="color-value color-gradient-label">Beginning Color</div>
+              <div class="color-value color-gradient-blue-cyan from"></div>
+              <div class="color-value color-gradient-label">&nbsp;</div>
+              <div class="color-value color-gradient-label">Ending Color</div>
+              <div class="color-value color-gradient-blue-cyan to"></div>
+            </div>
+          </div>
+        </div>
+
+        <h3>Message Boxes</h3>
+        <h3>Notification Badges</h3>
+      </div>
+    </main>
+    <footer class="site-footer"></footer>
+
+    <a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+    <script src="js/masthead.js"></script>
+    <script src="js/site.js"></script>
+  </body>
+</html>

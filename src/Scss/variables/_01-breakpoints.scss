@@ -1,0 +1,122 @@
+// note: 1rem = 16px
+// note: 1ch is the width of the '0' character
+
+// note: the following names indicate the upper limit value in width
+// example: @media (max-width: $breakpoint-phone-portrait) means 400px is the maximum width
+// the following block of values are generally just for reference
+$breakpoint-phone-portrait: 400px;
+$breakpoint-phone-landscape: 625px;
+$breakpoint-tablet-portrait: 770px;
+$breakpoint-tablet-landscape: 925px;
+$breakpoint-desktop-small: 810px;
+$breakpoint-desktop-medium: 1025px;
+$breakpoint-desktop-large: 1600px;
+$breakpoint-desktop-huge: 10000px;
+
+// these are the values I will most likely use in media queries
+$breakpoint-0: 0px;
+$breakpoint-360: 0px;
+$breakpoint-396: 0px;
+$breakpoint-430: 0px;
+$breakpoint-576: 0px;
+$breakpoint-768: 0px;
+$breakpoint-1024: 0px;
+$breakpoint-1200: 0px;
+
+// used by my mixin
+$media-breakpoints: (
+   break-zero: 0,
+   break-360: 360px,
+   break-396: 396px,
+   break-430: 430px,
+   break-576: 576px,
+   break-768: 768px,
+   break-1024: 1024px,
+   break-1200: 1200px
+);
+
+/* grid-breakpoints are for that value and up */
+$grid-breakpoints: (
+   xxs: 0,
+   xs: 340px,
+   sm: 390px,
+   md: 430px,
+   lg: 576px,
+   xl: 768px,
+   xxl: 1024px,
+   xxxl: 1200px
+);
+
+// Minimum breakpoint width. Null for the smallest (first) breakpoint.
+//
+//    >> breakpoint-min(sm, (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px))
+//    576px
+@function viewport-min($name, $breakpoints: $media-breakpoints) {
+   $min: map-get($breakpoints, $name);
+   @return if($min != 0, $min, null);
+}
+
+@function viewport-max($name, $breakpoints: $media-breakpoints) {
+   $max: map-get($breakpoints, $name);
+   @return if($max and $max > 0, $max - 0.02, null);
+}
+
+// Media of at least the minimum breakpoint width. No query for the smallest breakpoint.
+// Makes the @content apply to the given breakpoint and wider.
+@mixin media-viewport-min($name, $breakpoints: $media-breakpoints) {
+   $min: viewport-min($name, $breakpoints);
+   @if $min {
+      @media (min-width: $min) {
+         @content;
+      }
+   } @else {
+      @content;
+   }
+}
+
+@mixin media-viewport-max($name, $breakpoints: $media-breakpoints) {
+   $max: viewport-max($name, $breakpoints);
+   @if $max {
+      @media (max-width: $max) {
+         @content;
+      }
+   } @else {
+      @content;
+   }
+}
+
+/* FROM VERTISAN BELOW */
+
+/* Viewport Sizes Reported */
+/* -----------------------------------------------------------------------------*/
+
+/* 320 x 547    Ed's Note 10*/
+/* 339 x 585    : DPR 3.19  : Samsung with zoomed text */
+/* -- ^ xxs - 340px  ^ ---------------------------------------------------------*/
+
+/* 360 x 612    : DPR 3.0   : Samsung Galaxy S9 using Google Chrome */
+/* 360 x 620    : DPR 3.0   : Samsung Galaxy S9 through Instagram */
+/* 375 x 589    : DPR 3.0   : iPhone 12 mini*/
+/* 375 x 635    : DPR 3.0   : iPhone */
+/* 375 x 647    : DPR 2.0   : iPhone */
+/* -- ^ xs - 375px ^ -----------------------------------------------------------*/
+
+/* 390 x 663    : DPR 3.0   : iPhone 12 Pro - Troy */
+/* 412 x 717    : DPR 2.0   : Samsung Galaxy Note 10+ 5G */
+/* 414 x 719    : DPR 2.0   : iPhone 11 Pro Max */
+/* 428 x 746    : DPR 3.0   : Samsung device */
+/* -- ^ sm - 430px ^ -----------------------------------------------------------*/
+
+/* -- ^ md - 576px ^ -----------------------------------------------------------*/
+
+/* 768 x 913   : DPR 2.0   : iPad Mini - landscape */
+/* -- ^ lg - 768px ^ -----------------------------------------------------------*/
+
+/* 980 x 1691  : DPR 3.19  : Samsung Galaxy Note 10+ in 'desktop view' */
+/* 1024 x 657  : DPR 2.0   : iPad Mini - landscape */
+/* -- ^ xl - 1024px ^ -----------------------------------------------------------*/
+
+/* -- ^ xxl - 1200px ^ ----------------------------------------------------------*/
+
+/* -- ^ xxxl - 1400px ^ ---------------------------------------------------------*/
+/* ------------------------------------------------------------------------------*/

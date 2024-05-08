@@ -1,0 +1,15 @@
+#cookieConsent {
+  background: #ffcd6e;
+  font-size: 87.5%;
+  font-weight: 400;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.2s;
+}
+#cookieConsent.hidden {
+  transform: translateY(100%);
+}

@@ -1,0 +1,126 @@
+@use 'sass:color';
+
+//====================================================================================
+// LIGHT MODE VARIABLES FOR THE COMMON THEME
+// NOTE: Only variables that need to switch between light and dark should appear here. 
+//       If no switching is needed, then they will be in the 'singleton' file.
+//       So... if it's not specified in ':root' then it goes in singletons.
+//------------------------------------------------------------------------------------
+
+$color-bg: $color-gray-100;
+$color-fg: $color-gray-900;
+
+//=== TEXT COLORS ===================================================
+// link color variations of gray
+$color-lnk-on-muted: $color-primary;
+$color-lnk-on-subtle: $color-primary;
+$color-lnk-on-normal: $color-primary;
+$color-lnk-on-bold: lighten($color-primary, 40%);
+$color-lnk-on-intense: lighten($color-primary, 40%);
+
+//=== LAYOUT ========================================================
+$color-bg-html: #f3f8fa;
+$color-bg-body: #e7e7e7;
+$color-headings: #14151c;
+$color-text: #14151c;
+$color-text-muted: #2f2f2f;
+/* nav bar */
+$color-nav-bar: hsl(0 0% 100% / 0.2);
+$color-nav-link: white;
+$color-nav-link-active: #afff00;
+/* theme switching */
+$color-box-shadow: hsl(217 19% 35% / 0.25);
+$box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35% / 0.25);
+
+/* standard background colors */
+$color-bg-gray-muted: hsl(0, 0%, 93%);
+$color-bg-gray-subtle: hsl(0 0% 86%);
+$color-bg-gray-normal: hsl(218, 14%, 70%);
+$color-bg-gray-bold: hsl(214, 8%, 37%);
+$color-bg-gray-intense: hsl(216, 9%, 23%);
+/* standard foreground colors */
+$color-fg-on-gray-muted: $color-text-on-light;
+$color-fg-on-gray-subtle: $color-text-on-light;
+$color-fg-on-gray-normal: $color-text-on-light;
+$color-fg-on-gray-bold: $color-text-on-dark;
+$color-fg-on-gray-intense: $color-text-on-dark;
+
+/* standard card background colors */
+$card-bg-gray-muted: hsl(0, 0%, 93%);
+$card-bg-gray-subtle: hsl(0 0% 86%);
+$card-bg-gray-normal: hsl(218, 14%, 70%);
+$card-bg-gray-bold: hsl(214, 8%, 37%);
+$card-bg-gray-intense: hsl(216, 9%, 23%);
+$card-bg-color-vivid: hsl(284, 80%, 33%);
+$card-bg-color-vibrant: hsl(284, 86%, 25%);
+/* standard card foreground colors */
+$card-fg-gray-muted: hsl(218, 27%, 18%);
+$card-fg-gray-subtle: hsl(218, 22%, 17%);
+$card-fg-gray-normal: hsl(0, 0%, 15%);
+$card-fg-gray-bold: hsl(0 0% 95%);
+$card-fg-gray-intense: hsl(0 0% 92%);
+$card-fg-color-vivid: hsl(0 0% 95%);
+$card-fg-color-vibrant: hsl(0, 0%, 95%);
+/* standard card links colors */
+$card-lnk-gray-muted: $color-primary;
+$card-lnk-gray-subtle: $color-primary;
+$card-lnk-gray-normal: $color-primary;
+$card-lnk-gray-bold: $color-primary-accent;
+$card-lnk-gray-intense: $color-primary-accent;
+$card-lnk-color-vivid: $color-primary-accent; //need something polarizing
+$card-lnk-color-vibrant: $color-primary-accent;
+
+//--- Start: Cards based upon current theme -------------------------
+/* background */
+$card-bg-theme-primary: $color-primary;
+$card-bg-theme-complementary: $color-complementary;
+$card-bg-theme-complementary-2: $color-complementary-2;
+$card-bg-theme-complementary-3: $color-complementary-3;
+$card-bg-theme-complementary-4: $color-complementary-4;
+/* foreground */
+$card-fg-theme-primary: $not-used;
+$card-fg-theme-complementary: $not-used;
+$card-fg-theme-complementary-2: $not-used;
+$card-fg-theme-complementary-3: $not-used;
+$card-fg-theme-complementary-4: $not-used;
+//--- End: Cards based upon current theme ---------------------------
+
+/* text */
+$txt-h2-shadow: 1px 1px 4px #f5f7f6;
+
+/* images */
+$img-card-bg-fancy-1: url('images/cards/bg-fancy-card-1-light.jpg');
+$img-mask-bordered-hexagon: url('images/homepage/bordered-hexagon-mask-light.svg');
+
+/* section backgrounds */
+$bg-section-featured-tech: #bebecb;
+$txt-section-featured-tech-heading: #323242;
+$bg-section-secret-laboratory: url('../img/homepage/bg-section-secret-laboratory-light.jpg');
+$bg-section-defi: linear-gradient(
+   135deg,
+   rgba(236, 227, 221, 1) 4%,
+   rgba(247, 243, 241, 1) 25%,
+   rgba(255, 255, 255, 1) 71%,
+   rgba(220, 183, 154, 1) 100%
+);
+$bg-section-creativity-central: url('../img/homepage/bg-section-creativity-central-light.jpg');
+$bg-section-neural-network: url('../img/homepage/bg-section-neural-network-light.jpg');
+$bg-section-particle: linear-gradient(
+   180deg,
+   rgba(255, 255, 255, 1) 28%,
+   rgba(212, 214, 215, 1) 100%
+);
+$bg-section-nebula: linear-gradient(
+   180deg,
+   rgba(255, 255, 255, 1) 0%,
+   rgba(249, 247, 250, 1) 48%,
+   rgba(208, 156, 231, 1) 100%
+);
+$bg-section-james-vertisan: url('../img/homepage/bg-section-james-vertisan-light.svg');
+$bg-section-the-best: url('../img/homepage/bg-section-only-the-best-light.jpg');
+$bg-section-resources: linear-gradient(
+   180deg,
+   rgba(253, 253, 253, 1) 28%,
+   rgba(245, 247, 246, 1) 100%
+);
+$bg-section-footer: url('../img/homepage/bg-section-footer-light.svg');

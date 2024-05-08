@@ -1,0 +1,24 @@
+// MODE AGNOSTIC VARIABLES
+
+// 00: Options toggle setting (rtl, shadow, caret, negative margin, color mode)
+
+$enable-dark-mode: true !default;
+$enable-rtl: false !default;
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: true !default;
+$enable-transitions: true !default;
+$enable-reduced-motion: true !default;
+$enable-smooth-scroll: true !default;
+$enable-grid-classes: true !default;
+$enable-container-classes: true !default;
+$enable-cssgrid: false !default;
+$enable-button-pointers: true !default;
+$enable-rfs: true !default;
+$enable-validation-icons: true !default;
+$enable-negative-margins: true !default;
+$enable-deprecation-messages: true !default;
+$enable-important-utilities: true !default;
+$theme-mode-type: data !default; // `data` or `media-query`
+$color-mode-type: data !default; // `data` or `media-query`

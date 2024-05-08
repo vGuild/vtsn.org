@@ -1,0 +1,190 @@
+@use 'sass:string';
+
+@function to-rgb-commas($value) {
+   @return red($value), green($value), blue($value);
+}
+@function to-rgba-commas($value) {
+   @return red($value), green($value), blue($value), alpha($value);
+}
+
+// attempted
+@function to-rgb-literal($value) {
+   @return string.unquote('rgb(')red($value), green($value), blue($value)string.unquote(')');
+}
+@function to-rgba-literal($value) {
+   @return string.unquote('rgba(')red($value), green($value), blue($value),
+      alpha($value)string.unquote(')');
+}
+
+//=== MIXINS FOR THE FOLLOWING GENERATORS =====================================
+@mixin generate-color-classes($color, $value) {
+   // This will output similar to
+   /* 
+   .text-color-red { color: rgba(204, 0, 0, 1) !important; }
+   .text-color-red-100 { color: rgba(245, 204, 204, 1) !important; }
+   .text-color-red-200 { color: rgba(235, 153, 153, 1) !important; }
+   .text-color-red-300 { color: rgba(224, 102, 102, 1) !important; }
+   .text-color-red-400 { color: rgba(214, 51, 51, 1) !important; }
+   .text-color-red-500 { color: rgba(204, 0, 0, 1) !important; }
+   .text-color-red-600 { color: rgba(163, 0, 0, 1) !important; }
+   .text-color-red-700 { color: rgba(122, 0, 0, 1) !important; }
+   .text-color-red-800 { color: rgba(82, 0, 0, 1) !important; }
+   .text-color-red-900 { color: rgba(41, 0, 0, 1) !important; }
+
+   .bg-color-red { color: rgba(204, 0, 0, 1) !important; }
+   .bg-color-red-100 { color: rgba(245, 204, 204, 1) !important; }
+   .bg-color-red-200 { color: rgba(235, 153, 153, 1) !important; }
+   .bg-color-red-300 { color: rgba(224, 102, 102, 1) !important; }
+   .bg-color-red-400 { color: rgba(214, 51, 51, 1) !important; }
+   .bg-color-red-500 { color: rgba(204, 0, 0, 1) !important; }
+   .bg-color-red-600 { color: rgba(163, 0, 0, 1) !important; }
+   .bg-color-red-700 { color: rgba(122, 0, 0, 1) !important; }
+   .bg-color-red-800 { color: rgba(82, 0, 0, 1) !important; }
+   .bg-color-red-900 { color: rgba(41, 0, 0, 1) !important; }
+
+   .bg-gradient-red {
+      background-color: #cc0000 !important;
+		background-image: linear-gradient(to bottom,	lighten(#cc0000, 10%), darken(#cc0000, 5%)) !important;
+   }
+
+   .border-color-red { border-color: #cc0000 !important; }
+
+   }
+   */
+
+   // local variables
+   $_text-opacity-74569: 1;
+   $_color-step-74569: 3;
+   // make singleton root variables
+   :root .theme-name-#{$color} {
+      --theme-color: #{$value} !important;
+      --theme-color-rgb: #{to-rgb-literal($value)} !important;
+      --theme-color-rgba-90: #{to-rgba-literal(rgba($value, 0.9))} !important;
+      --theme-color-rgba-80: #{to-rgba-literal(rgba($value, 0.8))} !important;
+      --theme-color-rgba-70: #{to-rgba-literal(rgba($value, 0.7))} !important;
+      --theme-color-rgba-60: #{to-rgba-literal(rgba($value, 0.6))} !important;
+      --theme-color-rgba-50: #{to-rgba-literal(rgba($value, 0.5))} !important;
+      --theme-color-text-contrast: #{color-contrast($value)} !important;
+      --theme-color-text-contrast-rgb: #{to-rgb-literal(color-contrast($value))} !important;
+      --theme-color-complementary: #{complement($value)} !important;
+      --theme-color-complementary-rgb: #{to-rgb-literal(complement($value))} !important;
+      --theme-color-inverse: #{invert($value)} !important;
+      --theme-color-inverse-rgb: #{to-rgb-literal(invert($value))} !important;
+      --theme-color-monochromatic: #{complement($value)} !important;
+      --theme-color-monochromatic-rgb: #{to-rgb-literal(complement($value))} !important;
+   }
+
+   // make text colors classes
+   .text-color-#{$color} {
+      color: rgba($value, $_text-opacity-74569) !important;
+   }
+   .text-color-#{$color}-500 {
+      color: rgba($value, $_text-opacity-74569) !important;
+   }
+   .bg-color-#{$color} {
+      color: rgba($value, $_text-opacity-74569) !important;
+   }
+   .bg-color-#{$color}-500 {
+      color: rgba($value, $_text-opacity-74569) !important;
+   }
+
+   // make the 100-400 and 600-900 variations
+
+   @for $i from 1 through 4 {
+      // tints (3% difference each step)
+      .text-color-#{$color}-#{$i * 100} {
+         color: rgba(
+            lighten($value, ((5 - $i) * $_color-step-74569 * 1%)),
+            $_text-opacity-74569
+         ) !important;
+      }
+      .bg-color-#{$color}-#{$i * 100} {
+         background-color: rgba(
+            lighten($value, ((5 - $i) * $_color-step-74569 * 1%)),
+            $_text-opacity-74569
+         ) !important;
+      }
+      // shades
+      .text-color-#{$color}-#{($i + 5) * 100} {
+         color: rgba(
+            darken($value, ($i * $_color-step-74569 * 1%)),
+            $_text-opacity-74569
+         ) !important;
+      }
+      .bg-color-#{$color}-#{($i + 5) * 100} {
+         background-color: rgba(
+            darken($value, ($i * $_color-step-74569 * 1%)),
+            $_text-opacity-74569
+         ) !important;
+      }
+   }
+
+   // make gradient class
+   .bg-gradient-#{$color} {
+      background-color: $value !important;
+      background-image: linear-gradient(
+         to bottom,
+         lighten($value, 10%),
+         darken($value, 10%)
+      ) !important;
+   }
+
+   // make border class
+   .border-color-#{$color} {
+      border-color: $value !important;
+   }
+}
+
+//=== GENERATE STANDARD COLOR CLASSES =========================================
+// See 00-colors-global for $themes array
+@each $themeName, $value in $themes {
+   @include generate-color-classes($themeName, $value);
+}
+
+// See 00-colors-global for $named-colors array
+@each $color, $value in $named-colors {
+   @include generate-color-classes($color, $value);
+}
+
+//=== STANDARD CUSTOM GRADIENTS ===============================================
+@include generate-background-gradient('bg-gradient-orange-red', lighten($color-orange, 10%), lighten($color-red, 10%));
+@include generate-background-gradient('bg-gradient-red-orange', lighten($color-red, 10%), lighten($color-orange, 10%));
+@include generate-background-gradient('bg-gradient-red-pink', lighten($color-red, 10%), lighten($color-pink, 10));
+@include generate-background-gradient('bg-gradient-yellow-orange', lighten($color-yellow, 10%), lighten($color-orange, 10%));
+@include generate-background-gradient('bg-gradient-yellow-red', lighten($color-yellow, 10%), lighten($color-red, 10%));
+@include generate-background-gradient('bg-gradient-yellow-green', lighten($color-yellow, 10%), lighten($color-green, 10%));
+@include generate-background-gradient('bg-gradient-blue-indigo', $color-blue, $color-indigo);
+@include generate-background-gradient('bg-gradient-blue-cyan', $color-blue, $color-cyan);
+@include generate-background-gradient('bg-gradient-cyan-blue', $color-cyan, $color-blue);
+@include generate-background-gradient('bg-gradient-cyan-indigo', $color-cyan, $color-indigo);
+@include generate-background-gradient('bg-gradient-indigo-blue', $color-indigo, $color-blue);
+@include generate-background-gradient(
+   'bg-gradient-custom-orange', 
+   lighten(mix($color-pink, $color-orange, 50%), 6%), 
+   lighten(mix($color-pink, $color-orange, 50%), 13%),
+   right
+);
+@include generate-background-gradient(
+   'bg-gradient-custom-pink',
+   lighten(mix($color-black, $color-pink, 20%), 14%),
+   lighten(mix($color-black, $color-pink, 20%), 21%),
+   right
+);
+@include generate-background-gradient(
+   'bg-gradient-custom-teal',
+   mix($color-black, $color-teal, 18%),
+   $color-teal,
+   right
+);
+@include generate-background-gradient(
+   'bg-gradient-custom-indigo',
+   lighten(mix($color-black, $color-indigo, 5%), 14%),
+   lighten(mix($color-black, $color-indigo, 5%), 25%),
+   right
+);
+@include generate-background-gradient(
+   'bg-gradient-custom-blue',
+   $color-blue,
+   lighten($color-blue, 10%),
+   right
+);

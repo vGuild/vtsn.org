@@ -1,0 +1,37 @@
+.section-nebula {
+  --_min-height: 500px;
+  min-height: var(--_min-height);
+  z-index: 10;
+  position: relative;
+  padding: 0;
+  background: url('../img/masthead/masthead-03.jpg');
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  .overlay {
+    background: url('images/homepage/section-overlay-3.svg');
+    background-size: cover;
+    height: 100vh;
+  }
+}
+.section-nebula .mask {
+  background: #323242;
+  /* background: url('images/homepage/section-mask-nebula.svg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: scroll; */
+  -webkit-mask-image: url('images/homepage/section-mask-nebula.svg');
+  mask-image: url('images/homepage/section-mask-nebula.svg');
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  min-height: var(--_min-height);
+  z-index: -1;
+
+  .content-container {
+    margin-left: 17rem;
+  }
+}

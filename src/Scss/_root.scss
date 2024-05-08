@@ -1,0 +1,333 @@
+:root {
+  // NOTE: singletons are at the bottom of this section
+
+  /* default light theme */
+
+  /* colors */
+  --color-bg-html: #{$color-bg-html};
+  --color-bg-body: #{$color-bg-body};
+  --color-headings: #{$color-headings};
+  --color-text: #{$color-text};
+  --color-text-muted: #{$color-text-muted};
+  --color-nav-bar: #{$color-nav-bar};
+  --color-nav-link: #{$color-nav-link};
+  --color-nav-link-active: #{$color-nav-link-active};
+  --color-sun-moon: #{$color-sun-moon};
+  --color-box-shadow: #{$color-box-shadow};
+  --box-shadow: #{$box-shadow};
+
+  /* neutral backgrounds */
+  --color-bg-gray-muted: #{$color-bg-gray-muted};
+  --color-bg-gray-subtle: #{$color-bg-gray-subtle};
+  --color-bg-gray-normal: #{$color-bg-gray-normal};
+  --color-bg-gray-bold: #{$color-bg-gray-bold};
+  --color-bg-gray-intense: #{$color-bg-gray-intense};
+  /* neutral foregrounds */
+  --color-fg-on-gray-muted: #{$color-fg-on-gray-muted};
+  --color-fg-on-gray-subtle: #{$color-fg-on-gray-subtle};
+  --color-fg-on-gray-normal: #{$color-fg-on-gray-normal};
+  --color-fg-on-gray-bold: #{$color-fg-on-gray-bold};
+  --color-fg-on-gray-intense: #{$color-fg-on-gray-intense};
+  /* cards background */
+  --card-bg-gray-muted: #{$card-bg-gray-muted};
+  --card-bg-gray-subtle: #{$card-bg-gray-subtle};
+  --card-bg-gray-normal: #{$card-bg-gray-normal};
+  --card-bg-gray-bold: #{$card-bg-gray-bold};
+  --card-bg-gray-intense: #{$card-bg-gray-intense};
+  --card-bg-color-vibrant: #{$card-bg-color-vibrant};
+  --card-bg-color-vibrant: #{$card-bg-color-vibrant};
+  /* cards foreground */
+  --card-fg-gray-muted: #{$card-fg-gray-muted};
+  --card-fg-gray-subtle: #{$card-fg-gray-subtle};
+  --card-fg-gray-normal: #{$card-fg-gray-normal};
+  --card-fg-gray-bold: #{$card-fg-gray-bold};
+  --card-fg-gray-intense: #{$card-fg-gray-intense};
+  --card-fg-color-vivid: #{$card-fg-color-vivid};
+  --card-fg-color-vibrant: #{$card-fg-color-vibrant};
+  /* card links */
+  --card-lnk-gray-muted: #{$card-lnk-gray-muted};
+  --card-lnk-gray-subtle: #{$card-lnk-gray-subtle};
+  --card-lnk-gray-normal: #{$card-lnk-gray-normal};
+  --card-lnk-gray-bold: #{$card-lnk-gray-bold};
+  --card-lnk-gray-intense: #{$card-lnk-gray-intense};
+  --card-lnk-color-vivid: #{$card-lnk-color-vivid};
+  --card-lnk-color-vibrant: #{$card-lnk-color-vibrant};
+
+  /* text */
+  --txt-h2-shadow: #{$txt-h2-shadow};
+  --txt-section-featured-tech-heading: #{$txt-section-featured-tech-heading};
+
+  /* images */
+  --img-card-bg-fancy-1: #{$img-card-bg-fancy-1};
+  --img-mask-bordered-hexagon: #{$img-mask-bordered-hexagon};
+  --img-bg-card: #{$card-bg-gray-normal};
+
+  /* section backgrounds */
+  --bg-section-featured-tech: #{$bg-section-featured-tech};
+  --bg-section-secret-laboratory: #{$bg-section-secret-laboratory};
+  --bg-section-defi: #{$bg-section-defi};
+  --bg-section-creativity-central: #{$bg-section-creativity-central};
+  --bg-section-neural-network: #{$bg-section-neural-network};
+  --bg-section-particle: #{$bg-section-particle};
+  --bg-section-nebula: #{$bg-section-nebula};
+  --bg-section-james-vertisan: #{$bg-section-james-vertisan};
+  --bg-section-the-best: #{$bg-section-the-best};
+  --bg-section-resources: #{$bg-section-resources};
+  --bg-section-footer: #{$bg-section-footer};
+
+  // SINGLETONS
+  --txt-font-stack-headings: #{$txt-font-stack-headings};
+  --txt-font-stack-content: #{$txt-font-stack-content};
+  --border-radius: #{$border-radius};
+  --flex-gap: #{flex-gap};
+  --grid-gap: #{grid-gap};
+
+  --theme-name: #{$theme-name};
+  --theme-primary-color: #{$theme-primary-color};
+  --theme-primary-color-rgb: #{to-rgb($theme-primary-color)};
+
+  --flow-spacer: #{$flow-spacer};
+
+  // SINGLETON UTILITY
+  --font-size-100: #{$font-size-100};
+  --font-size-200: #{$font-size-200};
+  --font-size-300: #{$font-size-300};
+  --font-size-400: #{$font-size-400};
+  --font-size-500: #{$font-size-500};
+  --font-size-600: #{$font-size-600};
+  --font-size-700: #{$font-size-700};
+  --font-size-800: #{$font-size-800};
+  --font-size-900: #{$font-size-900};
+
+  --color-border-debug: rgb(221, 7, 7);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* colors */
+    --color-bg-html: #{$color-bg-html-dark};
+    --color-bg-body: #{$color-bg-body-dark};
+    --color-headings: #{$color-headings-dark};
+    --color-text: #{$color-text-dark};
+    --color-text-muted: #{$color-text-muted-dark};
+    --color-nav-bar: #{$color-nav-bar-dark};
+    --color-nav-link: #{$color-nav-link-dark};
+    --color-nav-link-active: #{$color-nav-link-active-dark};
+    --color-sun-moon: #{$color-sun-moon-dark};
+    --color-box-shadow: #{$color-box-shadow-dark};
+    --box-shadow: #{$box-shadow-dark};
+
+  /* neutral backgrounds */
+  --color-bg-gray-muted: #{$color-bg-gray-muted-dark};
+  --color-bg-gray-subtle: #{$color-bg-gray-subtle-dark};
+  --color-bg-gray-normal: #{$color-bg-gray-normal-dark};
+  --color-bg-gray-bold: #{$color-bg-gray-bold-dark};
+  --color-bg-gray-intense: #{$color-bg-gray-intense-dark};
+  /* neutral foregrounds */
+  --color-fg-on-gray-muted: #{$color-fg-on-gray-muted-dark};
+  --color-fg-on-gray-subtle: #{$color-fg-on-gray-subtle-dark};
+  --color-fg-on-gray-normal: #{$color-fg-on-gray-normal-dark};
+  --color-fg-on-gray-bold: #{$color-fg-on-gray-bold-dark};
+  --color-fg-on-gray-intense: #{$color-fg-on-gray-intense-dark};
+    /* cards background */
+    --card-bg-gray-muted: #{$card-bg-gray-muted-dark};
+    --card-bg-gray-subtle: #{$card-bg-gray-subtle-dark};
+    --card-bg-gray-normal: #{$card-bg-gray-normal-dark};
+    --card-bg-gray-bold: #{$card-bg-gray-bold-dark};
+    --card-bg-gray-intense: #{$card-bg-gray-intense-dark};
+    --card-bg-color-vivid: #{$card-bg-color-vivid-dark};
+    --card-bg-color-vibrant: #{$card-bg-color-vibrant-dark};
+    /* cards foreground */
+    --card-fg-gray-muted: #{$card-fg-gray-muted-dark};
+    --card-fg-gray-subtle: #{$card-fg-gray-subtle-dark};
+    --card-fg-gray-normal: #{$card-fg-gray-normal-dark};
+    --card-fg-gray-bold: #{$card-fg-gray-bold-dark};
+    --card-fg-gray-intense: #{$card-fg-gray-intense-dark};
+    --card-fg-color-vivid: #{$card-fg-color-vivid-dark};
+    --card-fg-color-vibrant: #{$card-fg-color-vibrant-dark};
+    /* card links */
+    --card-lnk-gray-muted: #{$card-lnk-gray-muted-dark};
+    --card-lnk-gray-subtle: #{$card-lnk-gray-subtle-dark};
+    --card-lnk-gray-normal: #{$card-lnk-gray-normal-dark};
+    --card-lnk-gray-bold: #{$card-lnk-gray-bold-dark};
+    --card-lnk-gray-intense: #{$card-lnk-gray-intense-dark};
+    --card-lnk-color-vivid: #{$card-lnk-color-vivid-dark};
+    --card-lnk-color-vibrant: #{$card-lnk-color-vibrant-dark};
+
+    /* text */
+    --txt-h2-shadow: #{$txt-h2-shadow-dark};
+    --txt-section-featured-tech-heading: #{$txt-section-featured-tech-heading-dark};
+
+    /* images */
+    --img-card-bg-fancy-1: #{$img-card-bg-fancy-1-dark};
+    --img-mask-bordered-hexagon: #{$img-mask-bordered-hexagon-dark};
+    --img-bg-card: #{$card-bg-gray-normal-dark};
+
+    /* section backgrounds */
+    --bg-section-featured-tech: #{$bg-section-featured-tech-dark};
+    --bg-section-secret-laboratory: #{$bg-section-secret-laboratory-dark};
+    --bg-section-defi: #{$bg-section-defi-dark};
+    --bg-section-creativity-central: #{$bg-section-creativity-central-dark};
+    --bg-section-neural-network: #{$bg-section-neural-network-dark};
+    --bg-section-particle: #{$bg-section-particle-dark};
+    --bg-section-nebula: #{$bg-section-nebula-dark};
+    --bg-section-james-vertisan: #{$bg-section-james-vertisan-dark};
+    --bg-section-the-best: #{$bg-section-the-best-dark};
+    --bg-section-resources: #{$bg-section-resources-dark};
+    --bg-section-footer: #{$bg-section-footer-dark};
+  }
+}
+
+[data-theme-mode='light'] {
+  color-scheme: light;
+  /* colors */
+  --color-bg-html: #{$color-bg-html};
+  --color-bg-body: #{$color-bg-body};
+  --color-headings: #{$color-headings};
+  --color-text: #{$color-text};
+  --color-text-muted: #{$color-text-muted};
+  --color-nav-bar: #{$color-nav-bar};
+  --color-nav-link: #{$color-nav-link};
+  --color-nav-link-active: #{$color-nav-link-active};
+  --color-sun-moon: #{$color-sun-moon};
+  --color-box-shadow: #{$color-box-shadow};
+  --box-shadow: #{$box-shadow};
+
+  /* neutral backgrounds */
+  --color-bg-gray-muted: #{$color-bg-gray-muted};
+  --color-bg-gray-subtle: #{$color-bg-gray-subtle};
+  --color-bg-gray-normal: #{$color-bg-gray-normal};
+  --color-bg-gray-bold: #{$color-bg-gray-bold};
+  --color-bg-gray-intense: #{$color-bg-gray-intense};
+  /* neutral foregrounds */
+  --color-fg-on-gray-muted: #{$color-fg-on-gray-muted};
+  --color-fg-on-gray-subtle: #{$color-fg-on-gray-subtle};
+  --color-fg-on-gray-normal: #{$color-fg-on-gray-normal};
+  --color-fg-on-gray-bold: #{$color-fg-on-gray-bold};
+  --color-fg-on-gray-intense: #{$color-fg-on-gray-intense};
+  /* cards background */
+  --card-bg-gray-muted: #{$card-bg-gray-muted};
+  --card-bg-gray-subtle: #{$card-bg-gray-subtle};
+  --card-bg-gray-normal: #{$card-bg-gray-normal};
+  --card-bg-gray-bold: #{$card-bg-gray-bold};
+  --card-bg-gray-intense: #{$card-bg-gray-intense};
+  --card-bg-color-vivid: #{$card-bg-color-vivid};
+  --card-bg-color-vibrant: #{$card-bg-color-vibrant};
+  /* cards foreground */
+  --card-fg-gray-muted: #{$card-fg-gray-muted};
+  --card-fg-gray-subtle: #{$card-fg-gray-subtle};
+  --card-fg-gray-normal: #{$card-fg-gray-normal};
+  --card-fg-gray-bold: #{$card-fg-gray-bold};
+  --card-fg-gray-intense: #{$card-fg-gray-intense};
+  --card-fg-color-vivid: #{$card-fg-color-vivid};
+  --card-fg-color-vibrant: #{$card-fg-color-vibrant};
+  /* card links */
+  --card-lnk-gray-muted: #{$card-lnk-gray-muted};
+  --card-lnk-gray-subtle: #{$card-lnk-gray-subtle};
+  --card-lnk-gray-normal: #{$card-lnk-gray-normal};
+  --card-lnk-gray-bold: #{$card-lnk-gray-bold};
+  --card-lnk-gray-intense: #{$card-lnk-gray-intense};
+  --card-lnk-color-vivid: #{$card-lnk-color-vivid};
+  --card-lnk-color-vibrant: #{$card-lnk-color-vibrant};
+
+  /* text */
+  --txt-h2-shadow: #{$txt-h2-shadow};
+  --txt-section-featured-tech-heading: #{$txt-section-featured-tech-heading};
+
+  /* images */
+  --img-card-bg-fancy-1: #{$img-card-bg-fancy-1};
+  --img-mask-bordered-hexagon: #{$img-mask-bordered-hexagon};
+  --img-bg-card: #{$card-bg-gray-normal};
+
+  /* section backgrounds */
+  --bg-section-featured-tech: #{$bg-section-featured-tech};
+  --bg-section-secret-laboratory: #{$bg-section-secret-laboratory};
+  --bg-section-defi: #{$bg-section-defi};
+  --bg-section-creativity-central: #{$bg-section-creativity-central};
+  --bg-section-neural-network: #{$bg-section-neural-network};
+  --bg-section-particle: #{$bg-section-particle};
+  --bg-section-nebula: #{$bg-section-nebula};
+  --bg-section-james-vertisan: #{$bg-section-james-vertisan};
+  --bg-section-the-best: #{$bg-section-the-best};
+  --bg-section-resources: #{$bg-section-resources};
+  --bg-section-footer: #{$bg-section-footer};
+}
+[data-theme-mode='dark'] {
+  color-scheme: dark;
+  --theme: #{to-rgb($theme-color-current-dark)};
+  --theme-rgb: #{to-rgb($theme-color-current-dark)};
+  --theme-color: #{to-rgb($theme-color-current-dark)};
+  --theme-color-rgb: #{to-rgb($theme-color-current-dark)};
+
+  /* colors */
+  --color-bg-html: #{$color-bg-html-dark};
+  --color-bg-body: #{$color-bg-body-dark};
+  --color-headings: #{$color-headings-dark};
+  --color-text: #{$color-text-dark};
+  --color-text-muted: #{$color-text-muted-dark};
+  --color-nav-bar: #{$color-nav-bar-dark};
+  --color-nav-link: #{$color-nav-link-dark};
+  --color-nav-link-active: #{$color-nav-link-active-dark};
+  --color-sun-moon: #{$color-sun-moon-dark};
+  --color-box-shadow: #{$color-box-shadow-dark};
+  --box-shadow: #{$box-shadow-dark};
+
+  /* neutral backgrounds */
+  --color-bg-gray-muted: #{$color-bg-gray-muted-dark};
+  --color-bg-gray-subtle: #{$color-bg-gray-subtle-dark};
+  --color-bg-gray-normal: #{$color-bg-gray-normal-dark};
+  --color-bg-gray-bold: #{$color-bg-gray-bold-dark};
+  --color-bg-gray-intense: #{$color-bg-gray-intense-dark};
+  /* neutral foregrounds */
+  --color-fg-on-gray-muted: #{$color-fg-on-gray-muted-dark};
+  --color-fg-on-gray-subtle: #{$color-fg-on-gray-subtle-dark};
+  --color-fg-on-gray-normal: #{$color-fg-on-gray-normal-dark};
+  --color-fg-on-gray-bold: #{$color-fg-on-gray-bold-dark};
+  --color-fg-on-gray-intense: #{$color-fg-on-gray-intense-dark};
+  /* cards background */
+  --card-bg-gray-muted: #{$card-bg-gray-muted-dark};
+  --card-bg-gray-subtle: #{$card-bg-gray-subtle-dark};
+  --card-bg-gray-normal: #{$card-bg-gray-normal-dark};
+  --card-bg-gray-bold: #{$card-bg-gray-bold-dark};
+  --card-bg-gray-intense: #{$card-bg-gray-intense-dark};
+  --card-bg-color-vivid: #{$card-bg-color-vivid-dark};
+  --card-bg-color-vibrant: #{$card-bg-color-vibrant-dark};
+  /* cards foreground */
+  --card-fg-gray-muted: #{$card-fg-gray-muted-dark};
+  --card-fg-gray-subtle: #{$card-fg-gray-subtle-dark};
+  --card-fg-gray-normal: #{$card-fg-gray-normal-dark};
+  --card-fg-gray-bold: #{$card-fg-gray-bold-dark};
+  --card-fg-gray-intense: #{$card-fg-gray-intense-dark};
+  --card-fg-color-vivid: #{$card-fg-color-vivid-dark};
+  --card-fg-color-vibrant: #{$card-fg-color-vibrant-dark};
+  /* card links */
+  --card-lnk-gray-muted: #{$card-lnk-gray-muted-dark};
+  --card-lnk-gray-subtle: #{$card-lnk-gray-subtle-dark};
+  --card-lnk-gray-normal: #{$card-lnk-gray-normal-dark};
+  --card-lnk-gray-bold: #{$card-lnk-gray-bold-dark};
+  --card-lnk-gray-intense: #{$card-lnk-gray-intense-dark};
+  --card-lnk-color-vivid: #{$card-lnk-color-vivid-dark};
+  --card-lnk-color-vibrant: #{$card-lnk-color-vibrant-dark};
+
+  /* text */
+  --txt-h2-shadow: #{$txt-h2-shadow-dark};
+  --txt-section-featured-tech-heading: #{$txt-section-featured-tech-heading-dark};
+
+  /* images */
+  --img-card-bg-fancy-1: #{$img-card-bg-fancy-1-dark};
+  --img-mask-bordered-hexagon: #{$img-mask-bordered-hexagon-dark};
+  --img-bg-card: #{$card-bg-gray-normal-dark};
+
+  /* section backgrounds */
+  --bg-section-featured-tech: #{$bg-section-featured-tech-dark};
+  --bg-section-secret-laboratory: #{$bg-section-secret-laboratory-dark};
+  --bg-section-defi: #{$bg-section-defi-dark};
+  --bg-section-creativity-central: #{$bg-section-creativity-central-dark};
+  --bg-section-neural-network: #{$bg-section-neural-network-dark};
+  --bg-section-particle: #{$bg-section-particle-dark};
+  --bg-section-nebula: #{$bg-section-nebula-dark};
+  --bg-section-james-vertisan: #{$bg-section-james-vertisan-dark};
+  --bg-section-the-best: #{$bg-section-the-best-dark};
+  --bg-section-resources: #{$bg-section-resources-dark};
+  --bg-section-footer: #{$bg-section-footer-dark};
+}

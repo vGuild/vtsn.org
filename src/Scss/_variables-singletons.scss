@@ -1,0 +1,16 @@
+// GLOBAL
+
+// for use with my sass_clamp function
+$clamp-min-width-px: 400;
+$clamp-max-width-px: 1500;
+
+// placeholder
+$not-used: #cccccc;
+// legacy to keep imported stuff from breaking before refactoring.
+
+$prefix: vsn- !default;
+
+@import 'variables/00-options';
+@import 'variables/01-breakpoints';
+@import 'variables/02-colors-global';
+@import 'variables/03-theme-singletons';

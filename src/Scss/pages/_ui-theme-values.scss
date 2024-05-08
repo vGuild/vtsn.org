@@ -1,0 +1,1588 @@
+// for the page '/ui-theme-values.html'
+
+#uiThemeValues {
+   position: relative;
+   padding: 1rem;
+
+   p {
+      padding-left: 1rem;
+   }
+   h2 {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+   h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+   }
+
+   .official-colors-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(30ch, 1fr));
+      grid-auto-flow: dense;
+      padding-block: 0;
+      margin-inline: auto;
+   }
+
+   .data-row-card {
+      --_font-size: 1rem;
+      --_padding: 0.7em;
+      --_border-radius: 0.5rem;
+      position: relative;
+      padding: 0;
+      border-radius: var(--_border-radius);
+      border: 1px solid var(--card-bg-gray-bold);
+      white-space: nowrap;
+      overflow: hidden;
+      // shadow: horizontal vertical blur spread color
+      box-shadow: 1.5rem 1.5rem 2rem -1.5rem var(--color-box-shadow);
+
+      .title {
+         background-color: var(--card-bg-gray-subtle);
+         color: var(--card-fg-gray-subtle);
+         font-size: var(--_font-size);
+         text-align: center;
+         padding: var(--_padding);
+         border-radius: var(--_border-radius) var(--_border-radius) 0 0;
+         border-bottom: 1px solid var(--card-bg-gray-bold);
+      }
+      p {
+         font-size: 0.75rem;
+         text-align: center;
+         padding: 0.6em;
+         opacity: 0.6;
+      }
+      .container {
+         padding: 3rem;
+         padding-top: 1.5rem;
+
+         .color-value {
+            height: 3rem;
+            font-size: var(--_font-size);
+            text-align: center;
+            padding: var(--_padding);
+            overflow: hidden;
+         }
+         // primary
+         .color-value.color-primary-drow-ying {
+            background-color: $color-primary-drow-ying;
+            color: $color-text-on-primary;
+         }
+         .color-value.color-primary-drow-ying::after {
+            content: '' + $color-primary-drow-ying + '  rgb(' + to-rgb($color-primary-drow-ying) +
+               ')';
+            color: $color-text-on-primary;
+         }
+         .color-value.color-primary-drow-yang {
+            background-color: $color-primary-drow-yang;
+            color: $color-text-on-primary;
+         }
+         .color-value.color-primary-drow-yang::after {
+            content: '' + $color-primary-drow-yang + '  rgb(' + to-rgb($color-primary-drow-yang) +
+               ')';
+            color: $color-text-on-primary;
+         }
+         // complementary
+         .color-value.color-complementary-drow-ying {
+            background-color: $color-complementary-drow-ying;
+            color: $color-text-on-complementary;
+         }
+         .color-value.color-complementary-drow-ying::after {
+            content: '' + $color-complementary-drow-ying + '  rgb(' +
+               to-rgb($color-complementary-drow-ying) + ')';
+            color: $color-text-on-complementary;
+         }
+         .color-value.color-complementary-drow-yang {
+            background-color: $color-complementary-drow-yang;
+            color: $color-text-on-complementary;
+         }
+         .color-value.color-complementary-drow-yang::after {
+            content: '' + $color-complementary-drow-yang + '  rgb(' +
+               to-rgb($color-complementary-drow-yang) + ')';
+            color: $color-text-on-complementary;
+         }
+         // complementary-2
+         .color-value.color-complementary-2-drow-ying {
+            background-color: $color-complementary-2-drow-ying;
+            color: $color-text-on-complementary-2;
+         }
+         .color-value.color-complementary-2-drow-ying::after {
+            content: '' + $color-complementary-2-drow-ying + '  rgb(' +
+               to-rgb($color-complementary-2-drow-ying) + ')';
+            color: $color-text-on-complementary-2;
+         }
+         .color-value.color-complementary-2-drow-yang {
+            background-color: $color-complementary-2-drow-yang;
+            color: $color-text-on-complementary-2;
+         }
+         .color-value.color-complementary-2-drow-yang::after {
+            content: '' + $color-complementary-2-drow-yang + '  rgb(' +
+               to-rgb($color-complementary-2-drow-yang) + ')';
+            color: $color-text-on-complementary-2;
+         }
+      }
+   }
+   .data-row-card.primary {
+      background-color: $color-primary;
+      color: $color-text-on-primary;
+   }
+   .data-row-card.complementary {
+      background-color: $color-complementary;
+      color: $color-text-on-complementary;
+   }
+   .data-row-card.complementary-2 {
+      background-color: $color-complementary-2;
+      color: $color-text-on-complementary-2;
+   }
+
+   .color-card {
+      --_font-size: 1rem;
+      --_padding: 0.7em;
+      --_border-radius: 0.5rem;
+      position: relative;
+      padding: 0;
+      border-radius: var(--_border-radius);
+      border: 1px solid var(--card-bg-gray-bold);
+      white-space: nowrap;
+      overflow: hidden;
+      // shadow: horizontal vertical blur spread color
+      box-shadow: 1.5rem 1.5rem 2rem -1.5rem var(--color-box-shadow);
+
+      .title {
+         background-color: var(--card-bg-gray-subtle);
+         color: var(--card-fg-gray-subtle);
+         font-size: var(--_font-size);
+         text-align: center;
+         padding: var(--_padding);
+         border-radius: var(--_border-radius) var(--_border-radius) 0 0;
+         border-bottom: 1px solid var(--card-bg-gray-bold);
+      }
+      .color-value {
+         height: 3rem;
+         font-size: var(--_font-size);
+         text-align: center;
+         padding: var(--_padding);
+         overflow: hidden;
+      }
+
+      //=== START MANDATORY THEME COLORS ============================
+      .color-value.silver {
+         background-color: $color-silver;
+         color: $color-text-on-silver;
+      }
+      .color-value.silver::after {
+         content: '' + $color-silver + '  rgb(' + to-rgb($color-silver) + ')';
+         color: $color-text-on-silver;
+      }
+
+      .color-value.primary {
+         background-color: $color-primary;
+         color: $color-text-on-primary;
+      }
+      .color-value.primary::after {
+         content: '' + $color-primary + '  rgb(' + to-rgb($color-primary) + ')';
+         color: $color-text-on-primary;
+      }
+
+      .color-value.primary-accent {
+         background-color: $color-primary-accent;
+         color: $color-text-on-primary-accent;
+      }
+      .color-value.primary-accent::after {
+         content: '' + $color-primary-accent + '  rgb(' + to-rgb($color-primary-accent) + ')';
+         color: $color-text-on-primary-accent;
+      }
+
+      .color-value.complementary {
+         background-color: $color-complementary;
+         color: $color-text-on-complementary;
+      }
+      .color-value.complementary::after {
+         content: '' + $color-complementary + '  rgb(' + to-rgb($color-complementary) + ')';
+         color: $color-text-on-complementary;
+      }
+
+      .color-value.complementary-accent {
+         background-color: $color-complementary-accent;
+         color: $color-text-on-complementary-accent;
+      }
+      .color-value.complementary-accent::after {
+         content: '' + $color-complementary-accent + '  rgb(' + to-rgb($color-complementary-accent) + ')';
+         color: $color-text-on-complementary-accent;
+      }
+
+      .color-value.bg-primary-neutral {
+         background-color: $color-bg-neutral-primary;
+         color: $color-text-on-bg-neutral-primary;
+      }
+      .color-value.bg-primary-neutral::after {
+         content: '' + $color-bg-neutral-primary + '  rgb(' + to-rgb($color-bg-neutral-primary) + ')';
+         color: $color-text-on-bg-neutral-primary;
+      }
+
+      .color-value.bg-secondary-neutral {
+         background-color: $color-bg-neutral-secondary;
+         color: $color-text-on-bg-neutral-secondary;
+      }
+      .color-value.bg-secondary-neutral::after {
+         content: '' + $color-bg-neutral-secondary + '  rgb(' + to-rgb($color-bg-neutral-secondary) + ')';
+         color: $color-text-on-bg-neutral-secondary;
+      }
+
+      .color-value.bg-color-light {
+         background-color: $color-bg-light;
+         color: $color-text-on-light;
+      }
+      .color-value.bg-color-light::after {
+         content: '' + $color-bg-light + '  rgb(' + to-rgb($color-bg-light) + ')';
+         color: $color-text-on-light;
+      }
+
+      .color-value.bg-color-dark {
+         background-color: $color-bg-dark;
+         color: $color-text-on-dark;
+      }
+      .color-value.bg-color-dark::after {
+         content: '' + $color-bg-dark + '  rgb(' + to-rgb($color-bg-dark) + ')';
+         color: $color-text-on-dark;
+      }
+
+      .color-value.bg-color-dark {
+         background-color: $color-bg-dark;
+         color: $color-text-on-dark;
+      }
+      .color-value.bg-color-dark::after {
+         content: '' + $color-bg-dark + '  rgb(' + to-rgb($color-bg-dark) + ')';
+         color: $color-text-on-dark;
+      }
+
+      .color-value.bg-color-gray-muted {
+         background-color: var(--color-bg-gray-muted);
+         color: var(--color-fg-on-gray-muted);
+      }
+      .color-value.bg-color-gray-muted::after {
+         content: 'TEXT COLOR';
+         color: var(--color-fg-on-gray-muted);
+      }
+
+      .color-value.bg-color-gray-subtle {
+         background-color: var(--color-bg-gray-subtle);
+         color: var(--color-fg-on-gray-subtle);
+      }
+      .color-value.bg-color-gray-subtle::after {
+         content: 'TEXT COLOR';
+         color: var(--color-fg-on-gray-subtle);
+      }
+
+      .color-value.bg-color-gray-normal {
+         background-color: var(--color-bg-gray-normal);
+         color: var(--color-fg-on-gray-normal);
+      }
+      .color-value.bg-color-gray-normal::after {
+         content: 'TEXT COLOR';
+         color: var(--color-fg-on-gray-normal);
+      }
+
+      .color-value.bg-color-gray-bold {
+         background-color: var(--color-bg-gray-bold);
+         color: var(--color-fg-on-gray-bold);
+      }
+      .color-value.bg-color-gray-bold::after {
+         content: 'TEXT COLOR';
+         color: var(--color-fg-on-gray-bold);
+      }
+
+      .color-value.bg-color-gray-intense {
+         background-color: var(--color-bg-gray-intense);
+         color: var(--color-fg-on-gray-intense);
+      }
+      .color-value.bg-color-gray-intense::after {
+         content: 'TEXT COLOR';
+         color: var(--color-fg-on-gray-intense);
+      }
+
+      //=== START OPTIONAL THEME COLORS =============================
+      .color-value.complementary-2 {
+         background-color: $color-complementary-2;
+         color: $color-text-on-complementary-2;
+      }
+      .color-value.complementary-2::after {
+         content: '' + $color-complementary-2 + '  rgb(' + to-rgb($color-complementary-2) + ')';
+         color: $color-text-on-complementary-2;
+      }
+
+      .color-value.complementary-3 {
+         background-color: $color-complementary-3;
+         color: $color-text-on-complementary-3;
+      }
+      .color-value.complementary-3::after {
+         content: '' + $color-complementary-3 + '  rgb(' + to-rgb($color-complementary-3) + ')';
+         color: $color-text-on-complementary-3;
+      }
+
+      .color-value.complementary-4 {
+         background-color: $color-complementary-4;
+         color: $color-text-on-complementary-4;
+      }
+      .color-value.complementary-4::after {
+         content: '' + $color-complementary-4 + '  rgb(' + to-rgb($color-complementary-4) + ')';
+         color: $color-text-on-complementary-4;
+      }
+
+      //=== START SHADES AND TINTS ==================================
+      .color-value.primary-100 {
+         background-color: $color-primary-100;
+         color: $color-text-on-primary-100;
+      }
+      .color-value.primary-100::after {
+         content: '100: ' + $color-primary-100 + '  rgb(' + to-rgb($color-primary-100) + ')';
+         color: $color-text-on-primary-100;
+      }
+
+      .color-value.primary-300 {
+         background-color: $color-primary-300;
+         color: $color-text-on-primary-300;
+      }
+      .color-value.primary-300::after {
+         content: '300: ' + $color-primary-300 + '  rgb(' + to-rgb($color-primary-300) + ')';
+         color: $color-text-on-primary-300;
+      }
+      .color-value.primary-700 {
+         background-color: $color-primary-700;
+         color: $color-text-on-primary-700;
+      }
+      .color-value.primary-700::after {
+         content: '700: ' + $color-primary-700 + '  rgb(' + to-rgb($color-primary-700) + ')';
+         color: $color-text-on-primary-700;
+      }
+      .color-value.primary-900 {
+         background-color: $color-primary-900;
+         color: $color-text-on-primary-900;
+      }
+      .color-value.primary-900::after {
+         content: '900: ' + $color-primary-900 + '  rgb(' + to-rgb($color-primary-900) + ')';
+         color: $color-text-on-primary-900;
+      }
+
+      // Begin Accent color
+      .color-value.primary-accent-100 {
+         background-color: $color-primary-accent-100;
+         color: $color-text-on-primary-accent-100;
+      }
+      .color-value.primary-accent-100::after {
+         content: '100: ' + $color-primary-accent-100 + '  rgb(' + to-rgb($color-primary-accent-100) +
+            ')';
+         color: $color-text-on-primary-accent-100;
+      }
+      .color-value.primary-accent-300 {
+         background-color: $color-primary-accent-300;
+         color: $color-text-on-primary-accent-300;
+      }
+      .color-value.primary-accent-300::after {
+         content: '300: ' + $color-primary-accent-300 + '  rgb(' + to-rgb($color-primary-accent-300) +
+            ')';
+         color: $color-text-on-primary-accent-300;
+      }
+      .color-value.primary-accent-700 {
+         background-color: $color-primary-accent-700;
+         color: $color-text-on-primary-accent-700;
+      }
+      .color-value.primary-accent-700::after {
+         content: '700: ' + $color-primary-accent-700 + '  rgb(' + to-rgb($color-primary-accent-700) +
+            ')';
+         color: $color-text-on-primary-accent-700;
+      }
+      .color-value.primary-accent-900 {
+         background-color: $color-primary-accent-900;
+         color: $color-text-on-primary-accent-900;
+      }
+      .color-value.primary-accent-900::after {
+         content: '900: ' + $color-primary-accent-900 + '  rgb(' + to-rgb($color-primary-accent-900) +
+            ')';
+         color: $color-text-on-primary-accent-900;
+      }
+
+      // Complementary color
+      .color-value.complementary-100 {
+         background-color: $color-complementary-100;
+         color: $color-text-on-complementary-100;
+      }
+      .color-value.complementary-100::after {
+         content: '100: ' + $color-complementary-100 + '  rgb(' + to-rgb($color-complementary-100) +
+            ')';
+         color: $color-text-on-complementary-100;
+      }
+
+      .color-value.complementary-300 {
+         background-color: $color-complementary-300;
+         color: $color-text-on-complementary-300;
+      }
+      .color-value.complementary-300::after {
+         content: '300: ' + $color-complementary-300 + '  rgb(' + to-rgb($color-complementary-300) +
+            ')';
+         color: $color-text-on-complementary-300;
+      }
+
+      .color-value.complementary-700 {
+         background-color: $color-complementary-700;
+         color: $color-text-on-complementary-700;
+      }
+      .color-value.complementary-700::after {
+         content: '700: ' + $color-complementary-700 + '  rgb(' + to-rgb($color-complementary-700) +
+            ')';
+         color: $color-text-on-complementary-700;
+      }
+
+      .color-value.complementary-900 {
+         background-color: $color-complementary-900;
+         color: $color-text-on-complementary-900;
+      }
+      .color-value.complementary-900::after {
+         content: '900: ' + $color-complementary-900 + '  rgb(' + to-rgb($color-complementary-900) +
+            ')';
+         color: $color-text-on-complementary-900;
+      }
+
+            // Begin Complementary Accent color
+            .color-value.complementary-accent-100 {
+               background-color: $color-complementary-accent-100;
+               color: $color-text-on-complementary-accent-100;
+            }
+            .color-value.complementary-accent-100::after {
+               content: '100: ' + $color-complementary-accent-100 + '  rgb(' + to-rgb($color-complementary-accent-100) +
+                  ')';
+               color: $color-text-on-complementary-accent-100;
+            }
+            .color-value.complementary-accent-300 {
+               background-color: $color-complementary-accent-300;
+               color: $color-text-on-complementary-accent-300;
+            }
+            .color-value.complementary-accent-300::after {
+               content: '300: ' + $color-complementary-accent-300 + '  rgb(' + to-rgb($color-complementary-accent-300) +
+                  ')';
+               color: $color-text-on-complementary-accent-300;
+            }
+            .color-value.complementary-accent-700 {
+               background-color: $color-complementary-accent-700;
+               color: $color-text-on-complementary-accent-700;
+            }
+            .color-value.complementary-accent-700::after {
+               content: '700: ' + $color-complementary-accent-700 + '  rgb(' + to-rgb($color-complementary-accent-700) +
+                  ')';
+               color: $color-text-on-complementary-accent-700;
+            }
+            .color-value.complementary-accent-900 {
+               background-color: $color-complementary-accent-900;
+               color: $color-text-on-complementary-accent-900;
+            }
+            .color-value.complementary-accent-900::after {
+               content: '900: ' + $color-complementary-accent-900 + '  rgb(' + to-rgb($color-complementary-accent-900) +
+                  ')';
+               color: $color-text-on-complementary-accent-900;
+            }
+            
+      // Complementary color 2
+      .color-value.complementary-2-100 {
+         background-color: $color-complementary-2-100;
+         color: $color-text-on-complementary-2-100;
+      }
+      .color-value.complementary-2-100::after {
+         content: '100: ' + $color-complementary-2-100 + '  rgb(' +
+            to-rgb($color-complementary-2-100) + ')';
+         color: $color-text-on-complementary-2-100;
+      }
+
+      .color-value.complementary-2-300 {
+         background-color: $color-complementary-2-300;
+         color: $color-text-on-complementary-2-300;
+      }
+      .color-value.complementary-2-300::after {
+         content: '300: ' + $color-complementary-2-300 + '  rgb(' +
+            to-rgb($color-complementary-2-300) + ')';
+         color: $color-text-on-complementary-2-300;
+      }
+
+      .color-value.complementary-2-700 {
+         background-color: $color-complementary-2-700;
+         color: $color-text-on-complementary-2-700;
+      }
+      .color-value.complementary-2-700::after {
+         content: '700: ' + $color-complementary-2-700 + '  rgb(' +
+            to-rgb($color-complementary-2-700) + ')';
+         color: $color-text-on-complementary-2-700;
+      }
+
+      .color-value.complementary-2-900 {
+         background-color: $color-complementary-2-900;
+         color: $color-text-on-complementary-2-900;
+      }
+      .color-value.complementary-2-900::after {
+         content: '900: ' + $color-complementary-2-900 + '  rgb(' +
+            to-rgb($color-complementary-2-900) + ')';
+         color: $color-text-on-complementary-2-900;
+      }
+
+      // Complementary color 3
+      .color-value.complementary-3-100 {
+         background-color: $color-complementary-3-100;
+         color: $color-text-on-complementary-3-100;
+      }
+      .color-value.complementary-3-100::after {
+         content: '100: ' + $color-complementary-3-100 + '  rgb(' +
+            to-rgb($color-complementary-3-100) + ')';
+         color: $color-text-on-complementary-3-100;
+      }
+
+      .color-value.complementary-3-300 {
+         background-color: $color-complementary-3-300;
+         color: $color-text-on-complementary-3-300;
+      }
+      .color-value.complementary-3-300::after {
+         content: '300: ' + $color-complementary-3-300 + '  rgb(' +
+            to-rgb($color-complementary-3-300) + ')';
+         color: $color-text-on-complementary-3-300;
+      }
+
+      .color-value.complementary-3-700 {
+         background-color: $color-complementary-3-700;
+         color: $color-text-on-complementary-3-700;
+      }
+      .color-value.complementary-3-700::after {
+         content: '700: ' + $color-complementary-3-700 + '  rgb(' +
+            to-rgb($color-complementary-3-700) + ')';
+         color: $color-text-on-complementary-3-700;
+      }
+
+      .color-value.complementary-3-900 {
+         background-color: $color-complementary-3-900;
+         color: $color-text-on-complementary-3-900;
+      }
+      .color-value.complementary-3-900::after {
+         content: '900: ' + $color-complementary-3-900 + '  rgb(' +
+            to-rgb($color-complementary-3-900) + ')';
+         color: $color-text-on-complementary-3-900;
+      }
+
+      // Complementary color 4
+      .color-value.complementary-4-100 {
+         background-color: $color-complementary-4-100;
+         color: $color-text-on-complementary-4-100;
+      }
+      .color-value.complementary-4-100::after {
+         content: '100: ' + $color-complementary-4-100 + '  rgb(' +
+            to-rgb($color-complementary-4-100) + ')';
+         color: $color-text-on-complementary-4-100;
+      }
+
+      .color-value.complementary-4-300 {
+         background-color: $color-complementary-4-300;
+         color: $color-text-on-complementary-4-300;
+      }
+      .color-value.complementary-4-300::after {
+         content: '300: ' + $color-complementary-4-300 + '  rgb(' +
+            to-rgb($color-complementary-4-300) + ')';
+         color: $color-text-on-complementary-4-300;
+      }
+
+      .color-value.complementary-4-700 {
+         background-color: $color-complementary-4-700;
+         color: $color-text-on-complementary-4-700;
+      }
+      .color-value.complementary-4-700::after {
+         content: '700: ' + $color-complementary-4-700 + '  rgb(' +
+            to-rgb($color-complementary-4-700) + ')';
+         color: $color-text-on-complementary-4-700;
+      }
+
+      .color-value.complementary-4-900 {
+         background-color: $color-complementary-4-900;
+         color: $color-text-on-complementary-4-900;
+      }
+      .color-value.complementary-4-900::after {
+         content: '900: ' + $color-complementary-4-900 + '  rgb(' +
+            to-rgb($color-complementary-4-900) + ')';
+         color: $color-text-on-complementary-4-900;
+      }
+
+      // silver color
+      .color-value.silver-100 {
+         background-color: $color-silver-100;
+         color: $color-text-on-silver-100;
+      }
+      .color-value.silver-100::after {
+         content: '100: ' + $color-silver-100 + '  rgb(' + to-rgb($color-silver-100) + ')';
+         color: $color-text-on-silver-100;
+      }
+
+      .color-value.silver-300 {
+         background-color: $color-silver-300;
+         color: $color-text-on-silver-300;
+      }
+      .color-value.silver-300::after {
+         content: '300: ' + $color-silver-300 + '  rgb(' + to-rgb($color-silver-300) + ')';
+         color: $color-text-on-silver-300;
+      }
+      .color-value.silver-700 {
+         background-color: $color-silver-700;
+         color: $color-text-on-silver-700;
+      }
+      .color-value.silver-700::after {
+         content: '700: ' + $color-silver-700 + '  rgb(' + to-rgb($color-silver-700) + ')';
+         color: $color-text-on-silver-700;
+      }
+      .color-value.silver-900 {
+         background-color: $color-silver-900;
+         color: $color-text-on-silver-900;
+      }
+      .color-value.silver-900::after {
+         content: '900: ' + $color-silver-900 + '  rgb(' + to-rgb($color-silver-900) + ')';
+         color: $color-text-on-silver-900;
+      }
+
+      // text colors
+      .color-value.text-on-light {
+         background-color: $color-bg-light;
+         color: $color-text-on-light;
+      }
+      .color-value.text-on-light::after {
+         content: '300: ' + $color-text-on-light + '  rgb(' + to-rgb($color-text-on-light) + ')';
+         color: $color-text-on-light;
+      }
+      .color-value.text-on-light-300 {
+         background-color: lighten($color-bg-light, 3%);
+         color: $color-text-on-light-300;
+      }
+      .color-value.text-on-light-300::after {
+         content: '300: ' + $color-text-on-light-300 + '  rgb(' + to-rgb($color-text-on-light-300) +
+            ')';
+         color: $color-text-on-light-300;
+      }
+      .color-value.text-on-light-700 {
+         background-color: darken($color-bg-light, 3%);
+         color: $color-text-on-light-700;
+      }
+      .color-value.text-on-light-700::after {
+         content: '700: ' + $color-text-on-light-700 + '  rgb(' + to-rgb($color-text-on-light-700) +
+            ')';
+         color: $color-text-on-light-700;
+      }
+   }
+
+   .color-value.text-on-dark {
+      background-color: $color-bg-dark;
+      color: $color-text-on-dark;
+   }
+   .color-value.text-on-dark::after {
+      content: '300: ' + $color-text-on-dark + '  rgb(' + to-rgb($color-text-on-dark) + ')';
+      color: $color-text-on-dark;
+   }
+   .color-value.text-on-dark-300 {
+      background-color: lighten($color-bg-dark, 3%);
+      color: $color-text-on-dark-300;
+   }
+   .color-value.text-on-dark-300::after {
+      content: '300: ' + $color-text-on-dark-300 + '  rgb(' + to-rgb($color-text-on-dark-300) + ')';
+      color: $color-text-on-dark-300;
+   }
+   .color-value.text-on-dark-700 {
+      background-color: darken($color-bg-dark, 3%);
+      color: $color-text-on-dark-700;
+   }
+   .color-value.text-on-dark-700::after {
+      content: '700: ' + $color-text-on-dark-700 + '  rgb(' + to-rgb($color-text-on-dark-700) + ')';
+      color: $color-text-on-dark-700;
+   }
+
+   .color-value.text-on-silver {
+      background-color: $color-bg-silver;
+      color: $color-text-on-silver;
+   }
+   .color-value.text-on-silver::after {
+      content: '300: ' + $color-text-on-silver + '  rgb(' + to-rgb($color-text-on-silver) + ')';
+      color: $color-text-on-silver;
+   }
+   .color-value.text-on-silver-300 {
+      background-color: lighten($color-bg-silver, 3%);
+      color: $color-text-on-silver-300;
+   }
+   .color-value.text-on-silver-300::after {
+      content: '300: ' + $color-text-on-silver-300 + '  rgb(' + to-rgb($color-text-on-silver-300) +
+         ')';
+      color: $color-text-on-silver-300;
+   }
+   .color-value.text-on-silver-700 {
+      background-color: darken($color-bg-silver, 3%);
+      color: $color-text-on-silver-700;
+   }
+   .color-value.text-on-silver-700::after {
+      content: '700: ' + $color-text-on-silver-700 + '  rgb(' + to-rgb($color-text-on-silver-700) +
+         ')';
+      color: $color-text-on-silver-700;
+   }
+
+   .color-value.text-on-primary {
+      background-color: $color-primary;
+      color: $color-text-on-primary;
+   }
+   .color-value.text-on-primary::after {
+      content: '300: ' + $color-text-on-primary + '  rgb(' + to-rgb($color-text-on-primary) + ')';
+      color: $color-text-on-primary;
+   }
+   .color-value.text-on-primary-300 {
+      background-color: lighten($color-primary, 3%);
+      color: $color-text-on-primary-300;
+   }
+   .color-value.text-on-primary-300::after {
+      content: '300: ' + $color-text-on-primary-300 + '  rgb(' + to-rgb($color-text-on-primary-300) +
+         ')';
+      color: $color-text-on-primary-300;
+   }
+   .color-value.text-on-primary-700 {
+      background-color: darken($color-primary, 3%);
+      color: $color-text-on-primary-700;
+   }
+   .color-value.text-on-primary-700::after {
+      content: '700: ' + $color-text-on-primary-700 + '  rgb(' + to-rgb($color-text-on-primary-700) +
+         ')';
+      color: $color-text-on-primary-700;
+   }
+
+   .color-value.text-accent-on-primary {
+      background-color: $color-primary;
+      color: $color-text-accent-on-primary;
+   }
+   .color-value.text-accent-on-primary::after {
+      content: '300: ' + $color-text-accent-on-primary + '  rgb(' +
+         to-rgb($color-text-accent-on-primary) + ')';
+      color: $color-text-accent-on-primary;
+   }
+   .color-value.text-accent-on-primary-300 {
+      background-color: lighten($color-primary, 3%);
+      color: $color-text-accent-on-primary-300;
+   }
+   .color-value.text-accent-on-primary-300::after {
+      content: '300: ' + $color-text-accent-on-primary-300 + '  rgb(' +
+         to-rgb($color-text-accent-on-primary-300) + ')';
+      color: $color-text-accent-on-primary-300;
+   }
+   .color-value.text-accent-on-primary-700 {
+      background-color: darken($color-primary, 3%);
+      color: $color-text-accent-on-primary-700;
+   }
+   .color-value.text-accent-on-primary-700::after {
+      content: '700: ' + $color-text-accent-on-primary-700 + '  rgb(' +
+         to-rgb($color-text-accent-on-primary-700) + ')';
+      color: $color-text-accent-on-primary-700;
+   }
+
+   .color-value.text-accent-on-complementary {
+      background-color: $color-complementary;
+      color: $color-text-accent-on-complementary;
+   }
+   .color-value.text-accent-on-complementary::after {
+      content: '300: ' + $color-text-accent-on-complementary + '  rgb(' +
+         to-rgb($color-text-accent-on-complementary) + ')';
+      color: $color-text-accent-on-complementary;
+   }
+   .color-value.text-accent-on-complementary-300 {
+      background-color: lighten($color-complementary, 3%);
+      color: $color-text-accent-on-complementary-300;
+   }
+   .color-value.text-accent-on-complementary-300::after {
+      content: '300: ' + $color-text-accent-on-complementary-300 + '  rgb(' +
+         to-rgb($color-text-accent-on-complementary-300) + ')';
+      color: $color-text-accent-on-complementary-300;
+   }
+   .color-value.text-accent-on-complementary-700 {
+      background-color: darken($color-complementary, 3%);
+      color: $color-text-accent-on-complementary-700;
+   }
+   .color-value.text-accent-on-complementary-700::after {
+      content: '700: ' + $color-text-accent-on-complementary-700 + '  rgb(' +
+         to-rgb($color-text-accent-on-complementary-700) + ')';
+      color: $color-text-accent-on-complementary-700;
+   }
+
+   .color-value.text-accent-on-light {
+      background-color: $color-bg-light;
+      color: $color-text-accent-on-light;
+   }
+   .color-value.text-accent-on-light::after {
+      content: '300: ' + $color-text-accent-on-light + '  rgb(' +
+         to-rgb($color-text-accent-on-light) + ')';
+      color: $color-text-accent-on-light;
+   }
+   .color-value.text-accent-on-light-300 {
+      background-color: lighten($color-bg-light, 3%);
+      color: $color-text-accent-on-light-300;
+   }
+   .color-value.text-accent-on-light-300::after {
+      content: '300: ' + $color-text-accent-on-light-300 + '  rgb(' +
+         to-rgb($color-text-accent-on-light-300) + ')';
+      color: $color-text-accent-on-light-300;
+   }
+   .color-value.text-accent-on-light-700 {
+      background-color: darken($color-bg-light, 3%);
+      color: $color-text-accent-on-light-700;
+   }
+   .color-value.text-accent-on-light-700::after {
+      content: '700: ' + $color-text-accent-on-light-700 + '  rgb(' +
+         to-rgb($color-text-accent-on-light-700) + ')';
+      color: $color-text-accent-on-light-700;
+   }
+
+   .color-value.text-accent-on-dark {
+      background-color: $color-bg-dark;
+      color: $color-text-accent-on-dark;
+   }
+   .color-value.text-accent-on-dark::after {
+      content: '300: ' + $color-text-accent-on-dark + '  rgb(' + to-rgb($color-text-accent-on-dark) +
+         ')';
+      color: $color-text-accent-on-dark;
+   }
+   .color-value.text-accent-on-dark-300 {
+      background-color: lighten($color-bg-dark, 3%);
+      color: $color-text-accent-on-dark-300;
+   }
+   .color-value.text-accent-on-dark-300::after {
+      content: '300: ' + $color-text-accent-on-dark-300 + '  rgb(' +
+         to-rgb($color-text-accent-on-dark-300) + ')';
+      color: $color-text-accent-on-dark-300;
+   }
+   .color-value.text-accent-on-dark-700 {
+      background-color: darken($color-bg-dark, 3%);
+      color: $color-text-accent-on-dark-700;
+   }
+   .color-value.text-accent-on-dark-700::after {
+      content: '700: ' + $color-text-accent-on-dark-700 + '  rgb(' +
+         to-rgb($color-text-accent-on-dark-700) + ')';
+      color: $color-text-accent-on-dark-700;
+   }
+
+   .opacity-card {
+      --_font-size: 0.9rem;
+      --_padding: 0.7em;
+      --_border-radius: 0.5rem;
+      position: relative;
+      padding: 0;
+      border-radius: var(--_border-radius);
+      border: 1px solid var(--card-bg-gray-bold);
+      white-space: nowrap;
+      overflow: hidden;
+      // shadow: horizontal vertical blur spread color
+      box-shadow: 1.5rem 1.5rem 2rem -1.5rem var(--color-box-shadow);
+
+      .title {
+         background-color: var(--card-bg-gray-subtle);
+         color: var(--card-fg-gray-subtle);
+         font-size: var(--_font-size);
+         text-align: center;
+         padding: var(--_padding);
+         border-radius: var(--_border-radius) var(--_border-radius) 0 0;
+         border-bottom: 1px solid var(--card-bg-gray-bold);
+      }
+      p {
+         font-size: 1rem;
+         text-align: center;
+         padding: 0.6em;
+         color: white;
+         text-shadow:
+            1px 1px 2px hsl(0 0% 0% / 0.75),
+            -1px -1px 1px hsl(0 0% 0% / 0.25);
+      }
+      .container {
+         margin: 3rem;
+         margin-top: 1.5rem;
+
+         .color-value {
+            height: 3rem;
+            font-size: var(--_font-size);
+            text-align: center;
+            padding: var(--_padding);
+            overflow: hidden;
+         }
+         .color-value.color-fill-callout-1 {
+            background-color: $color-fill-callout-1;
+            color: $color-text-on-callout-1;
+            height: 5.5rem;
+            padding: 1.5rem;
+         }
+         .color-value.color-fill-callout-1.bg::after {
+            content: 'callout background color: ' + $color-fill-callout-1 + '  rgb(' +
+               to-rgb($color-fill-callout-1) + ')';
+            color: $color-text-on-callout-1;
+            white-space: normal !important;
+         }
+         .color-value.color-fill-callout-1.fg::after {
+            content: 'text color: ' + $color-text-on-callout-1 + '  rgb(' +
+               to-rgb($color-text-on-callout-1) + ')';
+            color: $color-text-on-callout-1;
+         }
+
+         .color-value.color-fill-callout-2 {
+            background-color: $color-fill-callout-2;
+            color: $color-text-on-callout-2;
+            height: 5.5rem;
+            padding: 1.5rem;
+         }
+         .color-value.color-fill-callout-2.bg::after {
+            content: 'callout background color: ' + $color-fill-callout-2 + '  rgb(' +
+               to-rgb($color-fill-callout-2) + ')';
+            color: $color-text-on-callout-2;
+            white-space: normal !important;
+         }
+         .color-value.color-fill-callout-2.fg::after {
+            content: 'text color: ' + $color-text-on-callout-2 + '  rgb(' +
+               to-rgb($color-text-on-callout-2) + ')';
+            color: $color-text-on-callout-2;
+         }
+
+         .color-value.color-fill-primary-25 {
+            background-color: $color-fill-primary-25;
+         }
+         .color-value.color-fill-primary-50 {
+            background-color: $color-fill-primary-50;
+         }
+         .color-value.color-fill-primary-65 {
+            background-color: $color-fill-primary-65;
+         }
+         .color-value.color-fill-primary-75 {
+            background-color: $color-fill-primary-75;
+         }
+         .color-value.color-fill-primary-85 {
+            background-color: $color-fill-primary-85;
+         }
+         .color-value.color-fill-primary-90 {
+            background-color: $color-fill-primary-90;
+         }
+         .color-value.color-fill-primary-25::after {
+            content: '25% opacity: rgb(' + to-rgb($color-text-on-primary) + ')';
+            color: $color-text-on-primary;
+         }
+         .color-value.color-fill-primary-50::after {
+            content: '50% opacity: rgb(' + to-rgb($color-text-on-primary) + ')';
+            color: $color-text-on-primary;
+         }
+         .color-value.color-fill-primary-65::after {
+            content: '65% opacity: rgb(' + to-rgb($color-text-on-primary) + ')';
+            color: $color-text-on-primary;
+         }
+         .color-value.color-fill-primary-75::after {
+            content: '75% opacity: rgb(' + to-rgb($color-text-on-primary) + ')';
+            color: $color-text-on-primary;
+         }
+         .color-value.color-fill-primary-85::after {
+            content: '85% opacity: rgb(' + to-rgb($color-text-on-primary) + ')';
+            color: $color-text-on-primary;
+         }
+         .color-value.color-fill-primary-90::after {
+            content: '90% opacity: rgb(' + to-rgb($color-text-on-primary) + ')';
+            color: $color-text-on-primary;
+         }
+         .color-value.color-fill-primary-25::after,
+         .color-value.color-fill-primary-50::after,
+         .color-value.color-fill-primary-65::after,
+         .color-value.color-fill-primary-75::after,
+         .color-value.color-fill-primary-85::after,
+         .color-value.color-fill-primary-90::after {
+            white-space: normal !important;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 0% / 0.75),
+               -1px -1px 1px hsl(0 0% 0% / 0.25);
+         }
+
+         .color-value.color-fill-primary-accent-25 {
+            background-color: $color-fill-primary-accent-25;
+         }
+         .color-value.color-fill-primary-accent-50 {
+            background-color: $color-fill-primary-accent-50;
+         }
+         .color-value.color-fill-primary-accent-65 {
+            background-color: $color-fill-primary-accent-65;
+         }
+         .color-value.color-fill-primary-accent-75 {
+            background-color: $color-fill-primary-accent-75;
+         }
+         .color-value.color-fill-primary-accent-85 {
+            background-color: $color-fill-primary-accent-85;
+         }
+         .color-value.color-fill-primary-accent-90 {
+            background-color: $color-fill-primary-accent-90;
+         }
+         .color-value.color-fill-primary-accent-25::after {
+            content: '25% opacity: rgb(' + to-rgb($color-text-on-primary-accent) + ')';
+            color: $color-text-on-primary-accent-900;
+         }
+         .color-value.color-fill-primary-accent-50::after {
+            content: '50% opacity: rgb(' + to-rgb($color-text-on-primary-accent) + ')';
+            color: $color-text-on-primary-accent-900;
+         }
+         .color-value.color-fill-primary-accent-65::after {
+            content: '65% opacity: rgb(' + to-rgb($color-text-on-primary-accent) + ')';
+            color: $color-text-on-primary-accent;
+         }
+         .color-value.color-fill-primary-accent-75::after {
+            content: '75% opacity: rgb(' + to-rgb($color-text-on-primary-accent) + ')';
+            color: $color-text-on-primary-accent;
+         }
+         .color-value.color-fill-primary-accent-85::after {
+            content: '85% opacity: rgb(' + to-rgb($color-text-on-primary-accent) + ')';
+            color: $color-text-on-primary-accent;
+         }
+         .color-value.color-fill-primary-accent-90::after {
+            content: '90% opacity: rgb(' + to-rgb($color-text-on-primary-accent) + ')';
+            color: $color-text-on-primary-accent;
+         }
+         .color-value.color-fill-primary-accent-25::after,
+         .color-value.color-fill-primary-accent-50::after,
+         .color-value.color-fill-primary-accent-65::after,
+         .color-value.color-fill-primary-accent-75::after,
+         .color-value.color-fill-primary-accent-85::after,
+         .color-value.color-fill-primary-accent-90::after {
+            white-space: normal !important;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 100% / 0.75),
+               -1px -1px 1px hsl(0 0% 100% / 0.25);
+         }
+
+         .color-value.color-fill-complementary-25 {
+            background-color: $color-fill-complementary-25;
+         }
+         .color-value.color-fill-complementary-50 {
+            background-color: $color-fill-complementary-50;
+         }
+         .color-value.color-fill-complementary-65 {
+            background-color: $color-fill-complementary-65;
+         }
+         .color-value.color-fill-complementary-75 {
+            background-color: $color-fill-complementary-75;
+         }
+         .color-value.color-fill-complementary-85 {
+            background-color: $color-fill-complementary-85;
+         }
+         .color-value.color-fill-complementary-90 {
+            background-color: $color-fill-complementary-90;
+         }
+         .color-value.color-fill-complementary-25::after {
+            content: '25% opacity: rgb(' + to-rgb($color-text-on-complementary) + ')';
+            color: $color-text-on-complementary-900;
+         }
+         .color-value.color-fill-complementary-50::after {
+            content: '50% opacity: rgb(' + to-rgb($color-text-on-complementary) + ')';
+            color: $color-text-on-complementary-900;
+         }
+         .color-value.color-fill-complementary-65::after {
+            content: '65% opacity: rgb(' + to-rgb($color-text-on-complementary) + ')';
+            color: $color-text-on-complementary;
+         }
+         .color-value.color-fill-complementary-75::after {
+            content: '75% opacity: rgb(' + to-rgb($color-text-on-complementary) + ')';
+            color: $color-text-on-complementary;
+         }
+         .color-value.color-fill-complementary-85::after {
+            content: '85% opacity: rgb(' + to-rgb($color-text-on-complementary) + ')';
+            color: $color-text-on-complementary;
+         }
+         .color-value.color-fill-complementary-90::after {
+            content: '90% opacity: rgb(' + to-rgb($color-text-on-complementary) + ')';
+            color: $color-text-on-complementary;
+         }
+         .color-value.color-fill-complementary-25::after,
+         .color-value.color-fill-complementary-50::after,
+         .color-value.color-fill-complementary-65::after,
+         .color-value.color-fill-complementary-75::after,
+         .color-value.color-fill-complementary-85::after,
+         .color-value.color-fill-complementary-90::after {
+            white-space: normal !important;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 0% / 0.75),
+               -1px -1px 1px hsl(0 0% 0% / 0.25);
+         }
+
+         .color-value.color-fill-complementary-accent-25 {
+            background-color: $color-fill-complementary-accent-25;
+         }
+         .color-value.color-fill-complementary-accent-50 {
+            background-color: $color-fill-complementary-accent-50;
+         }
+         .color-value.color-fill-complementary-accent-65 {
+            background-color: $color-fill-complementary-accent-65;
+         }
+         .color-value.color-fill-complementary-accent-75 {
+            background-color: $color-fill-complementary-accent-75;
+         }
+         .color-value.color-fill-complementary-accent-85 {
+            background-color: $color-fill-complementary-accent-85;
+         }
+         .color-value.color-fill-complementary-accent-90 {
+            background-color: $color-fill-complementary-accent-90;
+         }
+         .color-value.color-fill-complementary-accent-25::after {
+            content: '25% opacity: rgb(' + to-rgb($color-text-on-complementary-accent) + ')';
+            color: $color-text-on-complementary-accent-900;
+         }
+         .color-value.color-fill-complementary-accent-50::after {
+            content: '50% opacity: rgb(' + to-rgb($color-text-on-complementary-accent) + ')';
+            color: $color-text-on-complementary-accent-900;
+         }
+         .color-value.color-fill-complementary-accent-65::after {
+            content: '65% opacity: rgb(' + to-rgb($color-text-on-complementary-accent) + ')';
+            color: $color-text-on-complementary-accent;
+         }
+         .color-value.color-fill-complementary-accent-75::after {
+            content: '75% opacity: rgb(' + to-rgb($color-text-on-complementary-accent) + ')';
+            color: $color-text-on-complementary-accent;
+         }
+         .color-value.color-fill-complementary-accent-85::after {
+            content: '85% opacity: rgb(' + to-rgb($color-text-on-complementary-accent) + ')';
+            color: $color-text-on-complementary-accent;
+         }
+         .color-value.color-fill-complementary-accent-90::after {
+            content: '90% opacity: rgb(' + to-rgb($color-text-on-complementary-accent) + ')';
+            color: $color-text-on-complementary-accent;
+         }
+         .color-value.color-fill-complementary-accent-25::after,
+         .color-value.color-fill-complementary-accent-50::after,
+         .color-value.color-fill-complementary-accent-65::after,
+         .color-value.color-fill-complementary-accent-75::after,
+         .color-value.color-fill-complementary-accent-85::after,
+         .color-value.color-fill-complementary-accent-90::after {
+            white-space: normal !important;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 100% / 0.75),
+               -1px -1px 1px hsl(0 0% 100% / 0.25);
+         }
+
+         .color-value.color-fill-complementary-2-25 {
+            background-color: $color-fill-complementary-2-25;
+         }
+         .color-value.color-fill-complementary-2-50 {
+            background-color: $color-fill-complementary-2-50;
+         }
+         .color-value.color-fill-complementary-2-65 {
+            background-color: $color-fill-complementary-2-65;
+         }
+         .color-value.color-fill-complementary-2-75 {
+            background-color: $color-fill-complementary-2-75;
+         }
+         .color-value.color-fill-complementary-2-85 {
+            background-color: $color-fill-complementary-2-85;
+         }
+         .color-value.color-fill-complementary-2-90 {
+            background-color: $color-fill-complementary-2-90;
+         }
+         .color-value.color-fill-complementary-2-25::after {
+            content: '25% opacity: rgb(' + to-rgb($color-text-on-complementary-2) + ')';
+            color: $color-text-on-complementary-2;
+         }
+         .color-value.color-fill-complementary-2-50::after {
+            content: '50% opacity: rgb(' + to-rgb($color-text-on-complementary-2) + ')';
+            color: $color-text-on-complementary-2;
+         }
+         .color-value.color-fill-complementary-2-65::after {
+            content: '65% opacity: rgb(' + to-rgb($color-text-on-complementary-2) + ')';
+            color: $color-text-on-complementary-2;
+         }
+         .color-value.color-fill-complementary-2-75::after {
+            content: '75% opacity: rgb(' + to-rgb($color-text-on-complementary-2) + ')';
+            color: $color-text-on-complementary-2;
+         }
+         .color-value.color-fill-complementary-2-85::after {
+            content: '85% opacity: rgb(' + to-rgb($color-text-on-complementary-2) + ')';
+            color: $color-text-on-complementary-2;
+         }
+         .color-value.color-fill-complementary-2-90::after {
+            content: '90% opacity: rgb(' + to-rgb($color-text-on-complementary-2) + ')';
+            color: $color-text-on-complementary-2;
+         }
+         .color-value.color-fill-complementary-2-25::after,
+         .color-value.color-fill-complementary-2-50::after,
+         .color-value.color-fill-complementary-2-65::after,
+         .color-value.color-fill-complementary-2-75::after,
+         .color-value.color-fill-complementary-2-85::after,
+         .color-value.color-fill-complementary-2-90::after {
+            white-space: normal !important;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 0% / 0.75),
+               -1px -1px 1px hsl(0 0% 0% / 0.25);
+         }
+
+         .color-value.color-fill-complementary-3-25 {
+            background-color: $color-fill-complementary-3-25;
+         }
+         .color-value.color-fill-complementary-3-50 {
+            background-color: $color-fill-complementary-3-50;
+         }
+         .color-value.color-fill-complementary-3-65 {
+            background-color: $color-fill-complementary-3-65;
+         }
+         .color-value.color-fill-complementary-3-75 {
+            background-color: $color-fill-complementary-3-75;
+         }
+         .color-value.color-fill-complementary-3-85 {
+            background-color: $color-fill-complementary-3-85;
+         }
+         .color-value.color-fill-complementary-3-90 {
+            background-color: $color-fill-complementary-3-90;
+         }
+         .color-value.color-fill-complementary-3-25::after {
+            content: '25% opacity: rgb(' + to-rgb($color-text-on-complementary-3) + ')';
+            color: $color-text-on-complementary-3;
+         }
+         .color-value.color-fill-complementary-3-50::after {
+            content: '50% opacity: rgb(' + to-rgb($color-text-on-complementary-3) + ')';
+            color: $color-text-on-complementary-3;
+         }
+         .color-value.color-fill-complementary-3-75::after {
+            content: '75% opacity: rgb(' + to-rgb($color-text-on-complementary-3) + ')';
+            color: $color-text-on-complementary-3;
+         }
+         .color-value.color-fill-complementary-3-65::after {
+            content: '65% opacity: rgb(' + to-rgb($color-text-on-complementary-3) + ')';
+            color: $color-text-on-complementary-3;
+         }
+         .color-value.color-fill-complementary-3-85::after {
+            content: '85% opacity: rgb(' + to-rgb($color-text-on-complementary-3) + ')';
+            color: $color-text-on-complementary-3;
+         }
+         .color-value.color-fill-complementary-3-90::after {
+            content: '90% opacity: rgb(' + to-rgb($color-text-on-complementary-3) + ')';
+            color: $color-text-on-complementary-3;
+         }
+         .color-value.color-fill-complementary-3-25::after,
+         .color-value.color-fill-complementary-3-50::after,
+         .color-value.color-fill-complementary-3-65::after,
+         .color-value.color-fill-complementary-3-75::after,
+         .color-value.color-fill-complementary-3-85::after,
+         .color-value.color-fill-complementary-3-90::after {
+            white-space: normal !important;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 0% / 0.75),
+               -1px -1px 1px hsl(0 0% 0% / 0.25);
+         }
+
+         .color-value.color-fill-complementary-4-25 {
+            background-color: $color-fill-complementary-4-25;
+         }
+         .color-value.color-fill-complementary-4-50 {
+            background-color: $color-fill-complementary-4-50;
+         }
+         .color-value.color-fill-complementary-4-65 {
+            background-color: $color-fill-complementary-4-65;
+         }
+         .color-value.color-fill-complementary-4-75 {
+            background-color: $color-fill-complementary-4-75;
+         }
+         .color-value.color-fill-complementary-4-85 {
+            background-color: $color-fill-complementary-4-85;
+         }
+         .color-value.color-fill-complementary-4-90 {
+            background-color: $color-fill-complementary-4-90;
+         }
+         .color-value.color-fill-complementary-4-25::after {
+            content: '25% opacity: rgb(' + to-rgb($color-text-on-complementary-4) + ')';
+            color: $color-text-on-complementary-4;
+         }
+         .color-value.color-fill-complementary-4-50::after {
+            content: '50% opacity: rgb(' + to-rgb($color-text-on-complementary-4) + ')';
+            color: $color-text-on-complementary-4;
+         }
+         .color-value.color-fill-complementary-4-65::after {
+            content: '65% opacity: rgb(' + to-rgb($color-text-on-complementary-4) + ')';
+            color: $color-text-on-complementary-4;
+         }
+         .color-value.color-fill-complementary-4-75::after {
+            content: '75% opacity: rgb(' + to-rgb($color-text-on-complementary-4) + ')';
+            color: $color-text-on-complementary-4;
+         }
+         .color-value.color-fill-complementary-4-85::after {
+            content: '85% opacity: rgb(' + to-rgb($color-text-on-complementary-4) + ')';
+            color: $color-text-on-complementary-4;
+         }
+         .color-value.color-fill-complementary-4-90::after {
+            content: '90% opacity: rgb(' + to-rgb($color-text-on-complementary-4) + ')';
+            color: $color-text-on-complementary-4;
+         }
+         .color-value.color-fill-complementary-4-25::after,
+         .color-value.color-fill-complementary-4-50::after,
+         .color-value.color-fill-complementary-4-65::after,
+         .color-value.color-fill-complementary-4-75::after,
+         .color-value.color-fill-complementary-4-85::after,
+         .color-value.color-fill-complementary-4-90::after {
+            white-space: normal !important;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 0% / 0.75),
+               -1px -1px 1px hsl(0 0% 0% / 0.25);
+         }
+      }
+   }
+   .opacity-card.callout-block {
+      background-color: $color-bg-silver;
+      color: $color-text-on-silver;
+
+      .container {
+         border: solid 1px darken($color-bg-silver, 40%);
+      }
+   }
+
+   .opacity-card.bg-monaco-04 {
+      background: url('/img/demo/bg-ui-demo-monaco-04.jpg') !important;
+   }
+   .opacity-card.bg-office-01 {
+      background: url('/img/demo/bg-ui-demo-office-01.jpg') !important;
+   }
+   .opacity-card.bg-office-02 {
+      background: url('/img/demo/bg-ui-demo-office-02.jpg') !important;
+   }
+   .opacity-card.bg-map {
+      background: url('/img/demo/bg-ui-demo-monaco-map.jpg') !important;
+   }
+   .opacity-card.bg-map-color {
+      background: url('/img/demo/bg-ui-demo-monaco-map-color.jpg') !important;
+   }
+   .opacity-card.bg-foodie {
+      background: url('/img/demo/bg-ui-demo-foodie.jpg') !important;
+   }
+   .opacity-card.bg-lobster {
+      background: url('/img/demo/bg-ui-demo-lobster.jpg') !important;
+   }
+   .opacity-card.bg-jean-georges-03 {
+      background: url('/img/demo/bg-ui-demo-jean-georges-03.jpg') !important;
+   }
+   .opacity-card.bg-jean-georges-05 {
+      background: url('/img/demo/bg-ui-demo-jean-georges-05.jpg') !important;
+   }
+   .opacity-card.bg-monaco-04,
+   .opacity-card.bg-map-color,
+   .opacity-card.bg-map,
+   .opacity-card.bg-office-01,
+   .opacity-card.bg-office-02,
+   .opacity-card.bg-lobster,
+   .opacity-card.bg-jean-georges-03,
+   .opacity-card.bg-jean-georges-05,
+   .opacity-card.bg-foodie {
+      background-size: cover !important;
+      background-position: center center;
+      background-repeat: no-repeat;
+   }
+
+   .gradient-card {
+      --_font-size: 1rem;
+      --_padding: 0.7em;
+      --_border-radius: 0.5rem;
+      position: relative;
+      padding: 0;
+      border-radius: var(--_border-radius);
+      border: 1px solid var(--card-bg-gray-bold);
+      white-space: nowrap;
+      overflow: hidden;
+      // shadow: horizontal vertical blur spread color
+      box-shadow: 1.5rem 1.5rem 2rem -1.5rem var(--color-box-shadow);
+
+      .title {
+         background-color: var(--card-bg-gray-subtle);
+         color: var(--card-fg-gray-subtle);
+         font-size: var(--_font-size);
+         text-align: center;
+         padding: var(--_padding);
+         border-radius: var(--_border-radius) var(--_border-radius) 0 0;
+         border-bottom: 1px solid var(--card-bg-gray-bold);
+      }
+      p {
+         font-size: 1rem;
+         text-align: center;
+         padding: 0.6em;
+         color: white;
+         opacity: 0.7;
+         text-shadow:
+            1px 1px 2px hsl(0 0% 0% / 0.75),
+            -1px -1px 1px hsl(0 0% 0% / 0.25);
+      }
+      .container {
+         margin: 3rem;
+         margin-top: 1.5rem;
+
+         .color-value {
+            height: 2.3rem;
+            line-height: normal;
+            font-size: var(--_font-size);
+            text-align: center;
+            padding: var(--_padding);
+            overflow: hidden;
+            white-space: normal;
+            color: white;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 0% / 0.75),
+               -1px -1px 1px hsl(0 0% 0% / 0.25);
+         }
+         .color-value.color-gradient-label {
+            background-color: none;
+            padding: 0;
+            margin: 0;
+            height: auto;
+            font-weight: 500;
+            opacity: 0.7;
+         }
+         .color-value.color-gradient-primary.from::after {
+            content: '' + $color-primary + '  rgb(' + to-rgb($color-primary) + ')';
+         }
+         .color-value.color-gradient-primary.to::after {
+            content: '' + lighten($color-primary, 20%) + '  rgb(' +
+               to-rgb(lighten($color-primary, 20%)) + ')';
+         }
+
+         .color-value.color-gradient-primary-accent.from::after {
+            color: black;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 100% / 0.75),
+               -1px -1px 1px hsl(0 0% 100% / 0.25);
+            content: '' + $color-primary-accent + '  rgb(' + to-rgb($color-primary-accent) + ')';
+         }
+         .color-value.color-gradient-primary-accent.to::after {
+            color: black;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 100% / 0.75),
+               -1px -1px 1px hsl(0 0% 100% / 0.25);
+            content: '' + lighten($color-primary-accent, 20%) + '  rgb(' +
+               to-rgb(lighten($color-primary-accent, 20%)) + ')';
+         }
+
+         .color-value.color-gradient-complementary.from::after {
+            content: '' + $color-complementary + '  rgb(' + to-rgb($color-complementary) + ')';
+         }
+         .color-value.color-gradient-complementary.to::after {
+            content: '' + lighten($color-complementary, 20%) + '  rgb(' +
+               to-rgb(lighten($color-complementary, 20%)) + ')';
+         }
+
+         .color-value.color-gradient-complementary-accent.from::after {
+            color: black;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 100% / 0.75),
+               -1px -1px 1px hsl(0 0% 100% / 0.25);
+            content: '' + $color-complementary-accent + '  rgb(' +
+               to-rgb($color-complementary-accent) + ')';
+         }
+         .color-value.color-gradient-complementary-accent.to::after {
+            color: black;
+            text-shadow:
+               1px 1px 2px hsl(0 0% 100% / 0.75),
+               -1px -1px 1px hsl(0 0% 100% / 0.25);
+            content: '' + lighten($color-complementary-accent, 20%) + '  rgb(' +
+               to-rgb(lighten($color-complementary-accent, 20%)) + ')';
+         }
+
+         .color-value.color-gradient-complementary-2.from::after {
+            content: '' + $color-complementary-2 + '  rgb(' + to-rgb($color-complementary-2) + ')';
+         }
+         .color-value.color-gradient-complementary-2.to::after {
+            content: '' + lighten($color-complementary-2, 20%) + '  rgb(' +
+               to-rgb(lighten($color-complementary-2, 20%)) + ')';
+         }
+
+         .color-value.color-gradient-complementary-3.from::after {
+            content: '' + $color-complementary-3 + '  rgb(' + to-rgb($color-complementary-3) + ')';
+         }
+         .color-value.color-gradient-complementary-3.to::after {
+            content: '' + lighten($color-complementary-3, 20%) + '  rgb(' +
+               to-rgb(lighten($color-complementary-3, 20%)) + ')';
+         }
+
+         .color-value.color-gradient-complementary-4.from::after {
+            content: '' + $color-complementary-4 + '  rgb(' + to-rgb($color-complementary-4) + ')';
+         }
+         .color-value.color-gradient-complementary-4.to::after {
+            content: '' + lighten($color-complementary-4, 20%) + '  rgb(' +
+               to-rgb(lighten($color-complementary-4, 20%)) + ')';
+         }
+
+         .color-value.color-gradient-crimson-orange.from {
+            background-color: $color-crimson;
+         }
+         .color-value.color-gradient-crimson-orange.to {
+            background-color: $color-orange;
+         }
+         .color-value.color-gradient-crimson-orange.from::after {
+            content: '' + $color-crimson + '  rgb(' + to-rgb($color-crimson) + ')';
+         }
+         .color-value.color-gradient-crimson-orange.to::after {
+            content: '' + lighten($color-orange, 5%) + '  rgb(' + to-rgb(lighten($color-orange, 5%)) +
+               ')';
+         }
+
+         .color-value.color-gradient-yellow-orange.from {
+            background-color: $color-yellow;
+         }
+         .color-value.color-gradient-yellow-orange.to {
+            background-color: $color-orange;
+         }
+         .color-value.color-gradient-yellow-orange.from::after {
+            content: '' + $color-yellow + '  rgb(' + to-rgb($color-yellow) + ')';
+         }
+         .color-value.color-gradient-yellow-orange.to::after {
+            content: '' + lighten($color-orange, 5%) + '  rgb(' + to-rgb(lighten($color-orange, 5%)) +
+               ')';
+         }
+
+         .color-value.color-gradient-blue-cyan.from {
+            background-color: $color-blue;
+         }
+         .color-value.color-gradient-blue-cyan.to {
+            background-color: $color-cyan;
+         }
+         .color-value.color-gradient-blue-cyan.from::after {
+            content: '' + $color-blue + '  rgb(' + to-rgb($color-blue) + ')';
+         }
+         .color-value.color-gradient-blue-cyan.to::after {
+            content: '' + lighten($color-cyan, 5%) + '  rgb(' + to-rgb(lighten($color-cyan, 5%)) +
+               ')';
+         }
+
+         .color-value.color-gradient-cyan-blue.from {
+            background-color: $color-cyan;
+         }
+         .color-value.color-gradient-cyan-blue.to {
+            background-color: $color-blue;
+         }
+         .color-value.color-gradient-cyan-blue.from::after {
+            content: '' + $color-cyan + '  rgb(' + to-rgb($color-cyan) + ')';
+         }
+         .color-value.color-gradient-cyan-blue.to::after {
+            content: '' + lighten($color-blue, 5%) + '  rgb(' + to-rgb(lighten($color-blue, 5%)) +
+               ')';
+         }
+      }
+   }
+   .gradient-card.bg-gradient-primary {
+      background: $color-gradient-primary;
+   }
+   .gradient-card.bg-gradient-primary-accent {
+      background: $color-gradient-primary-accent;
+   }
+   .gradient-card.bg-gradient-complementary {
+      background: $color-gradient-complementary;
+   }
+   .gradient-card.bg-gradient-complementary-accent {
+      background: $color-gradient-complementary-accent;
+   }
+   .gradient-card.bg-gradient-complementary-2 {
+      background: $color-gradient-complementary-2;
+   }
+   .gradient-card.bg-gradient-complementary-3 {
+      background: $color-gradient-complementary-3;
+   }
+   .gradient-card.bg-gradient-complementary-4 {
+      background: $color-gradient-complementary-4;
+   }
+   .gradient-card.bg-gradient-crimson-orange {
+      background: $color-gradient-crimson-orange;
+   }
+   .gradient-card.bg-gradient-blue-cyan {
+      background: $color-gradient-blue-cyan;
+   }
+   .gradient-card.bg-gradient-cyan-blue {
+      background: $color-gradient-cyan-blue;
+   }
+}

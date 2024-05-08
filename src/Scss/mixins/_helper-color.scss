@@ -1,0 +1,42 @@
+@mixin helper-color($color, $value) {
+	.bg-gradient-#{$color} {
+		background-color: $value !important;
+		background-image: linear-gradient(
+			to bottom,
+			lighten($value, 10%),
+			darken($value, 5%)
+		) !important;
+	}
+	.border-#{$color} {
+		@if ($color == 'theme') {
+			border-color: var(--theme-color) !important;
+		}
+	}
+	:root .theme-#{$color} {
+		--theme: #{$value} !important;
+		--theme-rgb: #{to-rgb($value)} !important;
+		--theme-color: #{color-contrast($value)} !important;
+		--theme-color-rgb: #{to-rgb(color-contrast($value))} !important;
+	}
+	@for $i from 1 through 4 {
+		.text-#{$color}-#{$i * 100} {
+			--text-opacity: 1;
+			color: rgba(tint-color($value, (100 - ($i * 20)) * 1%), var(--text-opacity)) !important;
+		}
+		.bg-#{$color}-#{$i * 100} {
+			--bg-opacity: 1;
+			background-color: rgba(
+				tint-color($value, (100 - ($i * 20)) * 1%),
+				var(--bg-opacity)
+			) !important;
+		}
+		.text-#{$color}-#{($i + 5) * 100} {
+			--text-opacity: 1;
+			color: rgba(shade-color($value, ($i * 20) * 1%), var(--text-opacity)) !important;
+		}
+		.bg-#{$color}-#{($i + 5) * 100} {
+			--bg-opacity: 1;
+			background-color: rgba(shade-color($value, ($i * 20) * 1%), var(--bg-opacity)) !important;
+		}
+	}
+}

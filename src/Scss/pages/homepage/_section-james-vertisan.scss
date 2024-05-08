@@ -1,0 +1,17 @@
+
+.section-james-vertisan {
+   background-color: silver;
+   background: var(--bg-section-james-vertisan);
+   background-size: cover;
+   background-position: center right;
+   min-height: 500px;
+   z-index: 10;
+   position: relative;
+   padding: 0;
+ 
+   .overlay {
+     background: url('images/homepage/section-overlay-3.svg');
+     background-size: cover;
+     height: 100vh;
+   }
+ }

@@ -1,0 +1,387 @@
+//=== SINGLETONS FOR THIS THEME (no light-dark switching) ===========
+
+// theming
+$theme-name: 'nebula';
+$theme-primary-color: $color-nebula;
+$theme-default-mode: 'dark';
+$theme-current-mode: $theme-default-mode;
+
+//=======================================================
+// mandatory theme colors (nebula)
+$color-primary: #5a117c;
+$color-primary-accent: #c4e549;
+$color-complementary: #3e0834;
+$color-complementary-accent: #A899E7;
+// optional theme colors
+$color-complementary-2: #301355;
+$color-complementary-3: #292b52;
+$color-complementary-4: #7c1168;
+// neutral backgrounds
+$color-bg-neutral-primary: white;
+$color-bg-neutral-secondary: #F8F8FA;
+// solid backgrounds
+$color-bg-light: #f0f0f5;
+$color-bg-dark: #232323;
+// (the specific shade of silver varies from brand to brand)
+$color-silver-official: #d0d0d5; // nebula
+// gradients
+$color-gradient-primary: linear-gradient(darken($color-primary, 20%), lighten($color-primary, 10%));
+$color-gradient-complementary: linear-gradient(darken($color-complementary, 10%), lighten($color-complementary, 10%));
+// note: gradients with accent colors are darker
+$color-gradient-primary-accent: linear-gradient(darken($color-primary-accent, 20%), darken($color-primary-accent, 5%));
+$color-gradient-complementary-accent: linear-gradient(darken($color-complementary-accent, 20%), darken($color-complementary-accent, 5%));
+// extra colors
+$color-extra-1: #91DAFA;
+$color-extra-2: #F09FE1;
+// text on darker theme colors
+$color-text-on-primary: #f5f5f5;
+$color-text-on-complementary: white;
+// text on lighter theme accent colors
+$color-text-on-primary-accent: black;
+$color-text-on-complementary-accent: black;
+// text on the dominant neutral background colors
+$color-text-on-bg-neutral-primary: #2c2c2c;
+$color-text-on-bg-neutral-secondary: #2c2c2c;
+// callout blocks
+$color-fill-callout-1: #FFCD50;
+$color-fill-callout-2: #301355;
+$color-text-on-callout-1: black;
+$color-text-on-callout-2: white;
+// basic text colors
+$color-text-on-light: #2c2c2c;
+$color-text-on-dark: #f3f3f3;
+$color-text-on-silver: #333333;
+$color-text-on-light-image: #0c0c0c;
+$color-text-on-dark-image: #f5f5f5;
+$color-text-on-white: $color-text-on-light;
+$color-text-on-black: $color-text-on-dark;
+// gray duotones
+$color-duotone-gray-ying: #e7e7e7;
+$color-duotone-gray-yang: #9c9c9c;
+// standard named text colors
+$color-text-black: black;
+$color-text-white: white;
+
+// link colors (shouldn't need to change these values)
+$color-lnk-on-primary: $color-primary-accent;
+$color-lnk-on-complementary: $color-complementary-accent;
+$color-lnk-on-primary-accent: $color-primary;
+$color-lnk-on-complementary-accent: $color-complementary;
+/* links */
+$color-lnk-on-white: $color-primary;
+$color-lnk-on-black: $color-primary-accent;
+
+$color-lnk-on-primary: $color-primary-accent;
+$color-lnk-on-complementary: $color-primary-accent;
+$color-lnk-on-complementary-2: $color-primary-accent;
+$color-lnk-on-complementary-3: $color-primary-accent;
+$color-lnk-on-complementary-4: $color-primary-accent;
+
+/* links:hover */
+$color-lnk-on-white-hover: darken($color-primary, 15%);
+$color-lnk-on-black-hover: darken($color-primary-accent, 15%);
+
+$color-lnk-on-muted-hover: darken($color-primary, 15%);
+$color-lnk-on-subtle-hover: darken($color-primary, 15%);
+$color-lnk-on-normal-hover: darken($color-primary, 15%);
+$color-lnk-on-bold-hover: lighten($color-primary, 25%);
+$color-lnk-on-intense-hover: lighten($color-primary, 25%);
+
+$color-lnk-on-primary-hover: darken($color-primary-accent, 15%);
+$color-lnk-on-complementary-hover: darken($color-primary-accent, 15%);
+$color-lnk-on-complementary-2-hover: darken($color-primary-accent, 15%);
+$color-lnk-on-complementary-3-hover: darken($color-primary-accent, 15%);
+$color-lnk-on-complementary-4-hover: darken($color-primary-accent, 15%);
+
+//===================================================================
+// optional colors default values
+$color-complementary-2-accent: $color-complementary-accent;
+$color-complementary-3-accent: $color-complementary-accent;
+$color-complementary-4-accent: $color-complementary-accent;
+
+$color-gradient-complementary-2: linear-gradient(darken($color-complementary-2, 10%), lighten($color-complementary-2, 10%));
+$color-gradient-complementary-3: linear-gradient(darken($color-complementary-3, 10%), lighten($color-complementary-3, 10%));
+$color-gradient-complementary-4: linear-gradient(darken($color-complementary-4, 10%), lighten($color-complementary-4, 10%));
+
+$color-text-on-complementary-2: $color-text-on-complementary;
+$color-text-on-complementary-3: $color-text-on-complementary;
+$color-text-on-complementary-4: $color-text-on-complementary;
+$color-text-on-complementary-2-accent: $color-text-on-complementary-accent;
+$color-text-on-complementary-3-accent: $color-text-on-complementary-accent;
+$color-text-on-complementary-4-accent: $color-text-on-complementary-accent;
+
+$color-text-accent-on-primary: $color-primary-accent;
+$color-text-accent-on-complementary: $color-complementary-accent;
+$color-text-accent-on-light: $color-primary;
+$color-text-accent-on-dark: invert($color-primary);
+
+//-------------------------------------------------------------------
+
+// default silver to official color
+$color-bg-silver: $color-silver-official;
+
+//===================================================================
+// fonts
+$txt-font-stack-masthead: 'Roboto Condensed', sans-serif;
+$txt-font-stack-headings: 'Chakra Petch', sans-serif;
+$txt-font-stack-content: 'Work Sans', sans-serif;
+
+//===================================================================
+// layout
+$flex-gap: 1rem;
+$grid-gap: 1rem;
+$flow-spacer: 1em;
+$border-radius: 6px;
+
+//===================================================================
+//--- THEME COLOR VARIANTS (manually set or calculated) -------------
+$color-primary-100: lighten($color-primary, 15%);
+$color-primary-300: lighten($color-primary, 10%);
+$color-primary-700: darken($color-primary, 8%);
+$color-primary-900: darken($color-primary, 15%);
+
+$color-primary-drow-ying: lighten($color-primary, 6%); //(data row)
+$color-primary-drow-yang: lighten($color-primary, 9%); //(data row)
+
+// theme primary accent color
+$color-primary-accent-100: lighten($color-primary-accent, 15%);
+$color-primary-accent-300: lighten($color-primary-accent, 10%);
+$color-primary-accent-700: darken($color-primary-accent, 10%);
+$color-primary-accent-900: darken($color-primary-accent, 15%);
+
+// theme complementary color to the primary color
+$color-complementary-100: lighten($color-complementary, 15%);
+$color-complementary-300: lighten($color-complementary, 10%);
+$color-complementary-700: darken($color-complementary, 5%);
+$color-complementary-900: darken($color-complementary, 10%);
+
+$color-complementary-drow-ying: lighten($color-complementary, 6%); //(data row)
+$color-complementary-drow-yang: lighten($color-complementary, 9%); //(data row)
+
+// theme accent color to the complementary color
+// (optional because the primary accent color should also work for the complementary)
+$color-complementary-accent-100: lighten($color-complementary-accent, 15%);
+$color-complementary-accent-300: lighten($color-complementary-accent, 10%);
+$color-complementary-accent-700: darken($color-complementary-accent, 10%);
+$color-complementary-accent-900: darken($color-complementary-accent, 15%);
+
+// theme complementary color #2 to the primary color
+$color-complementary-2-100: lighten($color-complementary-2, 15%);
+$color-complementary-2-300: lighten($color-complementary-2, 10%);
+$color-complementary-2-700: darken($color-complementary-2, 5%);
+$color-complementary-2-900: darken($color-complementary-2, 10%);
+
+$color-complementary-2-drow-ying: lighten($color-complementary-2, 6%); //(data row)
+$color-complementary-2-drow-yang: lighten($color-complementary-2, 9%); //(data row)
+
+// theme accent color to the complementary color #2
+// (optional because the primary accent color should also work for the complementary)
+$color-complementary-2-accent-100: lighten($color-complementary-2-accent, 15%);
+$color-complementary-2-accent-300: lighten($color-complementary-2-accent, 10%);
+$color-complementary-2-accent-700: darken($color-complementary-2-accent, 10%);
+$color-complementary-2-accent-900: darken($color-complementary-2-accent, 15%);
+
+// theme complementary color #3 to the primary color
+$color-complementary-3-100: lighten($color-complementary-3, 15%);
+$color-complementary-3-300: lighten($color-complementary-3, 10%);
+$color-complementary-3-700: darken($color-complementary-3, 5%);
+$color-complementary-3-900: darken($color-complementary-3, 10%);
+
+$color-complementary-3-accent-100: lighten($color-complementary-3-accent, 15%);
+$color-complementary-3-accent-300: lighten($color-complementary-3-accent, 10%);
+$color-complementary-3-accent-700: darken($color-complementary-3-accent, 10%);
+$color-complementary-3-accent-900: darken($color-complementary-3-accent, 15%);
+
+// theme complementary color #4 to the primary color
+$color-complementary-4-100: lighten($color-complementary-4, 15%);
+$color-complementary-4-300: lighten($color-complementary-4, 10%);
+$color-complementary-4-700: darken($color-complementary-4, 5%);
+$color-complementary-4-900: darken($color-complementary-4, 10%);
+
+$color-complementary-4-accent-100: lighten($color-complementary-4-accent, 15%);
+$color-complementary-4-accent-300: lighten($color-complementary-4-accent, 10%);
+$color-complementary-4-accent-700: darken($color-complementary-4-accent, 10%);
+$color-complementary-4-accent-900: darken($color-complementary-4-accent, 15%);
+
+// duotones
+$color-duotone-primary-ying: lighten($color-primary, 5%);
+$color-duotone-primary-yang: lighten($color-primary, 8%);
+
+// silver variants
+$color-silver-official-100: tint($color-silver-official, 12%);
+$color-silver-official-200: tint($color-silver-official, 9%);
+$color-silver-official-300: tint($color-silver-official, 6%);
+$color-silver-official-400: tint($color-silver-official, 3%);
+$color-silver-official-500: $color-silver-official;
+$color-silver-official-600: shade($color-silver-official, 3%);
+$color-silver-official-700: shade($color-silver-official, 6%);
+$color-silver-official-800: shade($color-silver-official, 9%);
+$color-silver-official-900: shade($color-silver-official, 12%);
+
+//===================================================================
+//--- OPACITY FILLS -------------------------------------------------
+//$color-fill-solid-callout-block: darken($color-primary-accent, 15%);
+//$color-fill-solid-callout-block-alt: darken($color-primary-accent-alt, 15%);
+
+$color-fill-primary-25: rgba($color-primary, 25%);
+$color-fill-primary-50: rgba($color-primary, 50%);
+$color-fill-primary-65: rgba($color-primary, 65%);
+$color-fill-primary-75: rgba($color-primary, 75%);
+$color-fill-primary-85: rgba($color-primary, 85%);
+$color-fill-primary-90: rgba($color-primary, 90%);
+
+$color-fill-primary-accent-25: rgba($color-primary-accent, 25%);
+$color-fill-primary-accent-50: rgba($color-primary-accent, 50%);
+$color-fill-primary-accent-65: rgba($color-primary-accent, 65%);
+$color-fill-primary-accent-75: rgba($color-primary-accent, 75%);
+$color-fill-primary-accent-85: rgba($color-primary-accent, 85%);
+$color-fill-primary-accent-90: rgba($color-primary-accent, 90%);
+
+$color-fill-complementary-25: rgba($color-complementary, 25%);
+$color-fill-complementary-50: rgba($color-complementary, 50%);
+$color-fill-complementary-65: rgba($color-complementary, 65%);
+$color-fill-complementary-75: rgba($color-complementary, 75%);
+$color-fill-complementary-85: rgba($color-complementary, 85%);
+$color-fill-complementary-90: rgba($color-complementary, 90%);
+
+$color-fill-complementary-accent-25: rgba($color-complementary-accent, 25%);
+$color-fill-complementary-accent-50: rgba($color-complementary-accent, 50%);
+$color-fill-complementary-accent-65: rgba($color-complementary-accent, 65%);
+$color-fill-complementary-accent-75: rgba($color-complementary-accent, 75%);
+$color-fill-complementary-accent-85: rgba($color-complementary-accent, 85%);
+$color-fill-complementary-accent-90: rgba($color-complementary-accent, 90%);
+
+$color-fill-complementary-2-25: rgba($color-complementary-2, 25%);
+$color-fill-complementary-2-50: rgba($color-complementary-2, 50%);
+$color-fill-complementary-2-65: rgba($color-complementary-2, 65%);
+$color-fill-complementary-2-75: rgba($color-complementary-2, 75%);
+$color-fill-complementary-2-85: rgba($color-complementary-2, 85%);
+$color-fill-complementary-2-90: rgba($color-complementary-2, 90%);
+
+$color-fill-complementary-2-accent-25: rgba($color-complementary-2-accent, 25%);
+$color-fill-complementary-2-accent-50: rgba($color-complementary-2-accent, 50%);
+$color-fill-complementary-2-accent-65: rgba($color-complementary-2-accent, 65%);
+$color-fill-complementary-2-accent-75: rgba($color-complementary-2-accent, 75%);
+$color-fill-complementary-2-accent-85: rgba($color-complementary-2-accent, 85%);
+$color-fill-complementary-2-accent-90: rgba($color-complementary-2-accent, 90%);
+
+$color-fill-complementary-3-25: rgba($color-complementary-3, 25%);
+$color-fill-complementary-3-50: rgba($color-complementary-3, 50%);
+$color-fill-complementary-3-65: rgba($color-complementary-3, 65%);
+$color-fill-complementary-3-75: rgba($color-complementary-3, 75%);
+$color-fill-complementary-3-85: rgba($color-complementary-3, 85%);
+$color-fill-complementary-3-90: rgba($color-complementary-3, 90%);
+
+$color-fill-complementary-4-25: rgba($color-complementary-4, 25%);
+$color-fill-complementary-4-50: rgba($color-complementary-4, 50%);
+$color-fill-complementary-4-65: rgba($color-complementary-4, 65%);
+$color-fill-complementary-4-75: rgba($color-complementary-4, 75%);
+$color-fill-complementary-4-85: rgba($color-complementary-4, 85%);
+$color-fill-complementary-4-90: rgba($color-complementary-4, 90%);
+
+//--- TEXT COLOR VARIATIONS ---------------------------------------------------
+$color-text-on-light-100: lighten($color-text-on-light, 8%);
+$color-text-on-light-300: lighten($color-text-on-light, 4%);
+$color-text-on-light-700: darken($color-text-on-light, 4%);
+$color-text-on-light-900: darken($color-text-on-light, 8%);
+
+$color-text-on-dark-100: darken($color-text-on-dark, 8%);
+$color-text-on-dark-300: darken($color-text-on-dark, 4%);
+$color-text-on-dark-700: lighten($color-text-on-dark, 4%);
+$color-text-on-dark-900: lighten($color-text-on-dark, 8%);
+
+$color-text-on-silver-100: lighten($color-text-on-silver, 8%);
+$color-text-on-silver-300: lighten($color-text-on-silver, 4%);
+$color-text-on-silver-700: darken($color-text-on-silver, 4%);
+$color-text-on-silver-900: darken($color-text-on-silver, 8%);
+
+$color-text-on-light-image-100: lighten($color-text-on-light-image, 8%);
+$color-text-on-light-image-300: lighten($color-text-on-light-image, 4%);
+$color-text-on-light-image-700: darken($color-text-on-light-image, 4%);
+$color-text-on-light-image-900: darken($color-text-on-light-image, 8%);
+
+$color-text-on-dark-image-100: darken($color-text-on-dark-image, 8%);
+$color-text-on-dark-image-300: darken($color-text-on-dark-image, 4%);
+$color-text-on-dark-image-700: lighten($color-text-on-dark-image, 4%);
+$color-text-on-dark-image-900: lighten($color-text-on-dark-image, 8%);
+
+$color-text-on-primary-100: darken($color-text-on-primary, 8%);
+$color-text-on-primary-300: darken($color-text-on-primary, 4%);
+$color-text-on-primary-700: lighten($color-text-on-primary, 4%);
+$color-text-on-primary-900: lighten($color-text-on-primary, 8%);
+
+$color-text-accent-on-primary-100: darken($color-text-accent-on-primary, 8%);
+$color-text-accent-on-primary-300: darken($color-text-accent-on-primary, 4%);
+$color-text-accent-on-primary-700: lighten($color-text-accent-on-primary, 4%);
+$color-text-accent-on-primary-900: lighten($color-text-accent-on-primary, 8%);
+
+$color-text-on-primary-accent-100: lighten($color-text-on-primary-accent, 8%);
+$color-text-on-primary-accent-300: lighten($color-text-on-primary-accent, 4%);
+$color-text-on-primary-accent-700: darken($color-text-on-primary-accent, 5%);
+$color-text-on-primary-accent-900: darken($color-text-on-primary-accent, 10%);
+
+$color-text-on-complementary-100: darken($color-text-on-complementary, 8%);
+$color-text-on-complementary-300: darken($color-text-on-complementary, 4%);
+$color-text-on-complementary-700: lighten($color-text-on-complementary, 4%);
+$color-text-on-complementary-900: lighten($color-text-on-complementary, 8%);
+
+$color-text-on-complementary-accent-100: lighten($color-text-on-complementary-accent, 8%);
+$color-text-on-complementary-accent-300: lighten($color-text-on-complementary-accent, 4%);
+$color-text-on-complementary-accent-700: darken($color-text-on-complementary-accent, 4%);
+$color-text-on-complementary-accent-900: darken($color-text-on-complementary-accent, 8%);
+
+$color-text-accent-on-complementary-100: darken($color-text-accent-on-complementary, 8%);
+$color-text-accent-on-complementary-300: darken($color-text-accent-on-complementary, 4%);
+$color-text-accent-on-complementary-700: lighten($color-text-accent-on-complementary, 4%);
+$color-text-accent-on-complementary-900: lighten($color-text-accent-on-complementary, 8%);
+
+$color-text-on-complementary-2-100: darken($color-text-on-complementary-2, 8%);
+$color-text-on-complementary-2-300: darken($color-text-on-complementary-2, 4%);
+$color-text-on-complementary-2-700: lighten($color-text-on-complementary-2, 4%);
+$color-text-on-complementary-2-900: lighten($color-text-on-complementary-2, 8%);
+
+$color-text-on-complementary-2-accent-100: darken($color-text-on-complementary-2-accent, 8%);
+$color-text-on-complementary-2-accent-300: darken($color-text-on-complementary-2-accent, 4%);
+$color-text-on-complementary-2-accent-700: lighten($color-text-on-complementary-2-accent, 4%);
+$color-text-on-complementary-2-accent-900: lighten($color-text-on-complementary-2-accent, 8%);
+
+$color-text-on-complementary-3-100: darken($color-text-on-complementary-3, 8%);
+$color-text-on-complementary-3-300: darken($color-text-on-complementary-3, 4%);
+$color-text-on-complementary-3-700: lighten($color-text-on-complementary-3, 4%);
+$color-text-on-complementary-3-900: lighten($color-text-on-complementary-3, 8%);
+
+$color-text-on-complementary-3-accent-100: darken($color-text-on-complementary-3-accent, 8%);
+$color-text-on-complementary-3-accent-300: darken($color-text-on-complementary-3-accent, 4%);
+$color-text-on-complementary-3-accent-700: lighten($color-text-on-complementary-3-accent, 4%);
+$color-text-on-complementary-3-accent-900: lighten($color-text-on-complementary-3-accent, 8%);
+
+$color-text-on-complementary-4-100: darken($color-text-on-complementary-4, 8%);
+$color-text-on-complementary-4-300: darken($color-text-on-complementary-4, 4%);
+$color-text-on-complementary-4-700: lighten($color-text-on-complementary-4, 4%);
+$color-text-on-complementary-4-900: lighten($color-text-on-complementary-4, 8%);
+
+$color-text-on-complementary-4-accent-100: darken($color-text-on-complementary-4-accent, 8%);
+$color-text-on-complementary-4-accent-300: darken($color-text-on-complementary-4-accent, 4%);
+$color-text-on-complementary-4-accent-700: lighten($color-text-on-complementary-4-accent, 4%);
+$color-text-on-complementary-4-accent-900: lighten($color-text-on-complementary-4-accent, 8%);
+
+$color-text-accent-on-light-100: darken($color-text-accent-on-light, 8%);
+$color-text-accent-on-light-300: darken($color-text-accent-on-light, 4%);
+$color-text-accent-on-light-700: lighten($color-text-accent-on-light, 4%);
+$color-text-accent-on-light-900: lighten($color-text-accent-on-light, 8%);
+
+$color-text-accent-on-dark-100: darken($color-text-accent-on-dark, 8%);
+$color-text-accent-on-dark-300: darken($color-text-accent-on-dark, 4%);
+$color-text-accent-on-dark-700: lighten($color-text-accent-on-dark, 4%);
+$color-text-accent-on-dark-900: lighten($color-text-accent-on-dark, 8%);
+
+// utility font sizes for testing
+$font-size-100: 0.65rem;
+$font-size-200: 0.7rem;
+$font-size-300: 0.8rem;
+$font-size-400: 0.9rem;
+$font-size-500: 1rem;
+$font-size-600: 1.25rem;
+$font-size-700: 1.5rem;
+$font-size-800: 1.75rem;
+$font-size-900: 2rem;

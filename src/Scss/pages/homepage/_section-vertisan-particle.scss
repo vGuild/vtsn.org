@@ -1,0 +1,15 @@
+
+.section-particle {
+   background-color: silver;
+   background: var(--bg-section-particle);
+   min-height: 500px;
+   z-index: 10;
+   position: relative;
+   padding: 0;
+ 
+   .overlay {
+     background: url('images/homepage/section-overlay-3.svg');
+     background-size: cover;
+     height: 100vh;
+   }
+ }
