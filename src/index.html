@@ -1,116 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Vertisan (VTSN) - web3 Digital Money</title>
+    <meta
+      name="description"
+      content="Vertisan is a new kind of digital money that solves all the problems of gen1 cryptocurrencies"
+    />
+    <meta name="keywords" content="vtsn, vertisan, cryptocurrency, digital money, web3, james vertisan" />
+    <meta property="og:image" content="https://vtsn.org/img/icons/vertisan-opengraph.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon/favicon.png" />
 
-<head>
-  <meta charset="UTF-8">
-  <title>Vertisan (VTSN) - web3 Digital Money</title>
-  <meta name="description" content="Vertisan is a new kind of digital money that solves all the problems of gen1 cryptocurrencies">
-  <meta name="keywords" content="vtsn, vertisan, cryptocurrency, digital money, web3, james vertisan">
-  <meta property="og:image" content="https://vtsn.org/img/icons/vertisan-opengraph.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="favicon/favicon.png">
-  
-  <script src="/js/jquery/jquery-1.11.2.min.js"></script>
-  <script src="/js/jquery/jquery-ui.min.js"></script>
-  <script src="/js/jquery/jquery.qrcode.min.js"></script>
-  <script src="js/nav-menu.js" defer></script>
-  <script src="js/theme-switcher.js" defer></script>
+    <script src="/js/jquery/jquery-1.11.2.min.js"></script>
+    <script src="/js/jquery/jquery-ui.min.js"></script>
+    <script src="/js/jquery/jquery.qrcode.min.js"></script>
+    <script src="js/nav-menu.js" defer></script>
+    <script src="js/theme-switcher.js" defer></script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="css/fontawesome-6.1.1-pro/all.css" />
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/site-styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/fontawesome-6.1.1-pro/all.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/site-styles.css" />
+    <script>
+      window.cookieconsent_options = {
+        theme: 'light-floating',
+      };
+    </script>
+    <script type="text/javascript" src="/js/cookieconsent.js"></script>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NC6CQRQ35W"></script>
   <script>
-    window.cookieconsent_options = {
-        theme: 'light-floating'
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
     }
-</script>
-<script type="text/javascript" src="/js/cookieconsent.js"></script>
-</head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NC6CQRQ35W"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    gtag('js', new Date());
 
-  gtag('config', 'G-NC6CQRQ35W');
-</script>
+    gtag('config', 'G-NC6CQRQ35W');
+  </script>
 
-<body class="home">
-  <div class="body-cover"></div>
-  <div class="body-overlay"></div>
-  <div class="body-mask"></div>
-  <h1 class="sr-only">VERTISAN</h1>
-  <header id="primaryHeader" class="primary-header">
-    <div>
-      <img
-        class="header-logo"
-        src="img/vertisan-logo-navbar-200x100.svg"
-        alt="vertisan"
-      />
-    </div>
+  <body class="home">
+    <div class="body-cover"></div>
+    <div class="body-overlay"></div>
+    <div class="body-mask"></div>
+    <h1 class="sr-only">VERTISAN</h1>
+    <header id="primaryHeader" class="primary-header">
+      <div>
+        <img class="header-logo" src="img/layout/vtsn-logo-navbar.svg" alt="vertisan" />
+      </div>
 
-    <button
-      class="mobile-nav-toggle"
-      aria-controls="primaryNav"
-      aria-expanded="false"
-    >
-      <span class="sr-only">Menu</span>
-    </button>
+      <button class="mobile-nav-toggle" aria-controls="primaryNav" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+      </button>
 
-    <nav>
-      <ul id="primaryNav" class="primary-nav" data-visible="false">
-        <li class="active">
-          <a href="/"><span aria-hidden="true">00</span>home</a>
-        </li>
-        <li>
-          <a href="about.html"><span aria-hidden="true">01</span>about</a>
-        </li>
-        <li>
-          <a href="dev-progress.html"
-            ><span aria-hidden="true">02</span>progress</a
-          >
-        </li>
-        <li>
-          <a href="login.html"><span aria-hidden="true">03</span>login</a>
-        </li>
-        <li id="theme-toggle-container">
-          <button id="theme-toggle" aria-label="Switch to dark theme">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-            >
-              <g id="theme-svg-outer-points" class="toggle-sun">
-                <path
-                  d="M20.5,8.5v-5h-5L12,0L8.5,3.5h-5v5L0,12l3.5,3.5v5h5L12,24l3.5-3.5h5v-5L24,12L20.5,8.5z M12,18.6c-3.6,0-6.6-2.9-6.6-6.6
+      <nav>
+        <ul id="primaryNav" class="primary-nav" data-visible="false">
+          <li class="active">
+            <a href="/"><span aria-hidden="true">00</span>home</a>
+          </li>
+          <li>
+            <a href="#about"><span aria-hidden="true">01</span>about</a>
+          </li>
+          <li>
+            <a href="#advantages"><span aria-hidden="true">01</span>advantages</a>
+          </li>
+          <li>
+            <a href="#tokenomics"><span aria-hidden="true">02</span>tokenomics</a>
+          </li>
+          <li>
+            <a href="status.html"><span aria-hidden="true">03</span>status</a>
+          </li>
+          <li id="theme-toggle-container">
+            <button id="theme-toggle" aria-label="Switch to dark theme">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <g id="theme-svg-outer-points" class="toggle-sun">
+                  <path
+                    d="M20.5,8.5v-5h-5L12,0L8.5,3.5h-5v5L0,12l3.5,3.5v5h5L12,24l3.5-3.5h5v-5L24,12L20.5,8.5z M12,18.6c-3.6,0-6.6-2.9-6.6-6.6
   S8.4,5.4,12,5.4s6.6,2.9,6.6,6.6C18.5,15.6,15.6,18.6,12,18.6C12,18.6,12,18.6,12,18.6L12,18.6z"
-                />
-              </g>
-              <g id="theme-svg-inner-circle" class="toggle-circle">
-                <circle class="cls-1" cx="12" cy="12" r="5.3" />
-              </g>
-            </svg>
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </header>
+                  />
+                </g>
+                <g id="theme-svg-inner-circle" class="toggle-circle">
+                  <circle class="cls-1" cx="12" cy="12" r="5.3" />
+                </g>
+              </svg>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <main>
-    <div class="placeholder">
-    <h1>Vertisan (VTSN)</h1>
-    <img class="hero-icon" src="img/icons/vtsn-icon.svg" alt="VTSN Icon" />
-  </div>
-  <section>
-    <p>where is my content?</p>
-  </section>
-  </main>
-</body>
+    <main>
+      <section class="section">
+        <div class="placeholder">
+          <h1>Vertisan (VTSN)</h1>
+          <img class="hero-icon" src="img/icons/vtsn-icon.svg" alt="VTSN Icon" />
+        </div>
+      </section>
+      <section class="section">
+        <p style="text-align:center;">Vertisan is a new kind of digital money that solves all the problems of gen1 cryptocurrencies</p>
+      </section>
+    </main>
+    <footer class="homepage-footer">
+      <h2>Footer</h2>
+      <p>This website and VTSN are community-maintained by the Vertisan Guild and Contributors</p>
+    </footer>
 
+    <a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"
+      ><i class="fa fa-arrow-up"></i
+    ></a>
+  </body>
 </html>
