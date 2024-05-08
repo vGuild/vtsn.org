@@ -27,11 +27,8 @@ html, body {
 }
 
 main {
-  margin: auto;
-  padding: 1rem;
-  width: 100%
+  width: 100%;
 }
-
 main > h1 {
   text-align: center;
   font-size: 3.5em;
@@ -66,9 +63,9 @@ main > h1 {
 }
 
 footer {
-  padding: 2rem;
+  padding: 1rem 0.5rem;
 }
 
 .section {
-  padding: 1rem;
+  padding: 0.5rem;
 }

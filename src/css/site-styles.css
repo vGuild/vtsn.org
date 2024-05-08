@@ -5624,6 +5624,7 @@ html:focus-within {
 
 body {
   min-height: 100vh;
+  width: 100%;
   max-width: 1500px;
   margin: 0 auto;
   line-height: 1.6;
@@ -7437,7 +7438,6 @@ h2.only-the-best .green-subtitle-text {
   min-height: 500px;
   z-index: 10;
   position: relative;
-  width: 100vw;
 }
 
 /* START masked image */
