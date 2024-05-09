@@ -228,6 +228,7 @@ $color-bg-html-dark: #2b1617;
 $color-bg-body-dark: #0b070c;
 $color-headings-dark: #d19292;
 $color-text-dark: #e7e7e7;
+$color-text-inverse-dark: #14151c;
 $color-text-shadow-dark: hsl(0 0% 0% / 0.75);
 $color-text-muted-dark: darken(#e7e7e7, 20%);
 /* nav bar */
@@ -271,6 +272,7 @@ $img-card-bg-fancy-1-dark: url('images/cards/bg-fancy-card-1-dark.jpg');
 $img-mask-bordered-hexagon-dark: url('images/homepage/bordered-hexagon-mask-dark.svg');
 
 /* section backgrounds */
+$bg-section-footer-dark: #d0d0cb;
 $bg-section-featured-tech-dark: #323242;
 $txt-section-featured-tech-heading-dark: #afff00;
 $bg-section-secret-laboratory-dark: url('../img/homepage/bg-section-secret-laboratory-dark.jpg');
@@ -297,4 +299,4 @@ $bg-section-nebula-dark: linear-gradient(
 $bg-section-james-vertisan-dark: url('../img/homepage/bg-section-james-vertisan-dark.svg');
 $bg-section-the-best-dark: url('../img/homepage/bg-section-only-the-best-dark.jpg');
 $bg-section-resources-dark: linear-gradient(0deg, rgb(40, 41, 42) 28%, rgb(14, 15, 16) 100%);
-$bg-section-footer-dark: url('../img/homepage/bg-section-footer-dark.svg');
+//$bg-section-footer-dark: url('../img/homepage/bg-section-footer-dark.svg');

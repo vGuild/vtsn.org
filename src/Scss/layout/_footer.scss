@@ -1,11 +1,11 @@
 footer {
-   background-color: #323242;
+   color: var(--color-text-inverse);
    background: var(--bg-section-footer);
    background-size: cover;
    background-position: bottom left;
    z-index: 10;
    position: relative;
-   padding: 1.5rem;
+   padding: 1.2rem;
    font-size: 0.8rem;
 
    p {

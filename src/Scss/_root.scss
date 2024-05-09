@@ -8,6 +8,7 @@
   --color-bg-body: #{$color-bg-body};
   --color-headings: #{$color-headings};
   --color-text: #{$color-text};
+  --color-text-inverse: #{$color-text-inverse};
   --color-text-shadow: #{$color-text-shadow};
   --color-text-muted: #{$color-text-muted};
   --color-nav-bar: #{$color-nav-bar};
@@ -64,16 +65,6 @@
   --img-bg-card: #{$card-bg-gray-normal};
 
   /* section backgrounds */
-  --bg-section-featured-tech: #{$bg-section-featured-tech};
-  --bg-section-secret-laboratory: #{$bg-section-secret-laboratory};
-  --bg-section-defi: #{$bg-section-defi};
-  --bg-section-creativity-central: #{$bg-section-creativity-central};
-  --bg-section-neural-network: #{$bg-section-neural-network};
-  --bg-section-particle: #{$bg-section-particle};
-  --bg-section-nebula: #{$bg-section-nebula};
-  --bg-section-james-vertisan: #{$bg-section-james-vertisan};
-  --bg-section-the-best: #{$bg-section-the-best};
-  --bg-section-resources: #{$bg-section-resources};
   --bg-section-footer: #{$bg-section-footer};
 
   // SINGLETONS
@@ -110,6 +101,7 @@
     --color-bg-body: #{$color-bg-body-dark};
     --color-headings: #{$color-headings-dark};
     --color-text: #{$color-text-dark};
+    --color-text-inverse: #{$color-text-inverse-dark};
     --color-text-shadow: #{$color-text-shadow-dark};
     --color-text-muted: #{$color-text-muted-dark};
     --color-nav-bar: #{$color-nav-bar-dark};
@@ -166,16 +158,6 @@
     --img-bg-card: #{$card-bg-gray-normal-dark};
 
     /* section backgrounds */
-    --bg-section-featured-tech: #{$bg-section-featured-tech-dark};
-    --bg-section-secret-laboratory: #{$bg-section-secret-laboratory-dark};
-    --bg-section-defi: #{$bg-section-defi-dark};
-    --bg-section-creativity-central: #{$bg-section-creativity-central-dark};
-    --bg-section-neural-network: #{$bg-section-neural-network-dark};
-    --bg-section-particle: #{$bg-section-particle-dark};
-    --bg-section-nebula: #{$bg-section-nebula-dark};
-    --bg-section-james-vertisan: #{$bg-section-james-vertisan-dark};
-    --bg-section-the-best: #{$bg-section-the-best-dark};
-    --bg-section-resources: #{$bg-section-resources-dark};
     --bg-section-footer: #{$bg-section-footer-dark};
   }
 }
@@ -187,6 +169,7 @@
   --color-bg-body: #{$color-bg-body};
   --color-headings: #{$color-headings};
   --color-text: #{$color-text};
+  --color-text-inverse: #{$color-text-inverse};
   --color-text-shadow: #{$color-text-shadow};
   --color-text-muted: #{$color-text-muted};
   --color-nav-bar: #{$color-nav-bar};
@@ -243,16 +226,6 @@
   --img-bg-card: #{$card-bg-gray-normal};
 
   /* section backgrounds */
-  --bg-section-featured-tech: #{$bg-section-featured-tech};
-  --bg-section-secret-laboratory: #{$bg-section-secret-laboratory};
-  --bg-section-defi: #{$bg-section-defi};
-  --bg-section-creativity-central: #{$bg-section-creativity-central};
-  --bg-section-neural-network: #{$bg-section-neural-network};
-  --bg-section-particle: #{$bg-section-particle};
-  --bg-section-nebula: #{$bg-section-nebula};
-  --bg-section-james-vertisan: #{$bg-section-james-vertisan};
-  --bg-section-the-best: #{$bg-section-the-best};
-  --bg-section-resources: #{$bg-section-resources};
   --bg-section-footer: #{$bg-section-footer};
 }
 [data-theme-mode='dark'] {
@@ -267,6 +240,7 @@
   --color-bg-body: #{$color-bg-body-dark};
   --color-headings: #{$color-headings-dark};
   --color-text: #{$color-text-dark};
+  --color-text-inverse: #{$color-text-inverse-dark};
   --color-text-shadow: #{$color-text-shadow-dark};
   --color-text-muted: #{$color-text-muted-dark};
   --color-nav-bar: #{$color-nav-bar-dark};
@@ -323,15 +297,5 @@
   --img-bg-card: #{$card-bg-gray-normal-dark};
 
   /* section backgrounds */
-  --bg-section-featured-tech: #{$bg-section-featured-tech-dark};
-  --bg-section-secret-laboratory: #{$bg-section-secret-laboratory-dark};
-  --bg-section-defi: #{$bg-section-defi-dark};
-  --bg-section-creativity-central: #{$bg-section-creativity-central-dark};
-  --bg-section-neural-network: #{$bg-section-neural-network-dark};
-  --bg-section-particle: #{$bg-section-particle-dark};
-  --bg-section-nebula: #{$bg-section-nebula-dark};
-  --bg-section-james-vertisan: #{$bg-section-james-vertisan-dark};
-  --bg-section-the-best: #{$bg-section-the-best-dark};
-  --bg-section-resources: #{$bg-section-resources-dark};
   --bg-section-footer: #{$bg-section-footer-dark};
 }

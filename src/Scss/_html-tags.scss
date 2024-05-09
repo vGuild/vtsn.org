@@ -54,8 +54,7 @@ body {
 
 main {
   width: 100%;
-  min-height: 100vh;
-  border: 1px solid green;
+  min-height: 100vh; // to keep nav at the top when main is empty
 }
 
 /* A elements that don't have a class get default styles */
@@ -80,8 +79,7 @@ select {
 }
 
 footer {
-  background-color: var(--color-bg-body) !important;
-  color: var(--color-text) !important;
+  margin: 0;
 }
 
 h1,

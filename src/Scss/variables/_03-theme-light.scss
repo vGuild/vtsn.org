@@ -23,6 +23,7 @@ $color-bg-html: #dcb79a;
 $color-bg-body: #ffffff;
 $color-headings: #966a6a;
 $color-text: #14151c;
+$color-text-inverse: #e7e7e7;
 $color-text-shadow: hsl(0 0% 100% / 0.75);
 $color-text-muted: #2f2f2f;
 /* nav bar */
@@ -94,6 +95,7 @@ $img-card-bg-fancy-1: url('images/cards/bg-fancy-card-1-light.jpg');
 $img-mask-bordered-hexagon: url('images/homepage/bordered-hexagon-mask-light.svg');
 
 /* section backgrounds */
+$bg-section-footer: #0b070c;
 $bg-section-featured-tech: #bebecb;
 $txt-section-featured-tech-heading: #323242;
 $bg-section-secret-laboratory: url('../img/homepage/bg-section-secret-laboratory-light.jpg');
@@ -124,4 +126,4 @@ $bg-section-resources: linear-gradient(
    rgba(253, 253, 253, 1) 28%,
    rgba(245, 247, 246, 1) 100%
 );
-$bg-section-footer: url('../img/homepage/bg-section-footer-light.svg');
+//$bg-section-footer: url('../img/homepage/bg-section-footer-light.svg');
