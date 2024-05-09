@@ -2,7 +2,7 @@
    position: sticky;
    top: 0;
    width: 100%;
-   position: absolute;
+   //position: absolute;
    transition: background-color 500ms;
  }
  
@@ -13,8 +13,8 @@
  }
  
  .primary-header {
-   border: 1px solid firebrick; 
-   //align-items: flex-end;
+   //border: 1px solid firebrick; 
+   align-items: flex-end;
    justify-content: space-between;
    z-index: 100;
    display: flex;
@@ -127,7 +127,7 @@
      width: 1.7rem;
      aspect-ratio: 1;
      top: 0.6rem;
-     right: 1.5rem;
+     right: 1rem;
      z-index: 9999;
      cursor: pointer;
    }

@@ -5647,6 +5647,7 @@ body {
 
 main {
   width: 100%;
+  min-height: 100vh;
   border: 1px solid green;
 }
 
@@ -6853,7 +6854,6 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  position: absolute;
   transition: background-color 500ms;
 }
 
@@ -6864,7 +6864,7 @@ header {
 }
 
 .primary-header {
-  border: 1px solid firebrick;
+  align-items: flex-end;
   justify-content: space-between;
   z-index: 100;
   display: flex;
@@ -6971,7 +6971,7 @@ img.header-logo {
     width: 1.7rem;
     aspect-ratio: 1;
     top: 0.6rem;
-    right: 1.5rem;
+    right: 1rem;
     z-index: 9999;
     cursor: pointer;
   }
@@ -7014,12 +7014,12 @@ footer {
   background-position: bottom left;
   z-index: 10;
   position: relative;
-  padding: 2rem;
+  padding: 1.5rem;
   font-size: 0.8rem;
-  border: 1px solid pink;
 }
 footer p {
   font-size: 0.9rem;
+  margin-bottom: 1rem;
 }
 
 #theme-toggle-container {
