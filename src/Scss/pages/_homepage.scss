@@ -6,17 +6,17 @@
 @import 'homepage/masked-images';
 
 .vtsn-vs-btc-table {
+   font-family: sans-serif;
    border-collapse: collapse;
    margin: 25px 0;
    font-size: 0.9em;
-   font-family: sans-serif;
    min-width: 400px;
    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .vtsn-vs-btc-table thead tr {
    background-color: var(--color-headings);
-   color: #ffffff;
+   color: var(--color-text-inverse);
    text-align: left;
 }
 
@@ -45,3 +45,19 @@
 .vtsn-vs-btc-table tbody tr:last-of-type {
    border-bottom: 2px solid var(--color-headings);
 }
+
+@media (max-width: 35em) {
+   .vtsn-vs-btc-table {
+      margin: 10px 0;
+      font-size: 0.75em;
+      min-width: 200px;
+      width: 100%;
+   }
+
+   .vtsn-vs-btc-table th,
+   .vtsn-vs-btc-table td {
+      padding: 8px 8px;
+      text-align: center;
+   }
+}
+// mobile

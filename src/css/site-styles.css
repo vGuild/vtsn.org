@@ -64,9 +64,9 @@
   /* default light theme */
   /* colors */
   --color-bg-html: #dcb79a;
-  --color-bg-body: #ffffff;
+  --color-bg-body: #f4f4f0;
   --color-headings: #966a6a;
-  --color-text: #14151c;
+  --color-text: #2a2b30;
   --color-text-inverse: #e7e7e7;
   --color-text-shadow: hsla(0, 0%, 100%, 0.75);
   --color-text-muted: #2f2f2f;
@@ -147,9 +147,9 @@
   :root {
     /* colors */
     --color-bg-html: #2b1617;
-    --color-bg-body: #0b070c;
+    --color-bg-body: #100b11;
     --color-headings: #d19292;
-    --color-text: #e7e7e7;
+    --color-text: #dddddd;
     --color-text-inverse: #14151c;
     --color-text-shadow: hsla(0, 0%, 0%, 0.75);
     --color-text-muted: #b4b4b4;
@@ -211,9 +211,9 @@
   color-scheme: light;
   /* colors */
   --color-bg-html: #dcb79a;
-  --color-bg-body: #ffffff;
+  --color-bg-body: #f4f4f0;
   --color-headings: #966a6a;
-  --color-text: #14151c;
+  --color-text: #2a2b30;
   --color-text-inverse: #e7e7e7;
   --color-text-shadow: hsla(0, 0%, 100%, 0.75);
   --color-text-muted: #2f2f2f;
@@ -279,9 +279,9 @@
   --theme-color-rgb: 0, 58, 128;
   /* colors */
   --color-bg-html: #2b1617;
-  --color-bg-body: #0b070c;
+  --color-bg-body: #100b11;
   --color-headings: #d19292;
-  --color-text: #e7e7e7;
+  --color-text: #dddddd;
   --color-text-inverse: #14151c;
   --color-text-shadow: hsla(0, 0%, 0%, 0.75);
   --color-text-muted: #b4b4b4;
@@ -5760,6 +5760,7 @@ picture {
 
 section {
   padding: 1rem;
+  padding-bottom: 0;
   width: 100%;
 }
 @media (max-width: 35em) {
@@ -7369,17 +7370,17 @@ h2.homepage-section-title {
 
 /* END masked image */
 .vtsn-vs-btc-table {
+  font-family: sans-serif;
   border-collapse: collapse;
   margin: 25px 0;
   font-size: 0.9em;
-  font-family: sans-serif;
   min-width: 400px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .vtsn-vs-btc-table thead tr {
   background-color: var(--color-headings);
-  color: #ffffff;
+  color: var(--color-text-inverse);
   text-align: left;
 }
 
@@ -7405,6 +7406,19 @@ h2.homepage-section-title {
   border-bottom: 2px solid var(--color-headings);
 }
 
+@media (max-width: 35em) {
+  .vtsn-vs-btc-table {
+    margin: 10px 0;
+    font-size: 0.75em;
+    min-width: 200px;
+    width: 100%;
+  }
+  .vtsn-vs-btc-table th,
+  .vtsn-vs-btc-table td {
+    padding: 8px 8px;
+    text-align: center;
+  }
+}
 #uiThemeValues {
   position: relative;
   padding: 1rem;
