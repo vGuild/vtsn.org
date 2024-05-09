@@ -3,6 +3,9 @@
    display: grid;
    place-items: center;
    
+   padding: 0;
+   margin: 0;
+
    .hero-content-temp {
     max-width: 500px;
     text-align: center;
@@ -16,9 +19,9 @@
       color: var(--color-text);
     }
     h4 {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 200;
-      padding-top: 3rem;
+      padding-top: 3.3rem;
     }
    }
    .hero-content {

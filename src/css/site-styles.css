@@ -7053,6 +7053,8 @@ h2.homepage-section-title {
   text-transform: uppercase;
   display: grid;
   place-items: center;
+  padding: 0;
+  margin: 0;
 }
 #masthead .hero-content-temp {
   max-width: 500px;
@@ -7068,9 +7070,9 @@ h2.homepage-section-title {
   color: var(--color-text);
 }
 #masthead .hero-content-temp h4 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 200;
-  padding-top: 3rem;
+  padding-top: 3.3rem;
 }
 #masthead .hero-content {
   display: grid;
