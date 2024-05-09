@@ -1,14 +1,43 @@
 @import 'homepage/homepage-sections';
-@import 'homepage/section-featured-tech';
-@import 'homepage/section-secret-laboratory';
-@import 'homepage/section-defi';
-@import 'homepage/section-creativity-central';
-@import 'homepage/section-neural-network';
-@import 'homepage/section-vertisan-particle';
-@import 'homepage/section-nebula';
-@import 'homepage/section-james-vertisan';
-@import 'homepage/section-only-the-best';
-@import 'homepage/section-resources';
+@import 'homepage/section-masthead';
 @import 'homepage/section-footer';
+@import 'homepage/homepage-cards';
 
 @import 'homepage/masked-images';
+
+.vtsn-vs-btc-table {
+   border-collapse: collapse;
+   margin: 25px 0;
+   font-size: 0.9em;
+   font-family: sans-serif;
+   min-width: 400px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.vtsn-vs-btc-table thead tr {
+   background-color: var(--color-headings);
+   color: #ffffff;
+   text-align: left;
+}
+
+.vtsn-vs-btc-table th,
+.vtsn-vs-btc-table td {
+    padding: 10px 12px;
+    text-align: center;
+}
+
+.vtsn-vs-btc-table tbody tr {
+   border-bottom: 1px solid var(--color-text);
+}
+
+.vtsn-vs-btc-table tbody tr {
+   //background-color: var(--color-bg-gray-muted);
+}
+
+.vtsn-vs-btc-table tbody tr:nth-of-type(even) {
+   background-color: var(--color-bg-gray-muted);
+}
+
+.vtsn-vs-btc-table tbody tr:last-of-type {
+   border-bottom: 2px solid var(--color-headings);
+}
