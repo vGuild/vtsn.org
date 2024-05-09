@@ -1,0 +1,168 @@
+#primaryHeader {
+   position: sticky;
+   top: 0;
+   width: 100%;
+   position: absolute;
+   transition: background-color 500ms;
+ }
+ 
+ /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+ #primaryHeader.is-sticking {
+   /* change colors, etc */
+   background-color: hsl(0 0% 0% / 0.75);
+ }
+ 
+ .primary-header {
+   border: 1px solid firebrick; 
+   //align-items: flex-end;
+   justify-content: space-between;
+   z-index: 100;
+   display: flex;
+   gap: 1rem;
+   padding-bottom: 0.5rem;
+ }
+ 
+ .primary-header > .logo-area {
+  padding-top: 0.6rem;
+  margin: 0;
+  margin-left: 1em;
+ }
+ 
+ img.header-logo {
+   width: 160px;
+ }
+ 
+ .primary-nav {
+   display: flex;
+   align-items: center;
+   height: 48px; /* needed to vertically center content */
+   gap: 2.5rem;
+   list-style: none; /* Remove bullets */
+   padding: 0.8em 2em;
+   margin: 0;
+   font-size: 0.8rem;
+   background: hsl(
+     0 0% 0% / 0.75
+   ); /* fall back to black if blur not supported */
+ }
+ 
+ @supports (backdrop-filter: blur(1rem)) {
+   .primary-nav {
+     background: hsl(0 0% 100% / 0.2);
+     background: var(--color-nav-bar);
+     backdrop-filter: blur(1rem);
+   }
+ }
+ 
+ .primary-nav a {
+   color: var(--color-nav-link);
+   font-family: var(--txt-font-stack-headings);
+   text-decoration: none;
+   text-transform: uppercase;
+   text-shadow: 1px 1px 2px var(--color-text-shadow);
+ }
+ 
+ .primary-nav li.active a {
+   color: var(--color-nav-link-active) !important;
+ }
+ 
+ .primary-nav li {
+   margin: 0 0 0 0.75em;
+ }
+ 
+ .primary-nav a > span[aria-hidden='true'] {
+   /* covers the span tag */
+   font-weight: 800;
+   margin-inline-end: 0.5em;
+ }
+ 
+ .primary-nav .link-text {
+   visibility: visible;
+ }
+ .primary-nav .link-text-mobile {
+   visibility: hidden;
+ }
+ 
+ .mobile-nav-toggle {
+   display: none;
+ }
+ 
+ @media (max-width: 35em) {
+   /* mobile */
+   .primary-nav {
+     z-index: 1000;
+     height: 100vh;
+     gap: 2rem; /* vertical gap on mobile */
+     position: fixed;
+     inset: 0 0 0 50%;
+     flex-direction: column;
+     align-items: start;
+     padding: min(20vh, 6rem) 2em; /* min function chooses the smaller */
+ 
+     transform: translateX(100%); /* slides the menu off the page */
+     transition: transform 250ms ease-in;
+   }
+ 
+   .primary-nav[data-visible='true'] {
+     transform: translateX(0%); /* slides the menu onto the page */
+     transition: transform 350ms ease-in;
+   }
+ 
+   .primary-nav a {
+     font-size: 1.1rem;
+   }
+ 
+   .primary-nav .link-text {
+     visibility: hidden;
+   }
+   .primary-nav .link-text-mobile {
+     visibility: visible;
+   }
+ 
+   .mobile-nav-toggle {
+     position: absolute;
+     display: block;
+     background: url('images/hexagon-hamburger-menu.svg');
+     border: none;
+     width: 1.7rem;
+     aspect-ratio: 1;
+     top: 0.6rem;
+     right: 1.5rem;
+     z-index: 9999;
+     cursor: pointer;
+   }
+ 
+   .mobile-nav-toggle[aria-expanded='true'] {
+     background: url('images/hexagon-hamburger-menu-close.svg');
+   }
+ }
+ 
+ @media (min-width: 35em) and (max-width: 55em) {
+   /* tablet portrait (or so) */
+   .primary-nav {
+     background-color: #005a99;
+     background: hsl(205 100% 30% / 0.3); /* venice blue */
+     background-color: var(--color-nav-bar);
+   }
+   .primary-nav a > span[aria-hidden='true'] {
+     /* hide numbers to allow more room for menu items */
+     display: none;
+   }
+ }
+ 
+ @media (min-width: 35em) {
+   /* desktop and tablet */
+   .primary-nav {
+     padding-block: 0.5rem; /* top and bottom */
+   }
+ }
+ 
+ .resize-animation-stopper {
+   /* for the menu when resizing the viewport */
+   transition: none !important;
+   animation: none !important;
+ }
+ 
+ .scroll-watcher {
+  height: 0;
+ }

@@ -63,14 +63,15 @@
 :root {
   /* default light theme */
   /* colors */
-  --color-bg-html: #f3f8fa;
-  --color-bg-body: #e7e7e7;
+  --color-bg-html: #dcb79a;
+  --color-bg-body: #ffffff;
   --color-headings: #966a6a;
   --color-text: #14151c;
+  --color-text-shadow: hsla(0, 0%, 100%, 0.75);
   --color-text-muted: #2f2f2f;
-  --color-nav-bar: hsla(0, 0%, 100%, 0.2);
-  --color-nav-link: white;
-  --color-nav-link-active: #afff00;
+  --color-nav-bar: #eeeeeb;
+  --color-nav-link: black;
+  --color-nav-link-active: #d19292;
   --color-sun-moon: rgb(226, 183, 5);
   --color-box-shadow: hsla(217, 19%, 35%, 0.25);
   --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
@@ -153,14 +154,15 @@
 @media (prefers-color-scheme: dark) {
   :root {
     /* colors */
-    --color-bg-html: #14151c;
-    --color-bg-body: #161616;
+    --color-bg-html: #2b1617;
+    --color-bg-body: #0b070c;
     --color-headings: #d19292;
     --color-text: #e7e7e7;
+    --color-text-shadow: hsla(0, 0%, 0%, 0.75);
     --color-text-muted: #b4b4b4;
     --color-nav-bar: hsla(0, 0%, 100%, 0.2);
     --color-nav-link: white;
-    --color-nav-link-active: #afff00;
+    --color-nav-link-active: #d19292;
     --color-sun-moon: white;
     --color-box-shadow: hsla(217, 19%, 35%, 0.25);
     --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
@@ -224,14 +226,15 @@
 [data-theme-mode=light] {
   color-scheme: light;
   /* colors */
-  --color-bg-html: #f3f8fa;
-  --color-bg-body: #e7e7e7;
+  --color-bg-html: #dcb79a;
+  --color-bg-body: #ffffff;
   --color-headings: #966a6a;
   --color-text: #14151c;
+  --color-text-shadow: hsla(0, 0%, 100%, 0.75);
   --color-text-muted: #2f2f2f;
-  --color-nav-bar: hsla(0, 0%, 100%, 0.2);
-  --color-nav-link: white;
-  --color-nav-link-active: #afff00;
+  --color-nav-bar: #eeeeeb;
+  --color-nav-link: black;
+  --color-nav-link-active: #d19292;
   --color-sun-moon: rgb(226, 183, 5);
   --color-box-shadow: hsla(217, 19%, 35%, 0.25);
   --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
@@ -299,14 +302,15 @@
   --theme-color: 0, 58, 128;
   --theme-color-rgb: 0, 58, 128;
   /* colors */
-  --color-bg-html: #14151c;
-  --color-bg-body: #161616;
+  --color-bg-html: #2b1617;
+  --color-bg-body: #0b070c;
   --color-headings: #d19292;
   --color-text: #e7e7e7;
+  --color-text-shadow: hsla(0, 0%, 0%, 0.75);
   --color-text-muted: #b4b4b4;
   --color-nav-bar: hsla(0, 0%, 100%, 0.2);
   --color-nav-link: white;
-  --color-nav-link-active: #afff00;
+  --color-nav-link-active: #d19292;
   --color-sun-moon: white;
   --color-box-shadow: hsla(217, 19%, 35%, 0.25);
   --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
@@ -5386,6 +5390,11 @@ background-image: linear-gradient(to bottom,	lighten(#cc0000, 10%), darken(#cc00
   grid-row: span 3;
 }
 
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
 .d-block {
   display: block;
 }
@@ -5634,6 +5643,11 @@ body {
   background-color: var(--color-bg-body);
   color: var(--color-text);
   text-rendering: optimizeSpeed;
+}
+
+main {
+  width: 100%;
+  border: 1px solid green;
 }
 
 /* A elements that don't have a class get default styles */
@@ -6707,6 +6721,8 @@ section {
   border-radius: 50%;
   position: relative;
   isolation: isolate;
+  background-color: var(--color-nav-bar);
+  aspect-ratio: 1;
 }
 
 #theme-toggle svg {
@@ -6718,7 +6734,7 @@ section {
   position: absolute;
   inset: 0;
   background: hsla(0, 0%, 25%, 0.8);
-  /* background: red; */
+  background: rgb(15, 183, 15);
   border-radius: 50%;
   transform: scale(0);
   opacity: 0;
@@ -6757,8 +6773,7 @@ section {
 #theme-toggle:focus {
   outline: 0;
   opacity: 1;
-  background: hsla(0, 0%, 25%, 0.5);
-  /* background: blue; */
+  background: var(--color-nav-bar);
 }
 
 #theme-toggle:hover::after,
@@ -6838,6 +6853,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
+  position: absolute;
   transition: background-color 500ms;
 }
 
@@ -6848,8 +6864,7 @@ header {
 }
 
 .primary-header {
-  /* border: 2px solid firebrick; */
-  align-items: flex-end;
+  border: 1px solid firebrick;
   justify-content: space-between;
   z-index: 100;
   display: flex;
@@ -6857,8 +6872,10 @@ header {
   padding-bottom: 0.5rem;
 }
 
-.header-logo {
-  margin: 0 0 0 1em;
+.primary-header > .logo-area {
+  padding-top: 0.6rem;
+  margin: 0;
+  margin-left: 1em;
 }
 
 img.header-logo {
@@ -6886,15 +6903,15 @@ img.header-logo {
   }
 }
 .primary-nav a {
-  color: white;
+  color: var(--color-nav-link);
   font-family: var(--txt-font-stack-headings);
   text-decoration: none;
   text-transform: uppercase;
-  text-shadow: 1px 1px 2px hsla(0, 0%, 0%, 0.75);
+  text-shadow: 1px 1px 2px var(--color-text-shadow);
 }
 
 .primary-nav li.active a {
-  color: #d19292 !important;
+  color: var(--color-nav-link-active) !important;
 }
 
 .primary-nav li {
@@ -6953,9 +6970,10 @@ img.header-logo {
     border: none;
     width: 1.7rem;
     aspect-ratio: 1;
-    top: 1.1rem;
+    top: 0.6rem;
     right: 1.5rem;
     z-index: 9999;
+    cursor: pointer;
   }
   .mobile-nav-toggle[aria-expanded=true] {
     background: url("images/hexagon-hamburger-menu-close.svg");
@@ -6966,6 +6984,7 @@ img.header-logo {
   .primary-nav {
     background-color: #005a99;
     background: hsla(205, 100%, 30%, 0.3); /* venice blue */
+    background-color: var(--color-nav-bar);
   }
   .primary-nav a > span[aria-hidden=true] {
     /* hide numbers to allow more room for menu items */
@@ -6982,6 +7001,25 @@ img.header-logo {
   /* for the menu when resizing the viewport */
   transition: none !important;
   animation: none !important;
+}
+
+.scroll-watcher {
+  height: 0;
+}
+
+footer {
+  background-color: #323242;
+  background: var(--bg-section-footer);
+  background-size: cover;
+  background-position: bottom left;
+  z-index: 10;
+  position: relative;
+  padding: 2rem;
+  font-size: 0.8rem;
+  border: 1px solid pink;
+}
+footer p {
+  font-size: 0.9rem;
 }
 
 #theme-toggle-container {
@@ -7069,16 +7107,6 @@ h2.homepage-section-title {
   #masthead .hero-content {
     grid-template-areas: "one two";
   }
-}
-
-.homepage-footer {
-  background-color: #323242;
-  background: var(--bg-section-footer);
-  background-size: cover;
-  background-position: bottom left;
-  min-height: 500px;
-  z-index: 10;
-  position: relative;
 }
 
 .standard-cards-grid {

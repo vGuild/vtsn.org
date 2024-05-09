@@ -27,6 +27,7 @@ window.addEventListener('resize', () => {
 const primaryHeader = document.querySelector('.primary-header');
 const scrollWatcher = document.createElement('div');
 
+scrollWatcher.setAttribute('class', 'scroll-watcher');
 scrollWatcher.setAttribute('data-scroll-watcher', '');
 primaryHeader.before(scrollWatcher);
 

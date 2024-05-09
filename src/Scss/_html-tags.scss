@@ -52,6 +52,11 @@ body {
   text-rendering: optimizeSpeed;
 }
 
+main {
+  width: 100%;
+  border: 1px solid green;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip-ink: auto;

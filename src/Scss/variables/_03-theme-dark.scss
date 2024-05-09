@@ -224,15 +224,16 @@ $color-lnk-on-complementary-3-hover-dark: darken($color-primary-accent, 15%);
 $color-lnk-on-complementary-4-hover-dark: darken($color-primary-accent, 15%);
 
 //=== LAYOUT ==========================================================
-$color-bg-html-dark: #14151c;
-$color-bg-body-dark: #161616;
+$color-bg-html-dark: #2b1617;
+$color-bg-body-dark: #0b070c;
 $color-headings-dark: #d19292;
 $color-text-dark: #e7e7e7;
+$color-text-shadow-dark: hsl(0 0% 0% / 0.75);
 $color-text-muted-dark: darken(#e7e7e7, 20%);
 /* nav bar */
 $color-nav-bar-dark: hsl(0 0% 100% / 0.2);
 $color-nav-link-dark: white;
-$color-nav-link-active-dark: #afff00;
+$color-nav-link-active-dark: #d19292;
 /* theme switching */
 $color-box-shadow-dark: hsl(217 19% 35% / 0.25);
 $box-shadow-dark: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35% / 0.25);

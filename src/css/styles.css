@@ -1,7 +1,5 @@
 
-main {
-  width: 100%;
-}
+
 main > h1 {
   text-align: center;
   font-size: 3.5em;
@@ -24,19 +22,4 @@ main > h1 {
          text-align: center;
         text-transform: uppercase;
      }
-}
-
-.responsive {
-  width: 100%;
-  height: auto;
-}
-
-
-footer {
-  padding: 1rem 0.5rem;
-  text-align: center;
-}
-
-section {
-  padding: 0.5rem;
 }

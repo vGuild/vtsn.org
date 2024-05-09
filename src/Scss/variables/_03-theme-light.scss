@@ -19,15 +19,16 @@ $color-lnk-on-bold: lighten($color-primary, 40%);
 $color-lnk-on-intense: lighten($color-primary, 40%);
 
 //=== LAYOUT ========================================================
-$color-bg-html: #f3f8fa;
-$color-bg-body: #e7e7e7;
+$color-bg-html: #dcb79a;
+$color-bg-body: #ffffff;
 $color-headings: #966a6a;
 $color-text: #14151c;
+$color-text-shadow: hsl(0 0% 100% / 0.75);
 $color-text-muted: #2f2f2f;
 /* nav bar */
-$color-nav-bar: hsl(0 0% 100% / 0.2);
-$color-nav-link: white;
-$color-nav-link-active: #afff00;
+$color-nav-bar: #eeeeeb;
+$color-nav-link: black;
+$color-nav-link-active: #d19292;
 /* theme switching */
 $color-box-shadow: hsl(217 19% 35% / 0.25);
 $box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(217 19% 35% / 0.25);
