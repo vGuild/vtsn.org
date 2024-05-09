@@ -5332,6 +5332,18 @@ background-image: linear-gradient(to bottom,	lighten(#cc0000, 10%), darken(#cc00
   background: linear-gradient(to left, #348fe2, #61a8e8) !important;
 }
 
+.italic {
+  font-style: italic;
+}
+
+.semibold {
+  font-weight: 300;
+}
+
+.bold {
+  font-weight: 400;
+}
+
 .flex {
   display: flex;
   gap: var(--flex-gap, 1rem); /* variable undefined */
@@ -5680,8 +5692,9 @@ h6 small {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-family: var(--txt-font-stack-content);
+  margin-bottom: 0.8rem;
 }
 
 img,
