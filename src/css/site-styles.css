@@ -7024,7 +7024,8 @@ h2.homepage-section-title {
 }
 #masthead .hero-content {
   display: grid;
-  grid-template-columns: auto auto;
+  place-items: center;
+  grid-template-areas: "one" "two";
   -moz-column-gap: 10px;
        column-gap: 10px;
   max-width: 90vw;
@@ -7033,12 +7034,41 @@ h2.homepage-section-title {
 #masthead .hero-content .icon {
   width: 100px;
 }
+#masthead .hero-content .text {
+  min-width: 330px;
+}
 #masthead .hero-content h2 {
   font-size: clamp( 1.2rem, 50vw, 2rem );
 }
 #masthead .hero-content h3 {
   color: var(--color-text);
   font-size: clamp( 1.1rem, 2rem, 2rem );
+}
+#masthead .hero-content:nth-child(1) {
+  grid-area: one;
+}
+#masthead .hero-content:nth-child(2) {
+  grid-area: two;
+}
+@media screen and (min-width: 33em) {
+  #masthead .hero-content {
+    grid-template-areas: "one" "two";
+  }
+}
+@media screen and (min-width: 38em) {
+  #masthead .hero-content {
+    grid-template-areas: "one" "two";
+  }
+}
+@media screen and (min-width: 54em) {
+  #masthead .hero-content {
+    grid-template-areas: "one two";
+  }
+}
+@media screen and (min-width: 75em) {
+  #masthead .hero-content {
+    grid-template-areas: "one two";
+  }
 }
 
 .homepage-footer {
@@ -7336,6 +7366,10 @@ h2.homepage-section-title {
 .vtsn-vs-btc-table td {
   padding: 10px 12px;
   text-align: center;
+}
+
+.vtsn-vs-btc-table td.item {
+  text-align: left !important;
 }
 
 .vtsn-vs-btc-table tbody tr {

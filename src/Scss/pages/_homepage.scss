@@ -26,6 +26,10 @@
     text-align: center;
 }
 
+.vtsn-vs-btc-table td.item {
+   text-align: left !important;
+}
+
 .vtsn-vs-btc-table tbody tr {
    border-bottom: 1px solid var(--color-text);
 }
