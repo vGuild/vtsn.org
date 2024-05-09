@@ -7067,6 +7067,11 @@ h2.homepage-section-title {
   font-size: 3rem;
   color: var(--color-text);
 }
+#masthead .hero-content-temp h4 {
+  font-size: 1.3rem;
+  font-weight: 200;
+  padding-top: 3rem;
+}
 #masthead .hero-content {
   display: grid;
   place-items: center;
