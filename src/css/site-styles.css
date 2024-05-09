@@ -116,6 +116,7 @@
   --txt-h2-shadow: 1px 1px 4px #f5f7f6;
   --txt-section-featured-tech-heading: #323242;
   /* images */
+  --img-navbar-logo: url("images/layout/vtsn-logo-navbar-light.svg");
   --img-card-bg-fancy-1: url("images/cards/bg-fancy-card-1-light.jpg");
   --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-light.svg");
   --img-bg-card: hsl(218, 14%, 70%);
@@ -198,6 +199,7 @@
     --txt-h2-shadow: 1px 2px 2px #14151c;
     --txt-section-featured-tech-heading: #afff00;
     /* images */
+    --img-navbar-logo: url("images/layout/vtsn-logo-navbar-dark.svg");
     --img-card-bg-fancy-1: url("images/cards/bg-fancy-card-1-dark.jpg");
     --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-dark.svg");
     --img-bg-card: hsl(240, 1%, 26%);
@@ -261,6 +263,7 @@
   --txt-h2-shadow: 1px 1px 4px #f5f7f6;
   --txt-section-featured-tech-heading: #323242;
   /* images */
+  --img-navbar-logo: url("images/layout/vtsn-logo-navbar-light.svg");
   --img-card-bg-fancy-1: url("images/cards/bg-fancy-card-1-light.jpg");
   --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-light.svg");
   --img-bg-card: hsl(218, 14%, 70%);
@@ -328,6 +331,7 @@
   --txt-h2-shadow: 1px 2px 2px #14151c;
   --txt-section-featured-tech-heading: #afff00;
   /* images */
+  --img-navbar-logo: url("images/layout/vtsn-logo-navbar-dark.svg");
   --img-card-bg-fancy-1: url("images/cards/bg-fancy-card-1-dark.jpg");
   --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-dark.svg");
   --img-bg-card: hsl(240, 1%, 26%);
@@ -6838,6 +6842,11 @@ header {
   padding-top: 0.6rem;
   margin: 0;
   margin-left: 1em;
+  width: 200px;
+  height: 40px;
+  background: var(--img-navbar-logo);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 img.header-logo {
