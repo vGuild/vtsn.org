@@ -5337,11 +5337,11 @@ background-image: linear-gradient(to bottom,	lighten(#cc0000, 10%), darken(#cc00
 }
 
 .semibold {
-  font-weight: 300;
+  font-weight: 400;
 }
 
 .bold {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .flex {
@@ -5578,7 +5578,7 @@ html {
   background-color: var(--color-bg-html);
   font-family: var(--txt-font-stack-content);
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.6;
 }
 
@@ -5764,7 +5764,7 @@ section {
 }
 @media (max-width: 35em) {
   section {
-    padding: 0.25rem;
+    padding: 0.4rem;
   }
 }
 
@@ -7004,7 +7004,14 @@ footer {
 footer p {
   font-size: 0.75rem;
   font-weight: 400;
-  margin-bottom: 1rem;
+  margin-bottom: 0.2rem;
+}
+footer .build-numbers {
+  margin-top: 0.7rem;
+}
+footer .build-numbers > p {
+  margin-bottom: 0.3rem;
+  line-height: 1;
 }
 
 #theme-toggle-container {

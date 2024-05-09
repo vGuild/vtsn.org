@@ -11,6 +11,15 @@ footer {
    p {
       font-size: 0.75rem;
       font-weight: 400;
-      margin-bottom: 1rem;
+      margin-bottom: 0.2rem;
+   }
+
+   .build-numbers {
+      margin-top: 0.7rem;
+   }
+   
+   .build-numbers > p {
+      margin-bottom: 0.3rem;
+      line-height: 1;
    }
  }
