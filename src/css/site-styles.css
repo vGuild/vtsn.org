@@ -5694,7 +5694,7 @@ h6 small {
 p {
   font-size: 1.1rem;
   font-family: var(--txt-font-stack-content);
-  margin-bottom: 0.8rem;
+  margin-bottom: 1rem;
 }
 
 img,
@@ -7408,14 +7408,14 @@ h2.homepage-section-title {
 
 @media (max-width: 35em) {
   .vtsn-vs-btc-table {
-    margin: 10px 0;
+    margin: 6px 0;
     font-size: 0.75em;
     min-width: 200px;
     width: 100%;
   }
   .vtsn-vs-btc-table th,
   .vtsn-vs-btc-table td {
-    padding: 8px 8px;
+    padding: 5px 5px;
     text-align: center;
   }
 }
