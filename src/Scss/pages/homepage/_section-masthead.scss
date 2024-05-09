@@ -3,6 +3,19 @@
    display: grid;
    place-items: center;
    
+   .hero-content-temp {
+    max-width: 500px;
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    h2 {
+      font-size: 3rem;
+    }
+    h3 {
+      font-size: 3rem;
+      color: var(--color-text);
+    }
+   }
    .hero-content {
       display: grid;
       place-items: center;

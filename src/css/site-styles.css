@@ -7054,6 +7054,19 @@ h2.homepage-section-title {
   display: grid;
   place-items: center;
 }
+#masthead .hero-content-temp {
+  max-width: 500px;
+  text-align: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+#masthead .hero-content-temp h2 {
+  font-size: 3rem;
+}
+#masthead .hero-content-temp h3 {
+  font-size: 3rem;
+  color: var(--color-text);
+}
 #masthead .hero-content {
   display: grid;
   place-items: center;
