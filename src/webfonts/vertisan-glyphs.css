@@ -1,0 +1,449 @@
+/* Implementation of the Vertisan Glyphs Font */
+/* Same basic approach as how FontAwesome is implemented */
+@font-face {
+    font-family: 'Vertisan';
+    src: url("/webfonts/vertisan-glyphs.woff") format("woff"), url("/webfonts/vertisan-glyphs.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* vsn = Vertisan Glyphs Font */
+.vsn {
+    font-family: Vertisan;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: 1.2em;
+    display: inline-block;
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-rendering: auto;
+}
+/* vn = Nebula Glyphs Font */
+.vn {
+    font-family: Vertisan;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: 1.2em;
+    display: inline-block;
+    line-height: 1;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-rendering: auto;
+}
+
+/* Unicode sample - same as capital "A" */
+.vsn-test:before,
+.vn-test:before {
+    content: "\0041";
+}
+
+/* makes the font 33% larger relative to the icon container */
+.vsn-lg,
+.vn-lg {
+    font-size: 1.33333333em;
+    line-height: 0.75em;
+    vertical-align: -15%;
+}
+
+.vsn-2x,
+.vn-2x {
+    font-size: 2em;
+}
+
+.vsn-3x,
+.vn-3x {
+    font-size: 3em;
+}
+
+.vsn-4x,
+.vn-4x {
+    font-size: 4em;
+}
+
+.vsn-5x,
+.vn-5x {
+    font-size: 5em;
+}
+
+.vsn-fw,
+.vn-fw {
+    width: 1.28571429em;
+    text-align: center;
+}
+
+.vsn-ul {
+    padding-left: 0;
+    margin-left: 2.14285714em;
+    list-style-type: none;
+}
+
+    .vsn-ul > li,
+    .vn-ul > li {
+        position: relative;
+    }
+
+.vsn-li,
+.vn-li {
+    position: absolute;
+    left: -2.14285714em;
+    width: 2.14285714em;
+    top: 0.14285714em;
+    text-align: center;
+}
+
+    .vsn-li.vsn-lg,
+    .vn-li.vn-lg {
+        left: -1.85714286em;
+    }
+
+/* Vertisan Glyphs follow */
+/* -----------------------*/
+.vsn-vertisan-wordmark:before {
+    content: "\0012";
+}
+
+.vsn-vertisan-atomic:before {
+    content: "\001e";
+}
+
+.vsn-v:before {
+    content: "\0013";
+}
+
+.vsn-e:before {
+    content: "\0014";
+}
+
+.vsn-r:before {
+    content: "\0015";
+}
+
+.vsn-t:before {
+    content: "\0016";
+}
+
+.vsn-i:before {
+    content: "\0017";
+}
+
+.vsn-s:before {
+    content: "\0018";
+}
+
+.vsn-a:before {
+    content: "\0019";
+}
+
+.vsn-n:before {
+    content: "\001a";
+}
+
+.vsn-atomic:before {
+    content: "\001f";
+}
+
+.vsn-deu:before {
+    content: "\0029";
+}
+
+.vsn-dark-energy:before {
+    content: "\0029";
+}
+
+.vsn-dark-matter:before {
+    content: "\002b";
+}
+
+.vsn-vcc:before {
+    content: "\0025";
+}
+
+.vsn-vertisan-coin:before {
+    content: "\0025";
+}
+
+.vsn-lmd:before {
+    content: "$";
+}
+
+.vsn-fuckery:before {
+    content: "\007e";
+}
+
+.vsn-triadic:before {
+    content: "\002c";
+}
+
+.vsn-particle-payload:before {
+    content: "\002d";
+}
+
+.vsn-particle-framing:before {
+    content: "\002e";
+}
+
+.vsn-particle-decorator:before {
+    content: "\002f";
+}
+
+.vsn-inaccon-xa:before {
+    content: "\0008";
+}
+
+.vsn-inaccon-xb:before {
+    content: "\0009";
+}
+
+.vsn-inaccon-ya:before {
+    content: "\000a";
+}
+
+.vsn-inaccon-yb:before {
+    content: "\000b";
+}
+
+.vsn-inaccon-za:before {
+    content: "\000c";
+}
+
+.vsn-inaccon-zb:before {
+    content: "\000d";
+}
+
+.vsn-inaccon-td:before {
+    content: "\000e";
+}
+
+.vsn-triadic-synthesis:before {
+    content: "\0001";
+}
+
+.vsn-triadic-synthesis-equality:before {
+    content: "\0002";
+}
+
+.vsn-triadic-synthesis-inequality:before {
+    content: "\0003";
+}
+
+.vsn-surfaces:before {
+    content: "\0004";
+}
+
+.vsn-surface-symetry:before {
+    content: "\0005";
+}
+
+.vsn-surface-asymetry:before {
+    content: "\0006";
+}
+
+.vsn-ffvrp:before {
+    content: "\0007";
+}
+
+.vsn-fractal-shorthand:before {
+    content: "\000f";
+}
+
+.vsn-federated-fractal:before {
+    content: "\0011";
+}
+
+.vsn-curve-dimensions:before {
+    content: "\0021";
+}
+
+.vsn-curve-splinter:before {
+    content: "\0022";
+}
+
+.vsn-ddht:before {
+    content: "\0023";
+}
+
+
+/* -----------------------*/
+
+/* vn = Nebula glyphs follow */
+
+.vn-nebula-wordmark:before {
+    content: "\00d8";
+    font-size: 3rem;
+}
+
+.vn-vn-shield:before {
+    content: "\00db";
+}
+
+.vn-social-share:before {
+    content: "\00da";
+}
+
+.vn-vertisan-shield:before {
+    content: "\001b";
+}
+
+.vn-zeus-shield:before {
+    content: "\001d";
+}
+
+.vn-zeus-tie:before {
+    content: "\001c";
+    font-size: 8em;
+}
+
+.vn-at-symbol:before {
+    content: "\0099";
+}
+
+.vn-at-symbol-small:before {
+    content: "\009a";
+}
+
+.vn-at-framed:before {
+    content: "\009b";
+}
+
+.vn-dark-matter-shield:before {
+    content: "\0026";
+}
+
+.vn-dark-matter-symbol:before {
+    content: "\0027";
+}
+
+.vn-dark-energy-shield:before {
+    content: "\0028";
+}
+
+.vn-dark-energy-symbol:before {
+    content: "\0029";
+}
+
+.vn-gmass:before {
+    content: "\002b";
+}
+
+.vn-gmass-alt-1:before {
+    content: "N";
+}
+
+.vn-gmass-alt-2:before {
+    content: "O";
+}
+
+.vn-gmass-alt-3:before {
+    content: "P";
+}
+
+.vn-gmass-alt-4:before {
+    content: "Q";
+}
+
+.vn-gmass-alt-5:before {
+    content: "R";
+}
+
+.vn-gmass-alt-6:before {
+    content: "S";
+}
+
+.vn-hexagon:before {
+    content: "<";
+}
+
+.vn-hexagon-alt:before {
+    content: ";";
+}
+
+.vn-hexagons:before {
+    content: "\00e1";
+}
+
+.vn-persona:before {
+    content: "\008e";
+}
+
+.vn-persona-shield:before {
+    content: "\008f";
+}
+
+.vn-persona-shield-bare:before {
+    content: "\008e";
+}
+
+.vn-rating-star:before {
+    content: "\002a";
+}
+
+.vn-lock-hexagon:before {
+    content: "\009d";
+}
+
+/* Stars */
+
+.vn-star-1:before {
+    content: "\00c6";
+}
+
+.vn-star-2:before {
+    content: "\00c7";
+}
+
+.vn-star-3:before {
+    content: "\00c8";
+}
+
+.vn-star-4:before {
+    content: "\00c9";
+}
+
+.vn-star-5:before {
+    content: "\00ca";
+}
+
+.vn-star-6:before {
+    content: "\00cb";
+}
+
+.vn-star-7:before {
+    content: "\00cc";
+}
+
+.vn-star-8:before {
+    content: "\00cd";
+}
+
+.vn-star-9:before {
+    content: "\00ce";
+}
+
+.vn-star-10:before {
+    content: "\00cf";
+}
+
+.vn-star-11:before {
+    content: "\00d0";
+}
+
+.vn-star-12:before {
+    content: "\00d1";
+}
+
+.vn-star-13:before {
+    content: "\00d2";
+}
+
+.vn-star-14:before {
+    content: "\00d3";
+}
+
+.vn-star-15:before {
+    content: "\00d4";
+}
