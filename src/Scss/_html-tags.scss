@@ -65,9 +65,11 @@ a:not([class]) {
 
 a {
   text-decoration: none;
+  color: var(--color-lnk-on-intense);
 }
 a:hover {
   text-decoration: underline;
+  color: var(--color-lnk-on-intense);
 }
 
 /* Inherit fonts for inputs and buttons */

@@ -18,6 +18,12 @@
   --color-box-shadow: #{$color-box-shadow};
   --box-shadow: #{$box-shadow};
 
+  --color-lnk-on-muted: #{$color-lnk-on-muted};
+  --color-lnk-on-subtle: #{$color-lnk-on-subtle};
+  --color-lnk-on-normal: #{$color-lnk-on-normal};
+  --color-lnk-on-bold: #{$color-lnk-on-bold};
+  --color-lnk-on-intense: #{$color-lnk-on-intense};
+
   /* neutral backgrounds */
   --color-bg-gray-muted: #{$color-bg-gray-muted};
   --color-bg-gray-subtle: #{$color-bg-gray-subtle};
@@ -112,6 +118,12 @@
     --color-box-shadow: #{$color-box-shadow-dark};
     --box-shadow: #{$box-shadow-dark};
 
+    --color-lnk-on-muted: #{$color-lnk-on-muted-dark};
+    --color-lnk-on-subtle: #{$color-lnk-on-subtle-dark};
+    --color-lnk-on-normal: #{$color-lnk-on-normal-dark};
+    --color-lnk-on-bold: #{$color-lnk-on-bold-dark};
+    --color-lnk-on-intense: #{$color-lnk-on-intense-dark};
+  
   /* neutral backgrounds */
   --color-bg-gray-muted: #{$color-bg-gray-muted-dark};
   --color-bg-gray-subtle: #{$color-bg-gray-subtle-dark};
@@ -180,6 +192,12 @@
   --color-sun-moon: #{$color-sun-moon};
   --color-box-shadow: #{$color-box-shadow};
   --box-shadow: #{$box-shadow};
+
+  --color-lnk-on-muted: #{$color-lnk-on-muted};
+  --color-lnk-on-subtle: #{$color-lnk-on-subtle};
+  --color-lnk-on-normal: #{$color-lnk-on-normal};
+  --color-lnk-on-bold: #{$color-lnk-on-bold};
+  --color-lnk-on-intense: #{$color-lnk-on-intense};
 
   /* neutral backgrounds */
   --color-bg-gray-muted: #{$color-bg-gray-muted};
@@ -252,6 +270,12 @@
   --color-sun-moon: #{$color-sun-moon-dark};
   --color-box-shadow: #{$color-box-shadow-dark};
   --box-shadow: #{$box-shadow-dark};
+
+  --color-lnk-on-muted: #{$color-lnk-on-muted-dark};
+  --color-lnk-on-subtle: #{$color-lnk-on-subtle-dark};
+  --color-lnk-on-normal: #{$color-lnk-on-normal-dark};
+  --color-lnk-on-bold: #{$color-lnk-on-bold-dark};
+  --color-lnk-on-intense: #{$color-lnk-on-intense-dark};
 
   /* neutral backgrounds */
   --color-bg-gray-muted: #{$color-bg-gray-muted-dark};

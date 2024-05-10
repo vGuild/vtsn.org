@@ -77,6 +77,11 @@
   --color-sun-moon: rgb(226, 183, 5);
   --color-box-shadow: hsla(217, 19%, 35%, 0.25);
   --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
+  --color-lnk-on-muted: #5a117c;
+  --color-lnk-on-subtle: #5a117c;
+  --color-lnk-on-normal: #5a117c;
+  --color-lnk-on-bold: #c36eeb;
+  --color-lnk-on-intense: #c36eeb;
   /* neutral backgrounds */
   --color-bg-gray-muted: hsl(0, 0%, 93%);
   --color-bg-gray-subtle: hsl(0, 0%, 86%);
@@ -160,6 +165,11 @@
     --color-sun-moon: white;
     --color-box-shadow: hsla(217, 19%, 35%, 0.25);
     --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
+    --color-lnk-on-muted: #5a117c;
+    --color-lnk-on-subtle: #5a117c;
+    --color-lnk-on-normal: #5a117c;
+    --color-lnk-on-bold: #c36eeb;
+    --color-lnk-on-intense: #c36eeb;
     /* neutral backgrounds */
     --color-bg-gray-muted: hsl(216, 9%, 23%);
     --color-bg-gray-subtle: hsl(214, 8%, 37%);
@@ -224,6 +234,11 @@
   --color-sun-moon: rgb(226, 183, 5);
   --color-box-shadow: hsla(217, 19%, 35%, 0.25);
   --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
+  --color-lnk-on-muted: #5a117c;
+  --color-lnk-on-subtle: #5a117c;
+  --color-lnk-on-normal: #5a117c;
+  --color-lnk-on-bold: #c36eeb;
+  --color-lnk-on-intense: #c36eeb;
   /* neutral backgrounds */
   --color-bg-gray-muted: hsl(0, 0%, 93%);
   --color-bg-gray-subtle: hsl(0, 0%, 86%);
@@ -292,6 +307,11 @@
   --color-sun-moon: white;
   --color-box-shadow: hsla(217, 19%, 35%, 0.25);
   --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
+  --color-lnk-on-muted: #5a117c;
+  --color-lnk-on-subtle: #5a117c;
+  --color-lnk-on-normal: #5a117c;
+  --color-lnk-on-bold: #c36eeb;
+  --color-lnk-on-intense: #c36eeb;
   /* neutral backgrounds */
   --color-bg-gray-muted: hsl(216, 9%, 23%);
   --color-bg-gray-subtle: hsl(214, 8%, 37%);
@@ -5639,10 +5659,12 @@ a:not([class]) {
 
 a {
   text-decoration: none;
+  color: var(--color-lnk-on-intense);
 }
 
 a:hover {
   text-decoration: underline;
+  color: var(--color-lnk-on-intense);
 }
 
 /* Inherit fonts for inputs and buttons */
