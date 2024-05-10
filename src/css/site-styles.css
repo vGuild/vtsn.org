@@ -7060,7 +7060,7 @@ h2.homepage-section-title {
   max-width: 500px;
   text-align: center;
   padding-top: 5.5rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2.5rem;
 }
 #masthead .hero-content-temp h2 {
   font-size: 3rem;
@@ -7072,7 +7072,7 @@ h2.homepage-section-title {
 #masthead .hero-content-temp h4 {
   font-size: 1.1rem;
   font-weight: 200;
-  padding-top: 5rem;
+  padding-top: 5.5rem;
 }
 #masthead .hero-content {
   display: grid;
