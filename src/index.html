@@ -26,7 +26,7 @@
     />
 
     <link rel="stylesheet" href="css/fontawesome-6.1.1-pro/all.css" />
-    <link rel="stylesheet" href="css/shentox/all.css" />
+    <link rel="stylesheet" href="css/shentox/shentox-font-family.css" />
     <link rel="stylesheet" href="css/site-styles.css" />
     <script>
       window.cookieconsent_options = {
@@ -115,7 +115,7 @@
         <p>
           The VeNNeM Protocol is the consensus protocol used by VTSN, which is part of the Fractal technology
           stack created by James Vertisan. VeNNeM provides a true solution to the "double spend" and
-          "Byzantine Generals" problems, unlike bitcoin which is only a workaround.
+          "Byzantine Generals" problems, unlike bitcoin which only employs a workaround.
         </p>
         <p>
           It all starts with discrete packets of data known as Particles. Those are the fundamental building
@@ -132,13 +132,31 @@
         </p>
       </section>
       <section id="advantages">
-        <h2>Vertisan Advantages <i class="fa-solid fa-check"></i></h2>
-        <ul>
-          <li>Lightning Commit Speed</li>
-          <li>Fixed Low Fees of $0.05</li>
-          <li>Energy Efficient</li>
-          <li>Quantum-Proof Cryptography</li>
-        </ul>
+        <h2>Vertisan Advantages</h2>
+        <br />
+        <div class="advantages-grid">
+          <article class="advantage-card">
+              <h2>Lightning Fast</h2>
+              <h4>Fully settled transaction commits worldwide in ~0.3 seconds</h4>
+              <p>The VeNNeM Protocol employed by Vertisan allows transactions to be processed and fully settled at blazing speeds without sacrificing security or integrity.</p>
+          </article>
+          <article class="advantage-card">
+            <h2>Fixed Low Fees</h2>
+              <h4>Transaction fees are <strong>always</strong> $0.05 without exception</h4>
+              <p>Transaction fees for Bitcoin currently average approximately $2.40 per transaction and Ethereum transactions average $0.45.</p>
+          </article>
+          <article class="advantage-card">
+            <h2>Energy Efficient</h2>
+              <h4>The average energy cost per 10M transactions is only $0.01</h4>
+              <p>The cost of energy consumed by Vertisan neural compute units has been extensively tested and monitored. Tracking has been completed in multiple geographic regions during all times of day.</p>
+          </article>
+          <article class="advantage-card">
+            <h2>Quantum-Resistent</h2>
+              <h4>Vertisan's encryption is resistent to quantum computer attacks</h4>
+              <p>Bitcoin uses SHA256 encryption, which was <a href="https://en.wikipedia.org/wiki/SHA-2" target="_blank">commissioned by the NSA in 2001</a>. It's a well-known fact that quantum computers will be able to defeat bitcoin's encryption in the near future, destroying its integrity and value.</p>
+              <p>Vertisan uses Vecton 4096-bit encryption, utilizing <a href="https://www.nist.gov/news-events/news/2022/07/nist-announces-first-four-quantum-resistant-cryptographic-algorithms" target="_blank">mathematical lattices in encryption</a> and hashing functions for quantum resistance instead of prime numbers. </p>
+            </article>
+        </div>
         <div class="comparison-table">
           <h5>Vertisan VTSN vs Bitcoin BTC Comparison</h5>
           <table class="vtsn-vs-btc-table">

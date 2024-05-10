@@ -7124,198 +7124,43 @@ h2.homepage-section-title {
   }
 }
 
-.standard-cards-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-auto-columns: 1fr;
-  grid-template-areas: "one" "two" "three" "four" "five" "six" "seven";
-  padding-block: 2rem;
-  width: min(95%, 70rem);
+.advantages-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
   margin-inline: auto;
 }
-
-.standard-card {
-  position: relative;
-  padding: 2rem;
+.advantages-grid .advantage-card {
+  padding: 1.5rem;
+  padding-top: 1rem;
   border-radius: 0.5rem;
-  box-shadow: 2rem 2.5rem 2.5rem -1.5rem var(--color-box-shadow);
+  border: 1px solid var(--color-nav-bar);
+  max-width: 340px;
+}
+.advantages-grid .advantage-card > h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+.advantages-grid .advantage-card > h3 {
+  font-size: 1.4rem;
+}
+.advantages-grid .advantage-card > h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  font-family: var(--txt-font-stack-content);
+  color: var(--color-text);
+  margin-bottom: 0.6rem;
+}
+.advantages-grid .advantage-card > p {
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
 }
 
-.standard-card:nth-child(1) {
-  grid-area: one;
-}
-
-.standard-card:nth-child(2) {
-  grid-area: two;
-}
-
-.standard-card:nth-child(3) {
-  grid-area: three;
-}
-
-.standard-card:nth-child(4) {
-  grid-area: four;
-}
-
-.standard-card:nth-child(5) {
-  grid-area: five;
-}
-
-.standard-card:nth-child(6) {
-  grid-area: six;
-}
-
-.standard-card:nth-child(7) {
-  grid-area: seven;
-}
-
-@media screen and (min-width: 33em) {
-  .standard-cards-grid {
-    grid-template-areas: "one one" "two three" "four five" "six seven";
-  }
-}
-@media screen and (min-width: 38em) {
-  .standard-cards-grid {
-    grid-template-areas: "one one" "two three" "four four" "five five" "six seven";
-  }
-}
-@media screen and (min-width: 54em) {
-  .standard-cards-grid {
-    grid-template-areas: "one one two" "three four five" "six six seven";
-  }
-}
-@media screen and (min-width: 75em) {
-  .standard-cards-grid {
-    grid-template-areas: "one one two two" "three four four five" "six six seven seven";
-  }
-}
 .standard-card.quote {
   background-image: url("./images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: top 2% right 10%;
-}
-
-.standard-card img {
-  width: 1.75rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-}
-
-.standard-card .name {
-  font-size: 0.8125rem;
-  font-weight: 500;
-  line-height: 1;
-}
-
-.standard-card .position {
-  font-size: 0.75rem;
-  opacity: 0.7;
-}
-
-.standard-card > p:first-of-type {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-
-.standard-card > p:last-of-type {
-  opacity: 0.7;
-}
-
-.theme-cards-grid {
-  display: grid;
-  gap: 1.5rem;
-  grid-auto-columns: 1fr;
-  grid-template-areas: "t-one" "t-two" "t-three" "t-four" "t-five" "t-six" "t-seven";
-  padding-block: 2rem;
-  width: min(95%, 70rem);
-  margin-inline: auto;
-}
-
-.theme-card {
-  position: relative;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 2rem 2.5rem 2.5rem -1.5rem var(--color-box-shadow);
-}
-
-.theme-card:nth-child(1) {
-  grid-area: t-one;
-}
-
-.theme-card:nth-child(2) {
-  grid-area: t-two;
-}
-
-.theme-card:nth-child(3) {
-  grid-area: t-three;
-}
-
-.theme-card:nth-child(4) {
-  grid-area: t-four;
-}
-
-.theme-card:nth-child(5) {
-  grid-area: t-five;
-}
-
-.theme-card:nth-child(6) {
-  grid-area: t-six;
-}
-
-.theme-card:nth-child(7) {
-  grid-area: t-seven;
-}
-
-@media screen and (min-width: 33em) {
-  .theme-cards-grid {
-    grid-template-areas: "t-one t-one" "t-two t-three" "t-four t-five" "t-six t-seven";
-  }
-}
-@media screen and (min-width: 38em) {
-  .theme-cards-grid {
-    grid-template-areas: "t-one t-one" "t-two t-three" "t-four t-four" "t-five t-five" "t-six t-seven";
-  }
-}
-@media screen and (min-width: 54em) {
-  .theme-cards-grid {
-    grid-template-areas: "t-one t-one t-two" "t-three t-four t-five" "t-six t-six t-seven";
-  }
-}
-@media screen and (min-width: 75em) {
-  .theme-cards-grid {
-    grid-template-areas: "t-one t-one t-two t-two" "t-three t-four t-four t-five" "t-six t-six t-seven t-seven";
-  }
-}
-.theme-card.quote {
-  background-image: url("./images/bg-pattern-quotation.svg");
-  background-repeat: no-repeat;
-  background-position: top 2% right 5%;
-}
-
-.theme-card img {
-  width: 1.75rem;
-  aspect-ratio: 1;
-  border-radius: 50%;
-}
-
-.theme-card .name {
-  font-size: 0.8125rem;
-  font-weight: 500;
-  line-height: 1;
-}
-
-.theme-card .position {
-  font-size: 0.75rem;
-  opacity: 0.7;
-}
-
-.theme-card > p:first-of-type {
-  font-size: 1.25rem;
-  line-height: 1.2;
-}
-
-.theme-card > p:last-of-type {
-  opacity: 0.7;
 }
 
 /* START masked image */
