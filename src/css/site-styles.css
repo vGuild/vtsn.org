@@ -6880,18 +6880,17 @@ header {
 }
 
 .primary-header > .logo-area {
-  padding-top: 0.6rem;
   margin: 0;
-  margin-left: 1em;
-  width: 200px;
-  height: 40px;
-  background: var(--img-navbar-logo);
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-left: 0.75em;
+  height: 48px;
+  display: inline-block;
 }
-
-img.header-logo {
-  width: 160px;
+.primary-header > .logo-area * {
+  display: inline-block;
+}
+.primary-header > .logo-area picture, .primary-header > .logo-area img {
+  height: 32px;
+  margin-top: 0.3rem;
 }
 
 .primary-nav {
@@ -7190,7 +7189,7 @@ h2.homepage-section-title {
   margin: 0;
 }
 .tokenomics-card .sub-grid .group h6 {
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   color: var(--color-text);
   margin: 0;
@@ -7198,6 +7197,12 @@ h2.homepage-section-title {
 }
 .tokenomics-card .sub-grid .group h6:last-child {
   margin-bottom: 0;
+}
+.tokenomics-card .sub-grid .group h5.cap {
+  font-size: 1.1rem;
+}
+.tokenomics-card .sub-grid .group h6.cap {
+  font-size: 1.3rem;
 }
 
 .advantages-grid {

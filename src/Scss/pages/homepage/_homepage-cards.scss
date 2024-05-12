@@ -32,7 +32,7 @@
             margin: 0;
          }
          h6 {
-            font-size: 1rem;
+            font-size: 1.1rem;
             font-weight: 300;
             color: var(--color-text);
             margin: 0;
@@ -40,6 +40,12 @@
          }
          h6:last-child {
             margin-bottom: 0;
+         }
+         h5.cap {
+            font-size: 1.1rem;
+         }
+         h6.cap {
+            font-size: 1.3rem;
          }
       }
    }

@@ -50,7 +50,16 @@
   <body class="home">
     <h1 class="sr-only">VERTISAN</h1>
     <header id="primaryHeader" class="primary-header">
-      <div class="logo-area"></div>
+      <div class="logo-area">
+        <picture>
+          <source
+            srcset="img/layout/vtsn-logo-navbar-dark.svg"
+            media="(prefers-color-scheme: dark)"
+            alt="DARK IMAGE"
+          />
+          <img src="img/layout/vtsn-logo-navbar-light.svg" alt="LIGHT IMAGE" />
+        </picture>
+      </div>
 
       <button class="mobile-nav-toggle" aria-controls="primaryNav" aria-expanded="false">
         <span class="sr-only">Menu</span>
@@ -305,8 +314,8 @@
           <div class="tokenomics-card">
             <div class="sub-grid">
               <div class="group">
-                <h5>Market Cap</h5>
-                <h6>$52,185,000</h6>
+                <h5 class="cap">Market Cap</h5>
+                <h6 class="cap">$52,185,000</h6>
                 <h5>Current Market Price</h5>
                 <h6>$0.15</h6>
               </div>
@@ -369,5 +378,6 @@
     </footer>
 
     <a href="#" data-toggle="scroll-to-top" class="btn-scroll-top fade"><i class="fa fa-arrow-up"></i></a>
+    <script src="js/site.js"></script>
   </body>
 </html>

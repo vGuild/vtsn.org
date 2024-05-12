@@ -23,18 +23,21 @@
  }
  
  .primary-header > .logo-area {
-  padding-top: 0.6rem;
+  //padding-top: 0.6rem;
   margin: 0;
-  margin-left: 1em;
-  width: 200px;
-  height: 40px;
-  background: var(--img-navbar-logo);
-  background-repeat: no-repeat;
-  background-size: cover;
- }
- 
- img.header-logo {
-   width: 160px;
+  margin-left: 0.75em;
+  height: 48px;
+  //background: var(--img-navbar-logo);
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  display: inline-block;
+  * {
+    display: inline-block;
+  }
+  picture, img {
+    height: 32px;
+    margin-top: 0.3rem;
+  }
  }
  
  .primary-nav {
