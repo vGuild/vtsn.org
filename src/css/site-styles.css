@@ -7157,6 +7157,49 @@ h2.homepage-section-title {
   }
 }
 
+.tokenomics-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 1rem;
+  margin-inline: auto;
+}
+
+.tokenomics-card {
+  padding: 1.5rem;
+  padding-top: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--color-nav-bar);
+  min-width: 14rem;
+}
+.tokenomics-card .sub-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  justify-content: left;
+  gap: 0.7rem 2rem;
+}
+.tokenomics-card .sub-grid .group {
+  max-width: 14rem;
+}
+.tokenomics-card .sub-grid .group h5 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  margin: 0;
+}
+.tokenomics-card .sub-grid .group h6 {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--color-text);
+  margin: 0;
+  margin-bottom: 0.7rem;
+}
+.tokenomics-card .sub-grid .group h6:last-child {
+  margin-bottom: 0;
+}
+
 .advantages-grid {
   display: flex;
   flex-wrap: wrap;

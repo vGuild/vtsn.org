@@ -68,7 +68,7 @@
 
 .cc_container .cc_btn{
 	padding:8px 16px;
-	background-color:#EF9E5B;
+	background-color:#7f4f38;
 	position:absolute;
 	bottom:10px;
 	left:15px;
@@ -120,7 +120,7 @@
 
 .cc_container .cc_btn,.cc_container .cc_btn:visited{
 	color:#FFF;
-	background-color:#FF9500;
+	background-color:#7f4f38;
 	transition:background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
 	-webkit-transition:background 200ms ease-in-out,color 200ms ease-in-out,box-shadow 200ms ease-in-out;
 	border-radius:5px;
@@ -128,7 +128,7 @@
 }
 
 .cc_container .cc_btn:hover,.cc_container .cc_btn:active{
-	background-color:#F9A136;
+	background-color:#8c5a39;
 	color:#FFF
 }
 
