@@ -77,11 +77,11 @@
   --color-sun-moon: rgb(226, 183, 5);
   --color-box-shadow: hsla(217, 19%, 35%, 0.25);
   --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
-  --color-lnk-on-muted: #5a117c;
-  --color-lnk-on-subtle: #5a117c;
-  --color-lnk-on-normal: #5a117c;
-  --color-lnk-on-bold: #c36eeb;
-  --color-lnk-on-intense: #c36eeb;
+  --color-lnk-on-muted: #f5bf19;
+  --color-lnk-on-subtle: #f5bf19;
+  --color-lnk-on-normal: #f5bf19;
+  --color-lnk-on-bold: #fef5dd;
+  --color-lnk-on-intense: #dea600;
   /* neutral backgrounds */
   --color-bg-gray-muted: hsl(0, 0%, 93%);
   --color-bg-gray-subtle: hsl(0, 0%, 86%);
@@ -111,9 +111,9 @@
   --card-fg-color-vivid: hsl(0, 0%, 95%);
   --card-fg-color-vibrant: hsl(0, 0%, 95%);
   /* card links */
-  --card-lnk-gray-muted: #5a117c;
-  --card-lnk-gray-subtle: #5a117c;
-  --card-lnk-gray-normal: #5a117c;
+  --card-lnk-gray-muted: #f5bf19;
+  --card-lnk-gray-subtle: #f5bf19;
+  --card-lnk-gray-normal: #f5bf19;
   --card-lnk-gray-bold: #c4e549;
   --card-lnk-gray-intense: #c4e549;
   --card-lnk-color-vivid: #c4e549;
@@ -166,11 +166,11 @@
     --color-sun-moon: white;
     --color-box-shadow: hsla(217, 19%, 35%, 0.25);
     --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
-    --color-lnk-on-muted: #5a117c;
-    --color-lnk-on-subtle: #5a117c;
-    --color-lnk-on-normal: #5a117c;
-    --color-lnk-on-bold: #c36eeb;
-    --color-lnk-on-intense: #c36eeb;
+    --color-lnk-on-muted: #f5bf19;
+    --color-lnk-on-subtle: #f5bf19;
+    --color-lnk-on-normal: #f5bf19;
+    --color-lnk-on-bold: #fef5dd;
+    --color-lnk-on-intense: #f5bf19;
     /* neutral backgrounds */
     --color-bg-gray-muted: hsl(216, 9%, 23%);
     --color-bg-gray-subtle: hsl(214, 8%, 37%);
@@ -203,8 +203,8 @@
     --card-lnk-gray-muted: #c4e549;
     --card-lnk-gray-subtle: #c4e549;
     --card-lnk-gray-normal: #c4e549;
-    --card-lnk-gray-bold: #5a117c;
-    --card-lnk-gray-intense: #5a117c;
+    --card-lnk-gray-bold: #f5bf19;
+    --card-lnk-gray-intense: #f5bf19;
     --card-lnk-color-vivid: #c4e549;
     --card-lnk-color-vibrant: #c4e549;
     /* text */
@@ -236,11 +236,11 @@
   --color-sun-moon: rgb(226, 183, 5);
   --color-box-shadow: hsla(217, 19%, 35%, 0.25);
   --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
-  --color-lnk-on-muted: #5a117c;
-  --color-lnk-on-subtle: #5a117c;
-  --color-lnk-on-normal: #5a117c;
-  --color-lnk-on-bold: #c36eeb;
-  --color-lnk-on-intense: #c36eeb;
+  --color-lnk-on-muted: #f5bf19;
+  --color-lnk-on-subtle: #f5bf19;
+  --color-lnk-on-normal: #f5bf19;
+  --color-lnk-on-bold: #fef5dd;
+  --color-lnk-on-intense: #dea600;
   /* neutral backgrounds */
   --color-bg-gray-muted: hsl(0, 0%, 93%);
   --color-bg-gray-subtle: hsl(0, 0%, 86%);
@@ -270,9 +270,9 @@
   --card-fg-color-vivid: hsl(0, 0%, 95%);
   --card-fg-color-vibrant: hsl(0, 0%, 95%);
   /* card links */
-  --card-lnk-gray-muted: #5a117c;
-  --card-lnk-gray-subtle: #5a117c;
-  --card-lnk-gray-normal: #5a117c;
+  --card-lnk-gray-muted: #f5bf19;
+  --card-lnk-gray-subtle: #f5bf19;
+  --card-lnk-gray-normal: #f5bf19;
   --card-lnk-gray-bold: #c4e549;
   --card-lnk-gray-intense: #c4e549;
   --card-lnk-color-vivid: #c4e549;
@@ -310,11 +310,11 @@
   --color-sun-moon: white;
   --color-box-shadow: hsla(217, 19%, 35%, 0.25);
   --box-shadow: 2.5rem 3.75rem 3rem -3rem hsla(217, 19%, 35%, 0.25);
-  --color-lnk-on-muted: #5a117c;
-  --color-lnk-on-subtle: #5a117c;
-  --color-lnk-on-normal: #5a117c;
-  --color-lnk-on-bold: #c36eeb;
-  --color-lnk-on-intense: #c36eeb;
+  --color-lnk-on-muted: #f5bf19;
+  --color-lnk-on-subtle: #f5bf19;
+  --color-lnk-on-normal: #f5bf19;
+  --color-lnk-on-bold: #fef5dd;
+  --color-lnk-on-intense: #f5bf19;
   /* neutral backgrounds */
   --color-bg-gray-muted: hsl(216, 9%, 23%);
   --color-bg-gray-subtle: hsl(214, 8%, 37%);
@@ -347,8 +347,8 @@
   --card-lnk-gray-muted: #c4e549;
   --card-lnk-gray-subtle: #c4e549;
   --card-lnk-gray-normal: #c4e549;
-  --card-lnk-gray-bold: #5a117c;
-  --card-lnk-gray-intense: #5a117c;
+  --card-lnk-gray-bold: #f5bf19;
+  --card-lnk-gray-intense: #f5bf19;
   --card-lnk-color-vivid: #c4e549;
   --card-lnk-color-vibrant: #c4e549;
   /* text */
@@ -5931,7 +5931,7 @@ section {
 }
 
 .card-theme-primary {
-  background-color: #5a117c;
+  background-color: #f5bf19;
   color: #f5f5f5;
 }
 .card-theme-primary a {
@@ -6049,12 +6049,12 @@ section {
   color: #0c0c0c;
 }
 .card-theme-light-image a {
-  color: #5a117c;
+  color: #f5bf19;
   font-weight: 400;
 }
 .card-theme-light-image a:hover,
 .card-theme-light-image a:focus {
-  color: #5a117c;
+  color: #f5bf19;
   filter: brightness(120%);
 }
 .card-theme-light-image h2 {
@@ -7429,19 +7429,19 @@ h2.homepage-section-title {
   overflow: hidden;
 }
 #uiThemeValues .data-row-card .container .color-value.color-primary-drow-ying {
-  background-color: #6e1597;
+  background-color: #f6c736;
   color: #f5f5f5;
 }
 #uiThemeValues .data-row-card .container .color-value.color-primary-drow-ying::after {
-  content: "#6e1597  rgb(110, 21, 151)";
+  content: "#f6c736  rgb(246, 199, 54)";
   color: #f5f5f5;
 }
 #uiThemeValues .data-row-card .container .color-value.color-primary-drow-yang {
-  background-color: #7717a4;
+  background-color: #f7cb45;
   color: #f5f5f5;
 }
 #uiThemeValues .data-row-card .container .color-value.color-primary-drow-yang::after {
-  content: "#7717a4  rgb(119, 23, 164)";
+  content: "#f7cb45  rgb(247, 203, 69)";
   color: #f5f5f5;
 }
 #uiThemeValues .data-row-card .container .color-value.color-complementary-drow-ying {
@@ -7477,7 +7477,7 @@ h2.homepage-section-title {
   color: white;
 }
 #uiThemeValues .data-row-card.primary {
-  background-color: #5a117c;
+  background-color: #f5bf19;
   color: #f5f5f5;
 }
 #uiThemeValues .data-row-card.complementary {
@@ -7525,11 +7525,11 @@ h2.homepage-section-title {
   color: #333333;
 }
 #uiThemeValues .color-card .color-value.primary {
-  background-color: #5a117c;
+  background-color: #f5bf19;
   color: #f5f5f5;
 }
 #uiThemeValues .color-card .color-value.primary::after {
-  content: "#5a117c  rgb(90, 17, 124)";
+  content: "#f5bf19  rgb(245, 191, 25)";
   color: #f5f5f5;
 }
 #uiThemeValues .color-card .color-value.primary-accent {
@@ -7661,35 +7661,35 @@ h2.homepage-section-title {
   color: white;
 }
 #uiThemeValues .color-card .color-value.primary-100 {
-  background-color: #8b1abf;
+  background-color: #f8d362;
   color: #e1e1e1;
 }
 #uiThemeValues .color-card .color-value.primary-100::after {
-  content: "100: #8b1abf  rgb(139, 26, 191)";
+  content: "100: #f8d362  rgb(248, 211, 98)";
   color: #e1e1e1;
 }
 #uiThemeValues .color-card .color-value.primary-300 {
-  background-color: #7b17a9;
+  background-color: #f7cd4a;
   color: #ebebeb;
 }
 #uiThemeValues .color-card .color-value.primary-300::after {
-  content: "300: #7b17a9  rgb(123, 23, 169)";
+  content: "300: #f7cd4a  rgb(247, 205, 74)";
   color: #ebebeb;
 }
 #uiThemeValues .color-card .color-value.primary-700 {
-  background-color: #400c58;
+  background-color: #dca80a;
   color: white;
 }
 #uiThemeValues .color-card .color-value.primary-700::after {
-  content: "700: #400c58  rgb(64, 12, 88)";
+  content: "700: #dca80a  rgb(220, 168, 10)";
   color: white;
 }
 #uiThemeValues .color-card .color-value.primary-900 {
-  background-color: #290839;
+  background-color: #b98e08;
   color: white;
 }
 #uiThemeValues .color-card .color-value.primary-900::after {
-  content: "900: #290839  rgb(41, 8, 57)";
+  content: "900: #b98e08  rgb(185, 142, 8)";
   color: white;
 }
 #uiThemeValues .color-card .color-value.primary-accent-100 {
@@ -7989,7 +7989,7 @@ h2.homepage-section-title {
   color: #292929;
 }
 #uiThemeValues .color-value.text-on-primary {
-  background-color: #5a117c;
+  background-color: #f5bf19;
   color: #f5f5f5;
 }
 #uiThemeValues .color-value.text-on-primary::after {
@@ -7997,7 +7997,7 @@ h2.homepage-section-title {
   color: #f5f5f5;
 }
 #uiThemeValues .color-value.text-on-primary-300 {
-  background-color: #641389;
+  background-color: #f6c328;
   color: #ebebeb;
 }
 #uiThemeValues .color-value.text-on-primary-300::after {
@@ -8005,7 +8005,7 @@ h2.homepage-section-title {
   color: #ebebeb;
 }
 #uiThemeValues .color-value.text-on-primary-700 {
-  background-color: #500f6f;
+  background-color: #f4bb0b;
   color: white;
 }
 #uiThemeValues .color-value.text-on-primary-700::after {
@@ -8013,7 +8013,7 @@ h2.homepage-section-title {
   color: white;
 }
 #uiThemeValues .color-value.text-accent-on-primary {
-  background-color: #5a117c;
+  background-color: #f5bf19;
   color: #c4e549;
 }
 #uiThemeValues .color-value.text-accent-on-primary::after {
@@ -8021,7 +8021,7 @@ h2.homepage-section-title {
   color: #c4e549;
 }
 #uiThemeValues .color-value.text-accent-on-primary-300 {
-  background-color: #641389;
+  background-color: #f6c328;
   color: #bee237;
 }
 #uiThemeValues .color-value.text-accent-on-primary-300::after {
@@ -8029,7 +8029,7 @@ h2.homepage-section-title {
   color: #bee237;
 }
 #uiThemeValues .color-value.text-accent-on-primary-700 {
-  background-color: #500f6f;
+  background-color: #f4bb0b;
   color: #cae85b;
 }
 #uiThemeValues .color-value.text-accent-on-primary-700::after {
@@ -8062,51 +8062,51 @@ h2.homepage-section-title {
 }
 #uiThemeValues .color-value.text-accent-on-light {
   background-color: #f0f0f5;
-  color: #5a117c;
+  color: #f5bf19;
 }
 #uiThemeValues .color-value.text-accent-on-light::after {
-  content: "300: #5a117c  rgb(90, 17, 124)";
-  color: #5a117c;
+  content: "300: #f5bf19  rgb(245, 191, 25)";
+  color: #f5bf19;
 }
 #uiThemeValues .color-value.text-accent-on-light-300 {
   background-color: #f9f9fb;
-  color: #4d0f6a;
+  color: #efb70a;
 }
 #uiThemeValues .color-value.text-accent-on-light-300::after {
-  content: "300: #4d0f6a  rgb(77, 15, 106)";
-  color: #4d0f6a;
+  content: "300: #efb70a  rgb(239, 183, 10)";
+  color: #efb70a;
 }
 #uiThemeValues .color-value.text-accent-on-light-700 {
   background-color: #e7e7ef;
-  color: #67138e;
+  color: #f6c42d;
 }
 #uiThemeValues .color-value.text-accent-on-light-700::after {
-  content: "700: #67138e  rgb(103, 19, 142)";
-  color: #67138e;
+  content: "700: #f6c42d  rgb(246, 196, 45)";
+  color: #f6c42d;
 }
 #uiThemeValues .color-value.text-accent-on-dark {
   background-color: #232323;
-  color: #a5ee83;
+  color: #0a40e6;
 }
 #uiThemeValues .color-value.text-accent-on-dark::after {
-  content: "300: #a5ee83  rgb(165, 238, 131)";
-  color: #a5ee83;
+  content: "300: #0a40e6  rgb(10, 64, 230)";
+  color: #0a40e6;
 }
 #uiThemeValues .color-value.text-accent-on-dark-300 {
   background-color: #2b2b2b;
-  color: #98ec71;
+  color: #093bd2;
 }
 #uiThemeValues .color-value.text-accent-on-dark-300::after {
-  content: "300: #98ec71  rgb(152, 236, 113)";
-  color: #98ec71;
+  content: "300: #093bd2  rgb(9, 59, 210)";
+  color: #093bd2;
 }
 #uiThemeValues .color-value.text-accent-on-dark-700 {
   background-color: #1b1b1b;
-  color: #b2f095;
+  color: #1048f5;
 }
 #uiThemeValues .color-value.text-accent-on-dark-700::after {
-  content: "700: #b2f095  rgb(178, 240, 149)";
-  color: #b2f095;
+  content: "700: #1048f5  rgb(16, 72, 245)";
+  color: #1048f5;
 }
 #uiThemeValues .opacity-card {
   --_font-size: 0.9rem;
@@ -8178,22 +8178,22 @@ h2.homepage-section-title {
   color: white;
 }
 #uiThemeValues .opacity-card .container .color-value.color-fill-primary-25 {
-  background-color: rgba(90, 17, 124, 0.25);
+  background-color: rgba(245, 191, 25, 0.25);
 }
 #uiThemeValues .opacity-card .container .color-value.color-fill-primary-50 {
-  background-color: rgba(90, 17, 124, 0.5);
+  background-color: rgba(245, 191, 25, 0.5);
 }
 #uiThemeValues .opacity-card .container .color-value.color-fill-primary-65 {
-  background-color: rgba(90, 17, 124, 0.65);
+  background-color: rgba(245, 191, 25, 0.65);
 }
 #uiThemeValues .opacity-card .container .color-value.color-fill-primary-75 {
-  background-color: rgba(90, 17, 124, 0.75);
+  background-color: rgba(245, 191, 25, 0.75);
 }
 #uiThemeValues .opacity-card .container .color-value.color-fill-primary-85 {
-  background-color: rgba(90, 17, 124, 0.85);
+  background-color: rgba(245, 191, 25, 0.85);
 }
 #uiThemeValues .opacity-card .container .color-value.color-fill-primary-90 {
-  background-color: rgba(90, 17, 124, 0.9);
+  background-color: rgba(245, 191, 25, 0.9);
 }
 #uiThemeValues .opacity-card .container .color-value.color-fill-primary-25::after {
   content: "25% opacity: rgb(245, 245, 245)";
@@ -8634,10 +8634,10 @@ h2.homepage-section-title {
   opacity: 0.7;
 }
 #uiThemeValues .gradient-card .container .color-value.color-gradient-primary.from::after {
-  content: "#5a117c  rgb(90, 17, 124)";
+  content: "#f5bf19  rgb(245, 191, 25)";
 }
 #uiThemeValues .gradient-card .container .color-value.color-gradient-primary.to::after {
-  content: "#9b1dd6  rgb(155, 29, 214)";
+  content: "#f9da7b  rgb(249, 218, 123)";
 }
 #uiThemeValues .gradient-card .container .color-value.color-gradient-primary-accent.from::after {
   color: black;
@@ -8732,7 +8732,7 @@ h2.homepage-section-title {
   content: "#4a9be5  rgb(74, 155, 229)";
 }
 #uiThemeValues .gradient-card.bg-gradient-primary {
-  background: linear-gradient(#190522, #7b17a9);
+  background: linear-gradient(#a17b07, #f7cd4a);
 }
 #uiThemeValues .gradient-card.bg-gradient-primary-accent {
   background: linear-gradient(#8faf19, #bde233);
