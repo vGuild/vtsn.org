@@ -72,6 +72,7 @@
   --color-text-shadow: hsla(0, 0%, 100%, 0.75);
   --color-text-muted: #2f2f2f;
   --color-nav-bar: #eeeeeb;
+  --color-nav-bar-sticking: hsla(0, 100%, 100%, 0.75);
   --color-nav-link: black;
   --color-nav-link-active: #d19292;
   --color-sun-moon: rgb(226, 183, 5);
@@ -161,6 +162,7 @@
     --color-text-shadow: hsla(0, 0%, 0%, 0.75);
     --color-text-muted: #b4b4b4;
     --color-nav-bar: hsla(0, 0%, 100%, 0.2);
+    --color-nav-bar-sticking: hsla(0, 0%, 0%, 0.75);
     --color-nav-link: white;
     --color-nav-link-active: #d19292;
     --color-sun-moon: white;
@@ -231,6 +233,7 @@
   --color-text-shadow: hsla(0, 0%, 100%, 0.75);
   --color-text-muted: #2f2f2f;
   --color-nav-bar: #eeeeeb;
+  --color-nav-bar-sticking: hsla(0, 100%, 100%, 0.75);
   --color-nav-link: black;
   --color-nav-link-active: #d19292;
   --color-sun-moon: rgb(226, 183, 5);
@@ -305,6 +308,7 @@
   --color-text-shadow: hsla(0, 0%, 0%, 0.75);
   --color-text-muted: #b4b4b4;
   --color-nav-bar: hsla(0, 0%, 100%, 0.2);
+  --color-nav-bar-sticking: hsla(0, 0%, 0%, 0.75);
   --color-nav-link: white;
   --color-nav-link-active: #d19292;
   --color-sun-moon: white;
@@ -6867,7 +6871,7 @@ header {
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 #primaryHeader.is-sticking {
   /* change colors, etc */
-  background-color: hsla(0, 0%, 0%, 0.75);
+  background-color: var(--color-nav-bar-sticking);
 }
 
 .primary-header {

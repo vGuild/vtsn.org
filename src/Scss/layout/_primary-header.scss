@@ -9,7 +9,7 @@
  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
  #primaryHeader.is-sticking {
    /* change colors, etc */
-   background-color: hsl(0 0% 0% / 0.75);
+   background-color: var(--color-nav-bar-sticking);
  }
  
  .primary-header {
