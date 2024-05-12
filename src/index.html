@@ -12,11 +12,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="favicon/favicon.png" />
 
-    <script src="/js/jquery/jquery-1.11.2.min.js"></script>
-    <script src="/js/jquery/jquery-ui.min.js"></script>
-    <script src="/js/jquery/jquery.qrcode.min.js"></script>
-    <script src="js/nav-menu.js" defer></script>
-    <script src="js/theme-switcher.js" defer></script>
+    <script src="/js/jquery/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="/js/jquery/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="/js/jquery/jquery.qrcode.min.js" type="text/javascript"></script>
+    <script src="js/nav-menu.js" defer type="text/javascript"></script>
+    <script src="js/theme-switcher.js" defer type="text/javascript"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -259,6 +259,10 @@
           can be processed simultaneously worldwide while maintaining strong data consistency and eliminating
           the possibility of a double spend.
         </p>
+        <picture>
+          <source style="max-width: 200px;" srcset="img/vennem-dark.svg" media="(prefers-color-scheme: dark)" alt="DARK IMAGE" />
+          <img style="max-width: 200px;" src="img/vennem-light.svg" alt="LIGHT IMAGE" />
+        </picture>
       </section>
       <section id="tokenomics">
         <h2>Tokenomics</h2>

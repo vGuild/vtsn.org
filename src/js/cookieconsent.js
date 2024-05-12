@@ -100,7 +100,8 @@
        var cookie = [
          name + '=' + value,
          'expires=' + exdate.toUTCString(),
-         'path=' + path || '/'
+         'path=' + path || '/',
+         'SameSite=Strict'
        ];
  
        if (domain) {

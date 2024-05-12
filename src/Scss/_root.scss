@@ -72,6 +72,7 @@
   --img-bg-card: #{$card-bg-gray-normal};
 
   /* section backgrounds */
+  --bg-section-masthead: #{$bg-section-masthead};
   --bg-section-footer: #{$bg-section-footer};
 
   // SINGLETONS
@@ -172,6 +173,7 @@
     --img-bg-card: #{$card-bg-gray-normal-dark};
 
     /* section backgrounds */
+    --bg-section-masthead: #{$bg-section-masthead-dark};
     --bg-section-footer: #{$bg-section-footer-dark};
   }
 }
@@ -247,6 +249,7 @@
   --img-bg-card: #{$card-bg-gray-normal};
 
   /* section backgrounds */
+  --bg-section-masthead: #{$bg-section-masthead};
   --bg-section-footer: #{$bg-section-footer};
 }
 [data-theme-mode='dark'] {
@@ -325,5 +328,6 @@
   --img-bg-card: #{$card-bg-gray-normal-dark};
 
   /* section backgrounds */
+  --bg-section-masthead: #{$bg-section-masthead-dark};
   --bg-section-footer: #{$bg-section-footer-dark};
 }

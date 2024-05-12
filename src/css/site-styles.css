@@ -127,6 +127,7 @@
   --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-light.svg");
   --img-bg-card: hsl(218, 14%, 70%);
   /* section backgrounds */
+  --bg-section-masthead: url("../img/bg/bg-generic-14-light.jpg");
   --bg-section-footer: #0b070c;
   --txt-font-stack-headings: ShentoxMedium, Chakra Petch, sans-serif;
   --txt-font-stack-content: Work Sans, sans-serif;
@@ -215,6 +216,7 @@
     --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-dark.svg");
     --img-bg-card: hsl(240, 1%, 26%);
     /* section backgrounds */
+    --bg-section-masthead: url("../img/bg/bg-generic-14-dark.jpg");
     --bg-section-footer: #d0d0cb;
   }
 }
@@ -284,6 +286,7 @@
   --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-light.svg");
   --img-bg-card: hsl(218, 14%, 70%);
   /* section backgrounds */
+  --bg-section-masthead: url("../img/bg/bg-generic-14-light.jpg");
   --bg-section-footer: #0b070c;
 }
 
@@ -357,6 +360,7 @@
   --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-dark.svg");
   --img-bg-card: hsl(240, 1%, 26%);
   /* section backgrounds */
+  --bg-section-masthead: url("../img/bg/bg-generic-14-dark.jpg");
   --bg-section-footer: #d0d0cb;
 }
 
@@ -5637,7 +5641,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   width: 100%;
-  max-width: 1500px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   overflow-x: hidden; /* for nav menu */
@@ -7073,6 +7077,10 @@ h2.homepage-section-title {
 }
 
 #masthead {
+  background: var(--bg-section-masthead);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
   text-transform: uppercase;
   display: grid;
   place-items: center;

@@ -1,4 +1,9 @@
 #masthead {
+  background: var(--bg-section-masthead);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top right;
+
    text-transform: uppercase;
    display: grid;
    place-items: center;
