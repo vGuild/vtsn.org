@@ -1,4 +1,6 @@
 .tokenomics-grid {
+   margin-top: 2rem;
+   margin-bottom: 2.2rem;
    display: flex;
    flex-wrap: wrap;
    justify-content: left;
@@ -13,6 +15,7 @@
    border-radius: 0.5rem;
    border: 1px solid var(--color-nav-bar);
    min-width: 14rem;
+   box-shadow: 1rem 1.5rem 2rem -0.5rem var(--color-box-shadow);
 
    .sub-grid {
       display: flex;
@@ -64,8 +67,9 @@
       padding: 1.5rem;
       padding-top: 1rem;
       border-radius: 0.5rem;
-      border: 1px solid var(--color-nav-bar);
+      border: 1px solid var(--color-bg-gray-subtle);
       max-width: 340px;
+      box-shadow: 1rem 1.5rem 2rem -0.5rem var(--color-box-shadow);
    }
 
    .advantage-card > h2 {

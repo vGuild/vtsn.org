@@ -174,8 +174,8 @@
     --color-lnk-on-bold: #fef5dd;
     --color-lnk-on-intense: #f5bf19;
     /* neutral backgrounds */
-    --color-bg-gray-muted: hsl(216, 9%, 23%);
-    --color-bg-gray-subtle: hsl(214, 8%, 37%);
+    --color-bg-gray-muted: hsl(216, 9%, 12%);
+    --color-bg-gray-subtle: hsl(214, 8%, 25%);
     --color-bg-gray-normal: hsl(218, 14%, 70%);
     --color-bg-gray-bold: hsl(0, 0%, 86%);
     --color-bg-gray-intense: hsl(0, 0%, 93%);
@@ -186,7 +186,7 @@
     --color-fg-on-gray-bold: #2c2c2c;
     --color-fg-on-gray-intense: #2c2c2c;
     /* cards background */
-    --card-bg-gray-muted: hsl(0, 0%, 13%);
+    --card-bg-gray-muted: hsl(0, 0%, 10%);
     --card-bg-gray-subtle: hsl(240, 1%, 18%);
     --card-bg-gray-normal: hsl(240, 1%, 26%);
     --card-bg-gray-bold: hsl(214, 4%, 61%);
@@ -320,8 +320,8 @@
   --color-lnk-on-bold: #fef5dd;
   --color-lnk-on-intense: #f5bf19;
   /* neutral backgrounds */
-  --color-bg-gray-muted: hsl(216, 9%, 23%);
-  --color-bg-gray-subtle: hsl(214, 8%, 37%);
+  --color-bg-gray-muted: hsl(216, 9%, 12%);
+  --color-bg-gray-subtle: hsl(214, 8%, 25%);
   --color-bg-gray-normal: hsl(218, 14%, 70%);
   --color-bg-gray-bold: hsl(0, 0%, 86%);
   --color-bg-gray-intense: hsl(0, 0%, 93%);
@@ -332,7 +332,7 @@
   --color-fg-on-gray-bold: #2c2c2c;
   --color-fg-on-gray-intense: #2c2c2c;
   /* cards background */
-  --card-bg-gray-muted: hsl(0, 0%, 13%);
+  --card-bg-gray-muted: hsl(0, 0%, 10%);
   --card-bg-gray-subtle: hsl(240, 1%, 18%);
   --card-bg-gray-normal: hsl(240, 1%, 26%);
   --card-bg-gray-bold: hsl(214, 4%, 61%);
@@ -7161,6 +7161,8 @@ h2.homepage-section-title {
 }
 
 .tokenomics-grid {
+  margin-top: 2rem;
+  margin-bottom: 2.2rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -7174,6 +7176,7 @@ h2.homepage-section-title {
   border-radius: 0.5rem;
   border: 1px solid var(--color-nav-bar);
   min-width: 14rem;
+  box-shadow: 1rem 1.5rem 2rem -0.5rem var(--color-box-shadow);
 }
 .tokenomics-card .sub-grid {
   display: flex;
@@ -7220,8 +7223,9 @@ h2.homepage-section-title {
   padding: 1.5rem;
   padding-top: 1rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-nav-bar);
+  border: 1px solid var(--color-bg-gray-subtle);
   max-width: 340px;
+  box-shadow: 1rem 1.5rem 2rem -0.5rem var(--color-box-shadow);
 }
 .advantages-grid .advantage-card > h2 {
   font-size: 1.5rem;
@@ -7346,7 +7350,7 @@ h2.homepage-section-title {
 }
 
 .vtsn-vs-btc-table tbody tr {
-  border-bottom: 1px solid var(--color-text);
+  border-bottom: 1px solid var(--color-bg-gray-subtle);
 }
 
 .vtsn-vs-btc-table tbody tr:nth-of-type(even) {
@@ -7366,7 +7370,7 @@ h2.homepage-section-title {
   }
   .vtsn-vs-btc-table th,
   .vtsn-vs-btc-table td {
-    padding: 8px 5px;
+    padding: 10px 5px;
     text-align: center;
   }
 }
