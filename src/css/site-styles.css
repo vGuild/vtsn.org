@@ -127,7 +127,7 @@
   --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-light.svg");
   --img-bg-card: hsl(218, 14%, 70%);
   /* section backgrounds */
-  --bg-section-masthead: url("../img/bg/bg-generic-14-light.jpg");
+  --bg-section-masthead: url("../img/bg/bg-generic-15-light.jpg");
   --bg-section-footer: #0b070c;
   --txt-font-stack-headings: ShentoxMedium, Chakra Petch, sans-serif;
   --txt-font-stack-content: Work Sans, sans-serif;
@@ -216,7 +216,7 @@
     --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-dark.svg");
     --img-bg-card: hsl(240, 1%, 26%);
     /* section backgrounds */
-    --bg-section-masthead: url("../img/bg/bg-generic-14-dark.jpg");
+    --bg-section-masthead: url("../img/bg/bg-generic-15-dark.jpg");
     --bg-section-footer: #d0d0cb;
   }
 }
@@ -286,7 +286,7 @@
   --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-light.svg");
   --img-bg-card: hsl(218, 14%, 70%);
   /* section backgrounds */
-  --bg-section-masthead: url("../img/bg/bg-generic-14-light.jpg");
+  --bg-section-masthead: url("../img/bg/bg-generic-15-light.jpg");
   --bg-section-footer: #0b070c;
 }
 
@@ -360,7 +360,7 @@
   --img-mask-bordered-hexagon: url("images/homepage/bordered-hexagon-mask-dark.svg");
   --img-bg-card: hsl(240, 1%, 26%);
   /* section backgrounds */
-  --bg-section-masthead: url("../img/bg/bg-generic-14-dark.jpg");
+  --bg-section-masthead: url("../img/bg/bg-generic-15-dark.jpg");
   --bg-section-footer: #d0d0cb;
 }
 
@@ -7080,7 +7080,7 @@ h2.homepage-section-title {
   background: var(--bg-section-masthead);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top left;
   text-transform: uppercase;
   display: grid;
   place-items: center;
@@ -7095,15 +7095,18 @@ h2.homepage-section-title {
 }
 #masthead .hero-content-temp h2 {
   font-size: 3rem;
+  text-shadow: 1px 1px 2px var(--color-text-shadow);
 }
 #masthead .hero-content-temp h3 {
   font-size: 3rem;
   color: var(--color-text);
+  text-shadow: 1px 1px 2px var(--color-text-shadow);
 }
 #masthead .hero-content-temp h4 {
   font-size: 1.1rem;
   font-weight: 200;
   padding-top: 5.5rem;
+  text-shadow: 1px 1px 2px var(--color-text-shadow);
 }
 #masthead .hero-content {
   display: grid;

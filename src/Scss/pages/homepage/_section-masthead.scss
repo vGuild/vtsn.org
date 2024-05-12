@@ -2,7 +2,7 @@
   background: var(--bg-section-masthead);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top right;
+  background-position: top left;
 
    text-transform: uppercase;
    display: grid;
@@ -16,17 +16,21 @@
     text-align: center;
     padding-top: 5.5rem;
     padding-bottom: 2.5rem;
+
     h2 {
       font-size: 3rem;
+    text-shadow: 1px 1px 2px var(--color-text-shadow);
     }
     h3 {
       font-size: 3rem;
       color: var(--color-text);
+    text-shadow: 1px 1px 2px var(--color-text-shadow);
     }
     h4 {
       font-size: 1.1rem;
       font-weight: 200;
       padding-top: 5.5rem;
+    text-shadow: 1px 1px 2px var(--color-text-shadow);
     }
    }
    .hero-content {
