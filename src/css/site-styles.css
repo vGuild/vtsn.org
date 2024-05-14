@@ -82,7 +82,7 @@
   --color-lnk-on-subtle: #f5bf19;
   --color-lnk-on-normal: #f5bf19;
   --color-lnk-on-bold: #fef5dd;
-  --color-lnk-on-intense: #dea600;
+  --color-lnk-on-intense: #ae2915;
   /* neutral backgrounds */
   --color-bg-gray-muted: hsl(0, 0%, 93%);
   --color-bg-gray-subtle: hsl(0, 0%, 86%);
@@ -172,7 +172,7 @@
     --color-lnk-on-subtle: #f5bf19;
     --color-lnk-on-normal: #f5bf19;
     --color-lnk-on-bold: #fef5dd;
-    --color-lnk-on-intense: #f5bf19;
+    --color-lnk-on-intense: #ae2d27;
     /* neutral backgrounds */
     --color-bg-gray-muted: hsl(216, 9%, 9%);
     --color-bg-gray-subtle: hsl(214, 8%, 25%);
@@ -243,7 +243,7 @@
   --color-lnk-on-subtle: #f5bf19;
   --color-lnk-on-normal: #f5bf19;
   --color-lnk-on-bold: #fef5dd;
-  --color-lnk-on-intense: #dea600;
+  --color-lnk-on-intense: #ae2915;
   /* neutral backgrounds */
   --color-bg-gray-muted: hsl(0, 0%, 93%);
   --color-bg-gray-subtle: hsl(0, 0%, 86%);
@@ -318,7 +318,7 @@
   --color-lnk-on-subtle: #f5bf19;
   --color-lnk-on-normal: #f5bf19;
   --color-lnk-on-bold: #fef5dd;
-  --color-lnk-on-intense: #f5bf19;
+  --color-lnk-on-intense: #ae2d27;
   /* neutral backgrounds */
   --color-bg-gray-muted: hsl(216, 9%, 9%);
   --color-bg-gray-subtle: hsl(214, 8%, 25%);
@@ -7219,7 +7219,7 @@ h2.homepage-section-title {
 }
 .tokenomics-card .sub-grid .group h6.cap {
   font-size: 1.3rem;
-  color: var(--color-lnk-on-intense);
+  color: #22a619 !important;
 }
 
 .advantages-grid {
