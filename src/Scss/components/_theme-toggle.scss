@@ -36,6 +36,7 @@
   transform: scale(0);
   opacity: 0;
   z-index: -1;
+  aspect-ratio: 1;
 }
 
 .dark-theme-mode #theme-toggle::before {

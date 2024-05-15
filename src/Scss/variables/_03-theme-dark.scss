@@ -199,7 +199,7 @@ $color-lnk-on-muted-dark: $color-primary;
 $color-lnk-on-subtle-dark: $color-primary;
 $color-lnk-on-normal-dark: $color-primary;
 $color-lnk-on-bold-dark: lighten($color-primary, 40%);
-$color-lnk-on-intense-dark: #ae2d27;
+$color-lnk-on-intense-dark: #be2f27;
 
 $color-lnk-on-primary-dark: $color-primary-accent;
 $color-lnk-on-complementary-dark: $color-primary-accent;
@@ -225,7 +225,8 @@ $color-lnk-on-complementary-4-hover-dark: darken($color-primary-accent, 15%);
 
 //=== LAYOUT ==========================================================
 $color-bg-html-dark: #2b1617;
-$color-bg-body-dark: #100b11;
+//$color-bg-body-dark: #161017;
+$color-bg-body-dark: #121211;
 $color-headings-dark: #d19292;
 $color-text-dark: #dddddd;
 $color-text-inverse-dark: #14151c;

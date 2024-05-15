@@ -155,7 +155,7 @@
   :root {
     /* colors */
     --color-bg-html: #2b1617;
-    --color-bg-body: #100b11;
+    --color-bg-body: #121211;
     --color-headings: #d19292;
     --color-text: #dddddd;
     --color-text-inverse: #14151c;
@@ -172,7 +172,7 @@
     --color-lnk-on-subtle: #f5bf19;
     --color-lnk-on-normal: #f5bf19;
     --color-lnk-on-bold: #fef5dd;
-    --color-lnk-on-intense: #ae2d27;
+    --color-lnk-on-intense: #be2f27;
     /* neutral backgrounds */
     --color-bg-gray-muted: hsl(216, 9%, 9%);
     --color-bg-gray-subtle: hsl(214, 8%, 25%);
@@ -301,7 +301,7 @@
   --theme-color-rgb: 0, 58, 128;
   /* colors */
   --color-bg-html: #2b1617;
-  --color-bg-body: #100b11;
+  --color-bg-body: #121211;
   --color-headings: #d19292;
   --color-text: #dddddd;
   --color-text-inverse: #14151c;
@@ -318,7 +318,7 @@
   --color-lnk-on-subtle: #f5bf19;
   --color-lnk-on-normal: #f5bf19;
   --color-lnk-on-bold: #fef5dd;
-  --color-lnk-on-intense: #ae2d27;
+  --color-lnk-on-intense: #be2f27;
   /* neutral backgrounds */
   --color-bg-gray-muted: hsl(216, 9%, 9%);
   --color-bg-gray-subtle: hsl(214, 8%, 25%);
@@ -6751,6 +6751,7 @@ section {
   transform: scale(0);
   opacity: 0;
   z-index: -1;
+  aspect-ratio: 1;
 }
 
 .dark-theme-mode #theme-toggle::before {
