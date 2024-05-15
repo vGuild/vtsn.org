@@ -15,7 +15,11 @@
       margin-top: 2rem;
    }
 }
-
+@media (max-width: 40em) {
+   .comparison-table h4 {
+      font-size: 1.3rem;
+   }
+}
 .vtsn-vs-btc-table {
    font-family: sans-serif;
    border-collapse: collapse;
