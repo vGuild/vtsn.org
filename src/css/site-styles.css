@@ -7397,7 +7397,7 @@ h2.homepage-section-title {
   display: grid;
   gap: 2.5rem;
   grid-auto-columns: 1fr;
-  grid-template-areas: "u-one" "u-two";
+  grid-template-areas: "f-one" "f-two";
 }
 
 .final-section-grid-item {
@@ -7507,7 +7507,7 @@ h2.homepage-section-title {
 
 @media (max-width: 40em) {
   .comparison-table h4 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 .vtsn-vs-btc-table {
