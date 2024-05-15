@@ -7266,7 +7266,7 @@ h2.homepage-section-title {
   grid-template-areas: "a-one" "a-two" "a-three" "a-four";
 }
 .advantages-grid .advantage-card {
-  padding: 1.4rem;
+  padding: 1.25rem;
   padding-top: 1rem;
   border-radius: 0.5rem;
   border: 1px solid var(--color-bg-gray-subtle);
@@ -7340,7 +7340,7 @@ h2.homepage-section-title {
 
 .utility-grid-item {
   position: relative;
-  padding: 1.5rem;
+  padding: 1.25rem;
   border: 1px solid var(--color-bg-gray-subtle);
   border-radius: 0.5rem;
   box-shadow: 1rem 1rem 1rem -0.5rem var(--color-box-shadow);
