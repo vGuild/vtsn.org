@@ -7280,14 +7280,14 @@ h2.homepage-section-title {
   font-size: 1.4rem;
 }
 .advantages-grid .advantage-card > h4 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
   font-family: var(--txt-font-stack-content);
   color: var(--color-text);
   margin-bottom: 0.6rem;
 }
 .advantages-grid .advantage-card > p {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 0.6rem;
 }
 
@@ -7340,7 +7340,7 @@ h2.homepage-section-title {
 
 .utility-grid-item {
   position: relative;
-  padding: 1rem;
+  padding: 1.5rem;
   border: 1px solid var(--color-bg-gray-subtle);
   border-radius: 0.5rem;
   box-shadow: 1rem 1rem 1rem -0.5rem var(--color-box-shadow);
@@ -7501,6 +7501,7 @@ h2.homepage-section-title {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 0.7rem;
+  margin-top: 2rem;
 }
 
 .vtsn-vs-btc-table {
