@@ -7285,6 +7285,7 @@ h2.homepage-section-title {
   font-family: var(--txt-font-stack-content);
   color: var(--color-text);
   margin-bottom: 0.6rem;
+  line-height: 1.4;
 }
 .advantages-grid .advantage-card > p {
   font-size: 0.95rem;
