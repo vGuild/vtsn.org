@@ -7187,54 +7187,89 @@ h2.homepage-section-title {
   min-width: 14rem;
   box-shadow: 1rem 1.5rem 2rem -0.5rem var(--color-box-shadow);
 }
-.tokenomics-card .sub-grid {
-  display: flex;
-  flex-wrap: wrap;
-  flex-shrink: 0;
-  justify-content: left;
+
+.tokenomics-sub-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "t-one" "t-two" "t-three" "t-four" "t-five";
   gap: 0.7rem 2rem;
 }
-.tokenomics-card .sub-grid .group {
+
+.tokenomics-sub-grid-item {
   max-width: 14rem;
 }
-.tokenomics-card .sub-grid .group h5 {
+.tokenomics-sub-grid-item h5 {
   font-size: 0.9rem;
   font-weight: 500;
   color: var(--color-text-muted);
   text-transform: uppercase;
   margin: 0;
 }
-.tokenomics-card .sub-grid .group h6 {
+.tokenomics-sub-grid-item h6 {
   font-size: 1.1rem;
   font-weight: 300;
   color: var(--color-text);
   margin: 0;
   margin-bottom: 0.7rem;
 }
-.tokenomics-card .sub-grid .group h6:last-child {
+.tokenomics-sub-grid-item h6:last-child {
   margin-bottom: 0;
 }
-.tokenomics-card .sub-grid .group h5.cap {
+.tokenomics-sub-grid-item h5.cap {
   font-size: 1.1rem;
 }
-.tokenomics-card .sub-grid .group h6.cap {
+.tokenomics-sub-grid-item h6.cap {
   font-size: 1.3rem;
   color: #22a619 !important;
 }
 
+.tokenomics-sub-grid-item:nth-child(1) {
+  grid-area: t-one;
+}
+
+.tokenomics-sub-grid-item:nth-child(2) {
+  grid-area: t-two;
+}
+
+.tokenomics-sub-grid-item:nth-child(3) {
+  grid-area: t-three;
+}
+
+.tokenomics-sub-grid-item:nth-child(4) {
+  grid-area: t-four;
+}
+
+.tokenomics-sub-grid-item:nth-child(5) {
+  grid-area: t-five;
+}
+
+@media screen and (min-width: 33em) {
+  .tokenomics-sub-grid {
+    grid-template-areas: "t-one" "t-two" "t-three" "t-four" "t-five";
+  }
+}
+@media screen and (min-width: 54em) {
+  .tokenomics-sub-grid {
+    grid-template-areas: "t-one t-one t-one t-one" "t-two t-three t-four t-five";
+  }
+}
+@media screen and (min-width: 75em) {
+  .tokenomics-sub-grid {
+    grid-template-areas: "t-one t-two t-three t-four t-five";
+  }
+}
 .advantages-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
   gap: 1rem;
-  margin-inline: auto;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "a-one" "a-two" "a-three" "a-four";
 }
 .advantages-grid .advantage-card {
   padding: 1.5rem;
   padding-top: 1rem;
   border-radius: 0.5rem;
   border: 1px solid var(--color-bg-gray-subtle);
-  max-width: 340px;
   box-shadow: 1rem 1.5rem 2rem -0.5rem var(--color-box-shadow);
 }
 .advantages-grid .advantage-card > h2 {
@@ -7256,6 +7291,37 @@ h2.homepage-section-title {
   margin-bottom: 0.6rem;
 }
 
+.advantage-card:nth-child(1) {
+  grid-area: a-one;
+}
+
+.advantage-card:nth-child(2) {
+  grid-area: a-two;
+}
+
+.advantage-card:nth-child(3) {
+  grid-area: a-three;
+}
+
+.advantage-card:nth-child(4) {
+  grid-area: a-four;
+}
+
+@media screen and (min-width: 33em) {
+  .advantages-grid {
+    grid-template-areas: "a-one" "a-two" "a-three" "a-four";
+  }
+}
+@media screen and (min-width: 44em) {
+  .advantages-grid {
+    grid-template-areas: "a-one a-two" "a-three a-four";
+  }
+}
+@media screen and (min-width: 75em) {
+  .advantages-grid {
+    grid-template-areas: "a-one a-two a-three" "a-four a-four a-blank";
+  }
+}
 .standard-card.quote {
   background-image: url("./images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
@@ -7316,7 +7382,7 @@ h2.homepage-section-title {
     grid-template-areas: "u-one" "u-two" "u-three" "u-four" "u-five" "u-six";
   }
 }
-@media screen and (min-width: 54em) {
+@media screen and (min-width: 44em) {
   .utility-grid {
     grid-template-areas: "u-one u-two" "u-three u-four" "u-five u-six";
   }
@@ -7324,6 +7390,35 @@ h2.homepage-section-title {
 @media screen and (min-width: 75em) {
   .utility-grid {
     grid-template-areas: "u-one u-two u-three" "u-four u-five u-six";
+  }
+}
+.final-section-grid {
+  display: grid;
+  gap: 2.5rem;
+  grid-auto-columns: 1fr;
+  grid-template-areas: "u-one" "u-two";
+}
+
+.final-section-grid-item {
+  position: relative;
+}
+
+.final-section-grid-item:nth-child(1) {
+  grid-area: f-one;
+}
+
+.final-section-grid-item:nth-child(2) {
+  grid-area: f-two;
+}
+
+@media screen and (min-width: 33em) {
+  .final-section-grid {
+    grid-template-areas: "f-one" "f-two";
+  }
+}
+@media screen and (min-width: 65em) {
+  .final-section-grid {
+    grid-template-areas: "f-one f-one f-two";
   }
 }
 /* START masked image */
