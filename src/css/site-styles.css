@@ -7266,7 +7266,7 @@ h2.homepage-section-title {
   grid-template-areas: "a-one" "a-two" "a-three" "a-four";
 }
 .advantages-grid .advantage-card {
-  padding: 1.5rem;
+  padding: 1.4rem;
   padding-top: 1rem;
   border-radius: 0.5rem;
   border: 1px solid var(--color-bg-gray-subtle);
@@ -7280,14 +7280,14 @@ h2.homepage-section-title {
   font-size: 1.4rem;
 }
 .advantages-grid .advantage-card > h4 {
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
   font-family: var(--txt-font-stack-content);
   color: var(--color-text);
   margin-bottom: 0.6rem;
 }
 .advantages-grid .advantage-card > p {
-  font-size: 1rem;
+  font-size: 0.95rem;
   margin-bottom: 0.6rem;
 }
 
