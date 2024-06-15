@@ -1,0 +1,114 @@
+.faq-last-updated {
+   margin-bottom: 0;
+   font-size: 0.6rem;
+   font-weight: 500;
+   color: var(--color-text);
+ }
+ 
+ .main-faq {
+   background-color: var(--color-bg-body);
+   width: 100%;
+   display: flex;
+ }
+ 
+ .faq-container {
+   width: 90%;
+   max-width: 60rem;
+   margin: 0 auto;
+   padding: 0 1.5rem;
+ 
+   h2 {
+     text-align: left;
+     margin-top: 1rem;
+     margin-bottom: 0;
+   }
+ }
+ 
+ .faq-group {
+   padding: 0.5rem;
+ 
+   h3 {
+     margin-top: 0;
+     margin-bottom: 0.9rem;
+   }
+ }
+ 
+ .faq-item {
+   position: relative;
+   box-sizing: border-box;
+   background-color: #eae0d6;
+   border: solid 1px #641115;
+   border-radius: 6px;
+   padding: 0.6rem 1rem;
+   margin-bottom: 1rem;
+   box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+   /* horizontal-offset, vertical-offset, blur, spread, color */
+ 
+   .faq-question {
+     //padding: 0.5rem 3rem 0.5rem 1rem;
+     //min-height: 3.3rem;
+     line-height: 1.15;
+     font-size: 1rem;
+     font-weight: 400;
+     background-color: #eae0d6;
+     width: 100%;
+     color: black;
+     cursor: pointer;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ 
+     i {
+       color: black;
+       padding: 0.5rem;
+     }
+   }
+ 
+   .faq-answer {
+     position: relative;
+     line-height: 1.4;
+     margin-top: 0.2rem;
+     font-size: 0.9rem;
+     color: black;
+     position: relative;
+     background-color: #f2efed;
+     padding: 0;
+ 
+     overflow: hidden;
+     max-height: 0;
+     transition: max-height 0.3s ease-out;
+   }
+ }
+
+ .faq-answer::before {
+   content: "";
+   position: absolute;
+   width: 0.25rem;
+   height: 90%;
+   background-color: #8fc460;
+   top: 50%;
+   left: 0;
+   transform: translateY(-50%);
+ }
+ 
+ .faq-answer-padding {
+   padding: 0.5rem 1rem 0.2rem 1rem;
+ }
+ 
+ .faq-answer p {
+   font-size: 0.9rem;
+   color: black;
+   margin: 0;
+   margin-bottom: 0.5rem;
+ }
+  
+ .faq-question::after {
+   content: "\002B";
+   font-size: 1.5rem;
+ }
+ .faq-question.active::after {
+   content: "\002D";
+   font-size: 1.5rem;
+ }
+ 

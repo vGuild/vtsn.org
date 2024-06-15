@@ -16,6 +16,34 @@ var homepage = {
   },
 };
 
+// accordion                    = faq-group
+// accordion-item               = faq-item
+// accordion-item-header        = faq-question
+// accordion-item-body          = faq-answer
+// accordion-item-body-content  = faq-answer-padding
+
+
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(faqQuestion => {
+  faqQuestion.addEventListener('click', event => {
+    const currentlyActiveQuestion = document.querySelector('.faq-question.active');
+    if (currentlyActiveQuestion && currentlyActiveQuestion !== faqQuestion) {
+        currentlyActiveQuestion.classList.toggle('active');
+        currentlyActiveQuestion.nextElementSibling.style.maxHeight = 0;
+      }
+
+    faqQuestion.classList.toggle('active');
+    const faqAnswer = faqQuestion.nextElementSibling;
+    if (faqQuestion.classList.contains('active')) {
+      faqAnswer.style.maxHeight = faqAnswer.scrollHeight + 'px';
+    }
+    else {
+      faqAnswer.style.maxHeight = 0;
+    }
+  })
+})
+
 var handleScrollToTopButton = function () {
   'use strict';
 
