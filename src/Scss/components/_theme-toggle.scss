@@ -11,13 +11,12 @@
   background: 0;
   border: 0;
   opacity: 0.8;
-  padding: 0.2rem 0.3rem;
   padding-top: 0.3rem;
   border-radius: 50%;
   position: relative;
   isolation: isolate;
   background-color: var(--color-nav-bar);
-  aspect-ratio: 1;
+  aspect-ratio: 1 !important;
 }
 
 #theme-toggle svg {
